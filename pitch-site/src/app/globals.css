@@ -1,0 +1,307 @@
+@import "tailwindcss";
+
+/* ============================================
+   Wedding SaaS Pitch - Design System
+   (Matching BaliLove Brand Identity)
+   ============================================ */
+
+/* Custom Font Faces */
+@font-face {
+  font-family: 'OTR Nouveau Mono';
+  src: url('/fonts/OTRNouveauMono-Regular.woff') format('woff'),
+       url('/fonts/OTRNouveauMono-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'FBS Chopen';
+  src: url('/fonts/FBSChopen-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ============================================
+   CSS Custom Properties (Design Tokens)
+   ============================================ */
+:root {
+  /* Brand Colors */
+  --color-dark-red: #3B0304;
+  --color-red: #921303;
+  --color-red-red: #FF0000;
+  --color-pale-pink: #F6BDBD;
+  --color-sky-blue: #7BBADD;
+  --color-white: #FFFFFF;
+  --color-black: #000000;
+
+  /* Typography Scale (8-point grid) */
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.5rem;
+  --text-3xl: 2rem;
+  --text-4xl: 2.5rem;
+  --text-5xl: 3rem;
+  --text-6xl: 3.5rem;
+
+  /* Spacing Scale (8-point grid) */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 2.5rem;
+  --space-8: 3rem;
+  --space-9: 3.5rem;
+  --space-10: 4rem;
+  --space-12: 6rem;
+  --space-16: 8rem;
+
+  /* Line Heights */
+  --leading-tight: 1.2;
+  --leading-normal: 1.5;
+  --leading-relaxed: 1.75;
+
+  /* Letter Spacing */
+  --tracking-tight: -0.025em;
+  --tracking-normal: 0;
+  --tracking-wide: 0.05em;
+  --tracking-wider: 0.1em;
+  --tracking-widest: 0.2em;
+}
+
+/* ============================================
+   Tailwind Theme Configuration
+   ============================================ */
+@theme inline {
+  --color-dark-red: #3B0304;
+  --color-red: #921303;
+  --color-red-red: #FF0000;
+  --color-pale-pink: #F6BDBD;
+  --color-sky-blue: #7BBADD;
+
+  --font-heading: 'OTR Nouveau Mono', monospace;
+  --font-logo: 'FBS Chopen', sans-serif;
+  --font-body: 'OTR Nouveau Mono', monospace;
+  --font-secondary: Arial, Helvetica, sans-serif;
+}
+
+/* ============================================
+   Base Styles
+   ============================================ */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-white);
+  color: var(--color-dark-red);
+  font-family: 'OTR Nouveau Mono', monospace;
+  font-size: var(--text-base);
+  line-height: var(--leading-relaxed);
+}
+
+::selection {
+  background-color: var(--color-red-red);
+  color: var(--color-white);
+}
+
+/* ============================================
+   Typography Classes
+   ============================================ */
+
+.font-logo {
+  font-family: 'FBS Chopen', sans-serif;
+  font-weight: 700;
+}
+
+.font-heading {
+  font-family: 'OTR Nouveau Mono', monospace;
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-wide);
+  line-height: var(--leading-tight);
+}
+
+.font-body {
+  font-family: 'OTR Nouveau Mono', monospace;
+  text-transform: none;
+  line-height: var(--leading-relaxed);
+}
+
+.font-secondary {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.text-display {
+  font-size: clamp(2.5rem, 5vw, 3.5rem);
+  line-height: var(--leading-tight);
+}
+
+.text-h1 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: var(--leading-tight);
+}
+
+.text-h2 {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  line-height: var(--leading-tight);
+}
+
+.text-h3 {
+  font-size: clamp(1.25rem, 2vw, 1.5rem);
+  line-height: var(--leading-tight);
+}
+
+.text-body-lg {
+  font-size: var(--text-lg);
+  line-height: var(--leading-relaxed);
+}
+
+.text-body {
+  font-size: var(--text-base);
+  line-height: var(--leading-relaxed);
+}
+
+.text-caption {
+  font-size: var(--text-sm);
+  line-height: var(--leading-normal);
+}
+
+/* ============================================
+   Color Pairing Classes
+   ============================================ */
+
+.color-pair-primary {
+  background-color: var(--color-sky-blue);
+  color: var(--color-dark-red);
+}
+
+.color-pair-secondary {
+  background-color: var(--color-pale-pink);
+  color: var(--color-dark-red);
+}
+
+.color-pair-clean {
+  background-color: var(--color-white);
+  color: var(--color-dark-red);
+}
+
+.color-pair-inverted {
+  background-color: var(--color-dark-red);
+  color: var(--color-white);
+}
+
+.color-pair-cta {
+  background-color: var(--color-red);
+  color: var(--color-white);
+}
+
+/* ============================================
+   Button Styles
+   ============================================ */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-4) var(--space-6);
+  font-family: 'OTR Nouveau Mono', monospace;
+  font-size: var(--text-sm);
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-wider);
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background-color: var(--color-red);
+  color: var(--color-white);
+}
+
+.btn-primary:hover {
+  background-color: var(--color-dark-red);
+}
+
+.btn-secondary {
+  background-color: var(--color-white);
+  color: var(--color-red);
+  border: 1px solid var(--color-red);
+}
+
+.btn-secondary:hover {
+  background-color: var(--color-red);
+  color: var(--color-white);
+}
+
+/* ============================================
+   Panel/Section Base Styles
+   ============================================ */
+
+.panel {
+  width: 100%;
+  padding: var(--space-16) var(--space-5);
+}
+
+@media (min-width: 768px) {
+  .panel {
+    padding: var(--space-16) var(--space-8);
+  }
+}
+
+.panel-sm {
+  padding: var(--space-10) var(--space-5);
+}
+
+@media (min-width: 768px) {
+  .panel-sm {
+    padding: var(--space-10) var(--space-8);
+  }
+}
+
+.container-narrow {
+  max-width: 48rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container-wide {
+  max-width: 80rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ============================================
+   Decorative Elements
+   ============================================ */
+
+.accent-underline {
+  text-decoration: underline;
+  text-decoration-color: var(--color-red);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+}
+
+.divider {
+  width: 64px;
+  height: 2px;
+  background-color: var(--color-red);
+}
+
+/* ============================================
+   Animation Utilities
+   ============================================ */
+
+.transition-smooth {
+  transition: all 0.3s ease;
+}
+
+.transition-slow {
+  transition: all 0.5s ease;
+}
