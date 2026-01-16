@@ -48,6 +48,35 @@ A battle-tested wedding planning platform (300+ weddings proven via BaliLove) th
 - **Timeline:** 3-6 month POC with 2-3 hotels, then global expansion
 - **Target investors:** Angel investors (hospitality/travel), seed VCs (vertical SaaS)
 
+---
+
+## Process Management - CRITICAL
+
+### NEVER do these:
+- `taskkill //F //IM node.exe` - This kills ALL Node processes including other Claude Code instances
+- `taskkill //F //IM npm.exe` - Same problem
+- `taskkill //F //IM python.exe` - Kills ALL Python processes
+- Any broad process killing that affects the whole system
+
+### When a port is in use:
+1. Find the specific PID using the port: `netstat -ano | findstr :<port>`
+2. Kill only that specific process: `taskkill //F //PID <pid>`
+3. Or use: `npx kill-port <port>`
+
+### Example - correct way to free a port:
+```bash
+# Find what's using the port
+netstat -ano | findstr :3000
+
+# Kill only that specific PID (e.g., 12345)
+taskkill //F //PID 12345
+```
+
+### If a server/script won't start:
+- Check if there's an existing process on the port first
+- Kill only the specific process, not all node.exe or python.exe
+- Ask the user if you're unsure
+
 ## Competitive Landscape
 See `research/competitors.md` for detailed analysis.
 
