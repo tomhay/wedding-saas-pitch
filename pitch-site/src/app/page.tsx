@@ -11,7 +11,7 @@ const pitchNavigation = [
   { id: 'hero', label: 'Overview', description: 'The opportunity' },
   { id: 'problem', label: 'Problem', description: 'Market pain point' },
   { id: 'solution', label: 'Solution', description: 'Our platform' },
-  { id: 'traction', label: 'Traction', description: '300+ weddings' },
+  { id: 'traction', label: 'Traction', description: '10K+ bookings' },
   { id: 'market', label: 'Market', description: '$300B opportunity' },
   { id: 'business-model', label: 'Business Model', description: 'How we make money' },
   { id: 'competition', label: 'Competition', description: 'Our advantage' },
@@ -43,8 +43,8 @@ export default function PitchPage() {
     return (
       <div className="min-h-screen bg-dark-red flex items-center justify-center px-6">
         <div className="max-w-md w-full">
-          <h1 className="font-heading text-white text-3xl mb-2">Investor Pitch</h1>
-          <p className="text-white/50 text-sm mb-8">Enter password to continue</p>
+          <h1 className="font-heading text-white text-3xl mb-2">LoveOS</h1>
+          <p className="text-white/50 text-sm mb-8">Password to continue</p>
           <form onSubmit={handleSubmit}>
             <input
               type="password"
@@ -111,7 +111,7 @@ export default function PitchPage() {
 
         {/* Contact Info */}
         <div className="px-8 pb-8 text-dark-red/50 text-xs space-y-1">
-          <p>Seed Round 2025</p>
+          <p>Seed Round 2026</p>
           <p>$500K - $1M</p>
         </div>
       </aside>
@@ -137,7 +137,7 @@ export default function PitchPage() {
               transition={{ duration: 0.8 }}
             >
               <p className="text-red-red text-sm tracking-[0.3em] uppercase mb-6">
-                Seed Round 2025
+                Seed Round 2026
               </p>
               <h1 className="font-heading text-white text-4xl md:text-5xl lg:text-6xl leading-tight mb-8">
                 The wedding software<br />
@@ -193,7 +193,8 @@ export default function PitchPage() {
               </p>
               <p>
                 They struggle to get budget for software. Meanwhile, hotels happily pay
-                <span className="text-red-red font-medium"> 15-20% commissions</span> to external planners.
+                <span className="text-red-red font-medium"> 15-20% commissions</span> to external planners
+                and OTAs like Booking.com to fill their rooms.
               </p>
             </div>
 
@@ -277,28 +278,39 @@ export default function PitchPage() {
               This isn&apos;t a concept.<br />
               <span className="italic font-light">It&apos;s proven.</span>
             </h2>
-            <p className="font-secondary text-dark-red/80 text-xl leading-relaxed mb-12">
+            <p className="font-secondary text-dark-red/80 text-xl leading-relaxed mb-8">
               We&apos;ve been running weddings on this platform for over two years through BaliLove,
-              our destination wedding business in Bali.
+              our destination wedding business in Bali. <span className="text-red-red font-medium">The software isn&apos;t a concept — it&apos;s
+              live and operating right now.</span>
             </p>
+
+            {/* Pipeline */}
+            <div className="p-6 bg-white border-l-4 border-red mb-12">
+              <p className="font-heading text-dark-red text-lg mb-2">Already in Conversations</p>
+              <p className="font-secondary text-dark-red/70 text-base leading-relaxed">
+                We&apos;re in active discussions with <span className="text-red-red font-medium">4 hotels and 1 beach club</span> to
+                implement our solution. Beyond the platform, we offer lead generation and done-for-you sales
+                and planning services — hotels don&apos;t even need to resource those teams if they don&apos;t want to.
+              </p>
+            </div>
 
             {/* Stats Grid */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 pt-8 border-t border-dark-red/20">
               <div>
-                <p className="font-heading text-4xl md:text-5xl text-red-red mb-2">300+</p>
-                <p className="font-secondary text-dark-red/60 text-sm uppercase tracking-wide">Weddings Completed</p>
+                <p className="font-heading text-4xl md:text-5xl text-red-red mb-2">10K+</p>
+                <p className="font-secondary text-dark-red/60 text-sm uppercase tracking-wide">Bookings Processed</p>
+              </div>
+              <div>
+                <p className="font-heading text-4xl md:text-5xl text-red-red mb-2">15K+</p>
+                <p className="font-secondary text-dark-red/60 text-sm uppercase tracking-wide">Guests in 2026</p>
+              </div>
+              <div>
+                <p className="font-heading text-4xl md:text-5xl text-red-red mb-2">220+</p>
+                <p className="font-secondary text-dark-red/60 text-sm uppercase tracking-wide">Couples in Planning</p>
               </div>
               <div>
                 <p className="font-heading text-4xl md:text-5xl text-red-red mb-2">2+</p>
                 <p className="font-secondary text-dark-red/60 text-sm uppercase tracking-wide">Years Live</p>
-              </div>
-              <div>
-                <p className="font-heading text-4xl md:text-5xl text-red-red mb-2">50+</p>
-                <p className="font-secondary text-dark-red/60 text-sm uppercase tracking-wide">Team Members</p>
-              </div>
-              <div>
-                <p className="font-heading text-4xl md:text-5xl text-red-red mb-2">[X]</p>
-                <p className="font-secondary text-dark-red/60 text-sm uppercase tracking-wide">Guest Bookings</p>
               </div>
             </div>
           </div>
@@ -437,7 +449,8 @@ export default function PitchPage() {
 
             <p className="font-secondary text-dark-red/70 text-lg leading-relaxed mb-12">
               Competitors are event platforms that added wedding features. We built from
-              real wedding operations — 300+ of them.
+              real wedding operations — and we have the relationships and trust with Bali&apos;s
+              top venues that took years to develop.
             </p>
 
             {/* Comparison */}
@@ -463,18 +476,34 @@ export default function PitchPage() {
             <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="p-6 bg-pale-pink/50">
                 <p className="font-heading text-dark-red text-sm uppercase tracking-wide mb-2">
-                  Guest Self-Service
+                  Relational Moat
                 </p>
                 <p className="font-secondary text-dark-red/60 text-sm">
-                  Only platform where guests book directly — hotels capture more revenue
+                  Years of trust with Bali&apos;s top venues — relationships competitors can&apos;t replicate overnight
                 </p>
               </div>
               <div className="p-6 bg-pale-pink/50">
                 <p className="font-heading text-dark-red text-sm uppercase tracking-wide mb-2">
-                  Commission Model
+                  Zero Friction Adoption
                 </p>
                 <p className="font-secondary text-dark-red/60 text-sm">
-                  No big upfront cost — hotels pay when they succeed
+                  Commission model means no budget approval needed — teams can say yes immediately
+                </p>
+              </div>
+              <div className="p-6 bg-pale-pink/50">
+                <p className="font-heading text-dark-red text-sm uppercase tracking-wide mb-2">
+                  Makes Teams Less Busy
+                </p>
+                <p className="font-secondary text-dark-red/60 text-sm">
+                  Automation + done-for-you services mean wedding teams can handle more with less stress
+                </p>
+              </div>
+              <div className="p-6 bg-pale-pink/50">
+                <p className="font-heading text-dark-red text-sm uppercase tracking-wide mb-2">
+                  Guest Self-Service
+                </p>
+                <p className="font-secondary text-dark-red/60 text-sm">
+                  Only platform where guests book directly — hotels capture more room revenue
                 </p>
               </div>
             </div>
@@ -562,19 +591,19 @@ export default function PitchPage() {
 
             {/* Milestones */}
             <div className="border-t border-white/20 pt-8">
-              <p className="font-heading text-white text-lg mb-6">18-Month Milestones</p>
+              <p className="font-heading text-white text-lg mb-6">12-Month Milestones</p>
               <div className="grid grid-cols-3 gap-8">
                 <div>
-                  <p className="font-heading text-red-red text-3xl mb-2">[X]</p>
-                  <p className="font-secondary text-white/50 text-sm">Venues Live</p>
+                  <p className="font-heading text-red-red text-3xl mb-2">10</p>
+                  <p className="font-secondary text-white/50 text-sm">Venues Live in Bali</p>
                 </div>
                 <div>
-                  <p className="font-heading text-red-red text-3xl mb-2">[X]</p>
-                  <p className="font-secondary text-white/50 text-sm">GMV Processed</p>
+                  <p className="font-heading text-red-red text-3xl mb-2">800</p>
+                  <p className="font-secondary text-white/50 text-sm">Weddings Per Year</p>
                 </div>
                 <div>
-                  <p className="font-heading text-red-red text-3xl mb-2">[X]</p>
-                  <p className="font-secondary text-white/50 text-sm">Markets</p>
+                  <p className="font-heading text-red-red text-3xl mb-2">$3.9M</p>
+                  <p className="font-secondary text-white/50 text-sm">Platform Revenue</p>
                 </div>
               </div>
             </div>

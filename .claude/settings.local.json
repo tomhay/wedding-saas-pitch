@@ -1,11 +1,13 @@
 {
   "permissions": {
     "allow": [
-      "Bash(dir /s \"c:\\\\Users\\\\User\\\\apps\\\\balilove-new\")",
-      "Bash(npx create-next-app@latest *)",
-      "Bash(npm install *)",
-      "Bash(npm run dev *)",
-      "Bash(cat *)"
+      "Bash(git clone:*)",
+      "Bash(git init:*)",
+      "Bash(git remote add:*)",
+      "Bash(git fetch:*)",
+      "Bash(git checkout:*)",
+      "Bash(npm install:*)",
+      "Bash(npm run dev:*)"
     ]
   }
 }
