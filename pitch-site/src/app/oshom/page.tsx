@@ -10,6 +10,7 @@ const navigation = [
   { id: 'about', label: 'Bali Love' },
   { id: 'why-oshom', label: 'Why Oshom' },
   { id: 'products', label: 'Products' },
+  { id: 'buyout-model', label: 'Buyout Model' },
   { id: 'revenue', label: 'Revenue' },
   { id: 'calendar', label: 'Calendar' },
   { id: 'cashflow', label: 'Cash Flow' },
@@ -165,7 +166,7 @@ export default function OshomProposal() {
             </motion.h1>
             <motion.p variants={fadeUp} className="text-sm text-white/70 max-w-xl mx-auto leading-relaxed mb-12">
               A partnership to bring 50 destination weddings per year to Oshom &mdash;
-              adding 9 billion IDR in incremental revenue on top of normal hotel operations.
+              adding 16.9 billion IDR in revenue on top of normal hotel operations.
             </motion.p>
             <motion.div variants={fadeUp} className="flex items-center gap-8 justify-center">
               <img src="https://oshombali.com/wp-content/uploads/2024/09/Oshom-Logo-Full-Beige-300x300.png" alt="Oshom" className="h-16 opacity-80" />
@@ -180,7 +181,7 @@ export default function OshomProposal() {
           <div className="max-w-3xl mx-auto text-center">
             <motion.p variants={fadeUp} className="text-xs tracking-[0.25em] uppercase text-amber-600 mb-4">The Opportunity</motion.p>
             <motion.h2 variants={fadeUp} className="text-3xl md:text-4xl font-bold uppercase tracking-wider text-stone-900 mb-6 leading-tight">
-              Fill your calendar.<br /><span className="font-normal text-amber-600">Boost revenue 55%.</span>
+              Fill your calendar.<br /><span className="font-normal text-amber-600">Boost revenue 73%.</span>
             </motion.h2>
             <motion.p variants={fadeUp} className="text-sm text-stone-500 leading-relaxed max-w-2xl mx-auto">
               Oshom has 18 rooms, world-class F&amp;B, and a stunning venue &mdash; but at 47% occupancy in 2025,
@@ -296,8 +297,8 @@ export default function OshomProposal() {
                     </tr>
                   </thead>
                   <tbody>
-                    <tr className="border-b border-stone-200"><td className="p-3">2-Night Buyout</td><td className="p-3 text-right font-mono">119,000,000 IDR</td><td className="p-3 text-right font-mono">104,000,000 IDR</td></tr>
-                    <tr className="border-b border-stone-200"><td className="p-3">3-Night Buyout</td><td className="p-3 text-right font-mono">154,000,000 IDR</td><td className="p-3 text-right font-mono">135,000,000 IDR</td></tr>
+                    <tr className="border-b border-stone-200"><td className="p-3">2-Night Buyout</td><td className="p-3 text-right font-mono">119,000,000 IDR</td><td className="p-3 text-right font-mono">101,150,000 IDR</td></tr>
+                    <tr className="border-b border-stone-200"><td className="p-3">3-Night Buyout</td><td className="p-3 text-right font-mono">154,000,000 IDR</td><td className="p-3 text-right font-mono">130,900,000 IDR</td></tr>
                   </tbody>
                 </table>
               </div>
@@ -306,24 +307,40 @@ export default function OshomProposal() {
             {/* Product 2 */}
             <motion.div variants={fadeUp} className="mb-12">
               <h3 className="text-base font-bold uppercase tracking-wider text-stone-900 mb-4">Product 2: Food &amp; Beverage (80 guests)</h3>
+              <p className="text-xs text-stone-500 leading-relaxed mb-4">
+                F&amp;B is separate from the venue buyout. Couple guarantees a minimum F&amp;B spend.
+                Broken into food + drinks with tiered options.
+              </p>
               <div className="overflow-x-auto">
                 <table className="w-full text-sm">
                   <thead>
                     <tr className="border-b-2 border-amber-600 bg-stone-100">
-                      <th className="text-left p-3 text-[11px] tracking-wider uppercase text-amber-600"></th>
+                      <th className="text-left p-3 text-[11px] tracking-wider uppercase text-amber-600">Tier</th>
+                      <th className="text-right p-3 text-[11px] tracking-wider uppercase text-amber-600">Food / Head</th>
+                      <th className="text-right p-3 text-[11px] tracking-wider uppercase text-amber-600">Drinks / Head</th>
                       <th className="text-right p-3 text-[11px] tracking-wider uppercase text-amber-600">Per Head Sell</th>
                       <th className="text-right p-3 text-[11px] tracking-wider uppercase text-amber-600">Per Head Buy</th>
-                      <th className="text-right p-3 text-[11px] tracking-wider uppercase text-amber-600">Total Sell</th>
-                      <th className="text-right p-3 text-[11px] tracking-wider uppercase text-amber-600">Total Buy</th>
+                      <th className="text-right p-3 text-[11px] tracking-wider uppercase text-amber-600">Total Sell (80)</th>
+                      <th className="text-right p-3 text-[11px] tracking-wider uppercase text-amber-600">Total Buy (80)</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr className="border-b border-stone-200">
-                      <td className="p-3">F&amp;B (same rate 2 or 3 night)</td>
-                      <td className="p-3 text-right font-mono">943,000</td>
-                      <td className="p-3 text-right font-mono">826,000</td>
-                      <td className="p-3 text-right font-mono">75,500,000</td>
-                      <td className="p-3 text-right font-mono">66,100,000</td>
+                      <td className="p-3 font-bold">Standard</td>
+                      <td className="p-3 text-right font-mono">700,000</td>
+                      <td className="p-3 text-right font-mono">900,000</td>
+                      <td className="p-3 text-right font-mono">1,600,000</td>
+                      <td className="p-3 text-right font-mono">1,360,000</td>
+                      <td className="p-3 text-right font-mono">128,000,000</td>
+                      <td className="p-3 text-right font-mono">108,800,000</td>
+                    </tr>
+                    <tr className="border-b border-stone-200 text-stone-400">
+                      <td className="p-3 font-bold">Premium</td>
+                      <td className="p-3 text-right font-mono text-xs" colSpan={6}>Coming soon &mdash; from 2,000,000 / head</td>
+                    </tr>
+                    <tr className="border-b border-stone-200 text-stone-400">
+                      <td className="p-3 font-bold">Luxury</td>
+                      <td className="p-3 text-right font-mono text-xs" colSpan={6}>Coming soon &mdash; from 2,500,000 / head</td>
                     </tr>
                   </tbody>
                 </table>
@@ -345,8 +362,8 @@ export default function OshomProposal() {
                     </tr>
                   </thead>
                   <tbody>
-                    <tr className="border-b border-stone-200"><td className="p-3">2-Night Stay</td><td className="p-3 text-right font-mono">2,543,000</td><td className="p-3 text-right font-mono">2,225,000</td><td className="p-3 text-right font-mono">86,460,000</td><td className="p-3 text-right font-mono">75,650,000</td></tr>
-                    <tr className="border-b border-stone-200"><td className="p-3">3-Night Stay</td><td className="p-3 text-right font-mono">2,543,000</td><td className="p-3 text-right font-mono">2,225,000</td><td className="p-3 text-right font-mono">129,690,000</td><td className="p-3 text-right font-mono">113,475,000</td></tr>
+                    <tr className="border-b border-stone-200"><td className="p-3">2-Night Stay</td><td className="p-3 text-right font-mono">3,500,000</td><td className="p-3 text-right font-mono">2,975,000</td><td className="p-3 text-right font-mono">119,000,000</td><td className="p-3 text-right font-mono">101,150,000</td></tr>
+                    <tr className="border-b border-stone-200"><td className="p-3">3-Night Stay</td><td className="p-3 text-right font-mono">3,500,000</td><td className="p-3 text-right font-mono">2,975,000</td><td className="p-3 text-right font-mono">178,500,000</td><td className="p-3 text-right font-mono">151,725,000</td></tr>
                   </tbody>
                 </table>
               </div>
@@ -354,15 +371,72 @@ export default function OshomProposal() {
 
             <motion.div variants={fadeUp} className="bg-amber-50 border-l-4 border-amber-600 p-8">
               <p className="text-sm text-stone-900 leading-relaxed">
-                <strong>BaliLove commission is ~12.5%</strong> &mdash; the spread between sell and buy prices.
-                No retainers, no monthly fees, no cost to the venue unless we deliver revenue.
+                <strong>No retainers, no monthly fees.</strong> The spread between sell and buy prices is BaliLove&apos;s commission.
+                No cost to the venue unless we deliver revenue.
               </p>
             </motion.div>
           </div>
         </motion.section>
 
+        {/* HOW THE BUYOUT WORKS */}
+        <motion.section id="buyout-model" className="py-24 px-6 bg-white" initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger}>
+          <div className="max-w-6xl mx-auto">
+            <motion.p variants={fadeUp} className="text-xs tracking-[0.25em] uppercase text-amber-600 mb-4">The Financial Model</motion.p>
+            <motion.h2 variants={fadeUp} className="text-3xl md:text-4xl font-bold uppercase tracking-wider text-stone-900 mb-6 leading-tight">
+              How the buyout<br /><span className="font-normal text-amber-600">actually works.</span>
+            </motion.h2>
+            <motion.p variants={fadeUp} className="text-sm text-stone-500 leading-relaxed max-w-xl mb-12">
+              The couple commits to two things: a venue buyout and a minimum F&amp;B spend.
+              Guest room bookings offset the couple&apos;s buyout cost &mdash; and Oshom carries zero risk.
+            </motion.p>
+
+            <motion.div variants={stagger} className="space-y-6 mb-12">
+              {[
+                { num: '01', title: 'Couple Commits', desc: 'The couple guarantees both the venue buyout (e.g. 119M for 2 nights) and a minimum F&B spend (e.g. 128M for 80 guests at Standard tier). These are locked in — Oshom is guaranteed this revenue regardless.' },
+                { num: '02', title: '25% Deposit Locks the Date', desc: 'Couple pays 25% of the total upfront to secure the date. This reduces the upfront decision barrier while giving Oshom confirmed cash flow 12–18 months before the wedding.' },
+                { num: '03', title: 'Guest Room Bookings Open', desc: 'Bali Love sets up guest room bookings through the platform. Guests book and pay for their rooms directly — collected by Bali Love on behalf of the couple.' },
+                { num: '04', title: 'Room Revenue Offsets Buyout', desc: 'As guests book rooms, that revenue offsets the couple\'s buyout balance. The more rooms that fill, the less the couple pays out of pocket for the buyout.' },
+                { num: '05', title: 'Settlement', desc: 'If all 17 rooms fill: the couple recoups most or all of the buyout cost — the venue is essentially "free" for them. If rooms don\'t fill: the couple covers the shortfall (Oshom zero risk). If rooms overpay: the couple gets a credit back.' },
+              ].map((step) => (
+                <motion.div key={step.num} variants={fadeUp} className="bg-stone-50 p-6 flex gap-6">
+                  <span className="bg-amber-600 text-white text-xs font-bold px-3 py-1 tracking-wider h-fit">{step.num}</span>
+                  <div>
+                    <h3 className="text-sm font-bold uppercase tracking-wider text-stone-900 mb-2">{step.title}</h3>
+                    <p className="text-xs text-stone-500 leading-relaxed">{step.desc}</p>
+                  </div>
+                </motion.div>
+              ))}
+            </motion.div>
+
+            {/* Worked Example */}
+            <motion.div variants={fadeUp} className="bg-amber-50 border-l-4 border-amber-600 p-8">
+              <p className="text-[11px] tracking-[0.15em] uppercase text-amber-600 font-bold mb-4">Worked Example &mdash; 2-Night Buyout</p>
+              <div className="space-y-3 text-sm text-stone-900 leading-relaxed">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <div className="bg-white/60 p-4">
+                    <p className="text-[11px] tracking-wider uppercase text-amber-600 font-bold mb-2">Couple Commits</p>
+                    <p className="font-mono text-xs">Venue buyout: <strong>119,000,000 IDR</strong></p>
+                    <p className="font-mono text-xs">F&amp;B minimum (80 pax): <strong>128,000,000 IDR</strong></p>
+                    <p className="font-mono text-xs mt-2 text-stone-500">25% deposit upfront: 61,750,000 IDR</p>
+                  </div>
+                  <div className="bg-white/60 p-4">
+                    <p className="text-[11px] tracking-wider uppercase text-amber-600 font-bold mb-2">Guest Rooms Fill</p>
+                    <p className="font-mono text-xs">17 rooms &times; 3,500,000/night &times; 2 nights</p>
+                    <p className="font-mono text-xs">= <strong>119,000,000 IDR</strong> in room revenue</p>
+                    <p className="font-mono text-xs mt-2 text-stone-500">Room revenue = Buyout cost &rarr; venue is &ldquo;free&rdquo;</p>
+                  </div>
+                </div>
+                <p className="text-xs text-stone-600 pt-2">
+                  <strong>Result:</strong> Couple&apos;s buyout is fully offset by guest room bookings. They only pay for F&amp;B out of pocket.
+                  Oshom receives guaranteed revenue for venue + rooms + catering regardless of how rooms fill. <strong>Zero risk for Oshom.</strong>
+                </p>
+              </div>
+            </motion.div>
+          </div>
+        </motion.section>
+
         {/* PER WEDDING TOTAL */}
-        <motion.section className="py-24 px-6 bg-white" initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger}>
+        <motion.section className="py-24 px-6 bg-stone-50" initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger}>
           <div className="max-w-6xl mx-auto">
             <motion.p variants={fadeUp} className="text-xs tracking-[0.25em] uppercase text-amber-600 mb-4">Per Wedding</motion.p>
             <motion.h2 variants={fadeUp} className="text-3xl md:text-4xl font-bold uppercase tracking-wider text-stone-900 mb-8 leading-tight">
@@ -371,7 +445,7 @@ export default function OshomProposal() {
             <motion.div variants={fadeUp} className="overflow-x-auto">
               <table className="w-full text-sm">
                 <thead>
-                  <tr className="border-b-2 border-amber-600 bg-stone-50">
+                  <tr className="border-b-2 border-amber-600 bg-white">
                     <th className="text-left p-3 text-[11px] tracking-wider uppercase text-amber-600">Product</th>
                     <th className="text-right p-3 text-[11px] tracking-wider uppercase text-amber-600">2-Night Sell</th>
                     <th className="text-right p-3 text-[11px] tracking-wider uppercase text-amber-600">2-Night Buy</th>
@@ -380,16 +454,16 @@ export default function OshomProposal() {
                   </tr>
                 </thead>
                 <tbody>
-                  <tr className="border-b border-stone-200"><td className="p-3">Venue Buyout</td><td className="p-3 text-right font-mono">119,000,000</td><td className="p-3 text-right font-mono">104,000,000</td><td className="p-3 text-right font-mono">154,000,000</td><td className="p-3 text-right font-mono">135,000,000</td></tr>
-                  <tr className="border-b border-stone-200"><td className="p-3">F&amp;B (80 guests)</td><td className="p-3 text-right font-mono">75,500,000</td><td className="p-3 text-right font-mono">66,100,000</td><td className="p-3 text-right font-mono">75,500,000</td><td className="p-3 text-right font-mono">66,100,000</td></tr>
-                  <tr className="border-b border-stone-200"><td className="p-3">Guest Rooms (17)</td><td className="p-3 text-right font-mono">86,460,000</td><td className="p-3 text-right font-mono">75,650,000</td><td className="p-3 text-right font-mono">129,690,000</td><td className="p-3 text-right font-mono">113,475,000</td></tr>
-                  <tr className="border-b-2 border-amber-600 font-bold"><td className="p-3">Total</td><td className="p-3 text-right font-mono">280,960,000</td><td className="p-3 text-right font-mono">245,750,000</td><td className="p-3 text-right font-mono">359,190,000</td><td className="p-3 text-right font-mono">314,575,000</td></tr>
+                  <tr className="border-b border-stone-200 bg-white"><td className="p-3">Venue Buyout</td><td className="p-3 text-right font-mono">119,000,000</td><td className="p-3 text-right font-mono">101,150,000</td><td className="p-3 text-right font-mono">154,000,000</td><td className="p-3 text-right font-mono">130,900,000</td></tr>
+                  <tr className="border-b border-stone-200 bg-white"><td className="p-3">F&amp;B (80 guests, Standard)</td><td className="p-3 text-right font-mono">128,000,000</td><td className="p-3 text-right font-mono">108,800,000</td><td className="p-3 text-right font-mono">128,000,000</td><td className="p-3 text-right font-mono">108,800,000</td></tr>
+                  <tr className="border-b border-stone-200 bg-white"><td className="p-3">Guest Rooms (17)</td><td className="p-3 text-right font-mono">119,000,000</td><td className="p-3 text-right font-mono">101,150,000</td><td className="p-3 text-right font-mono">178,500,000</td><td className="p-3 text-right font-mono">151,725,000</td></tr>
+                  <tr className="border-b-2 border-amber-600 font-bold bg-white"><td className="p-3">Total</td><td className="p-3 text-right font-mono">366,000,000</td><td className="p-3 text-right font-mono">311,100,000</td><td className="p-3 text-right font-mono">460,500,000</td><td className="p-3 text-right font-mono">391,425,000</td></tr>
                 </tbody>
               </table>
             </motion.div>
             <motion.div variants={stagger} className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
-              <BigNumberCard number="$26,520" label="AUD sell per 2-night wedding (280.9M IDR)" />
-              <BigNumberCard number="$33,900" label="AUD sell per 3-night wedding (359.2M IDR)" />
+              <BigNumberCard number="$34,500" label="AUD sell per 2-night wedding (366M IDR)" />
+              <BigNumberCard number="$43,400" label="AUD sell per 3-night wedding (460.5M IDR)" />
             </motion.div>
           </div>
         </motion.section>
@@ -399,11 +473,11 @@ export default function OshomProposal() {
           <div className="max-w-6xl mx-auto">
             <motion.p variants={fadeUp} className="text-xs tracking-[0.25em] uppercase text-amber-600 mb-4">Annual Revenue</motion.p>
             <motion.h2 variants={fadeUp} className="text-3xl md:text-4xl font-bold uppercase tracking-wider text-stone-900 mb-6 leading-tight">
-              50 weddings.<br /><span className="font-normal text-amber-600">+55% revenue.</span>
+              50 weddings.<br /><span className="font-normal text-amber-600">+73% revenue.</span>
             </motion.h2>
             <motion.p variants={fadeUp} className="text-sm text-stone-500 leading-relaxed max-w-xl mb-8">
               Based on 33 two-night and 17 three-night weddings (matching
-              the proven demand pattern from our top venue).
+              the proven demand pattern from our top venue). Standard F&amp;B tier, 80 guests.
             </motion.p>
             <motion.div variants={fadeUp} className="overflow-x-auto">
               <table className="w-full text-sm">
@@ -415,17 +489,17 @@ export default function OshomProposal() {
                   </tr>
                 </thead>
                 <tbody>
-                  <tr className="border-b border-stone-200 bg-white"><td className="p-3">Venue Buyout</td><td className="p-3 text-right font-mono">6,545,000,000</td><td className="p-3 text-right font-mono">5,647,000,000</td></tr>
-                  <tr className="border-b border-stone-200 bg-white"><td className="p-3">F&amp;B (80 guests x 50)</td><td className="p-3 text-right font-mono">3,775,000,000</td><td className="p-3 text-right font-mono">3,305,000,000</td></tr>
-                  <tr className="border-b border-stone-200 bg-white"><td className="p-3">Guest Rooms</td><td className="p-3 text-right font-mono">5,058,510,000</td><td className="p-3 text-right font-mono">4,425,525,000</td></tr>
-                  <tr className="border-b-2 border-amber-600 font-bold bg-white"><td className="p-3">Total</td><td className="p-3 text-right font-mono">15,378,510,000</td><td className="p-3 text-right font-mono">13,377,525,000</td></tr>
+                  <tr className="border-b border-stone-200 bg-white"><td className="p-3">Venue Buyout</td><td className="p-3 text-right font-mono">6,545,000,000</td><td className="p-3 text-right font-mono">5,563,250,000</td></tr>
+                  <tr className="border-b border-stone-200 bg-white"><td className="p-3">F&amp;B (80 guests &times; 50)</td><td className="p-3 text-right font-mono">6,400,000,000</td><td className="p-3 text-right font-mono">5,440,000,000</td></tr>
+                  <tr className="border-b border-stone-200 bg-white"><td className="p-3">Guest Rooms</td><td className="p-3 text-right font-mono">6,961,500,000</td><td className="p-3 text-right font-mono">5,917,275,000</td></tr>
+                  <tr className="border-b-2 border-amber-600 font-bold bg-white"><td className="p-3">Total</td><td className="p-3 text-right font-mono">19,906,500,000</td><td className="p-3 text-right font-mono">16,920,525,000</td></tr>
                 </tbody>
               </table>
             </motion.div>
             <motion.div variants={stagger} className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
-              <BigNumberCard number="+8.9B" label="IDR net revenue increase after displacement" />
-              <BigNumberCard number="+55%" label="Increase on 2026 budgeted room revenue" />
-              <BigNumberCard number="25.1B" label="IDR total combined revenue vs 16.1B budget" />
+              <BigNumberCard number="+11.8B" label="IDR net revenue increase after displacement" />
+              <BigNumberCard number="+73%" label="Increase on 2026 budgeted room revenue" />
+              <BigNumberCard number="27.9B" label="IDR total combined revenue vs 16.1B budget" />
             </motion.div>
           </div>
         </motion.section>
@@ -485,7 +559,7 @@ export default function OshomProposal() {
 
             <motion.div variants={stagger} className="grid grid-cols-1 md:grid-cols-3 gap-0">
               {[
-                { when: 'On Booking (18 months out)', amount: '25%', desc: '~77M IDR deposit per wedding' },
+                { when: 'On Booking (18 months out)', amount: '25%', desc: '~100M IDR deposit per wedding' },
                 { when: '12 Months Out', amount: '25%', desc: 'Second payment' },
                 { when: '3 Months Out', amount: '50%', desc: 'Final balance' },
               ].map((item) => (
@@ -498,13 +572,13 @@ export default function OshomProposal() {
             </motion.div>
 
             <motion.div variants={stagger} className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
-              <BigNumberCard number="3.8B" label="IDR in deposits received 12–18 months before weddings" />
-              <BigNumberCard number="7.7B" label="IDR received before the 3-month mark (50% of total)" />
+              <BigNumberCard number="5.0B" label="IDR in deposits received 12–18 months before weddings" />
+              <BigNumberCard number="10.0B" label="IDR received before the 3-month mark (50% of total)" />
             </motion.div>
 
             <motion.div variants={fadeUp} className="bg-amber-50 border-l-4 border-amber-600 p-8 mt-8">
               <p className="text-sm text-stone-900 leading-relaxed">
-                <strong>Guaranteed working capital.</strong> 3.8 billion IDR sitting in your bank account
+                <strong>Guaranteed working capital.</strong> 5 billion IDR sitting in your bank account
                 well before any guest arrives. Use it to improve the property, fund marketing,
                 or smooth out seasonal cash flow dips.
               </p>
@@ -519,7 +593,7 @@ export default function OshomProposal() {
               <div>
                 <motion.p variants={fadeUp} className="text-xs tracking-[0.25em] uppercase text-amber-600 mb-4">Partnership Model</motion.p>
                 <motion.h2 variants={fadeUp} className="text-3xl md:text-4xl font-bold uppercase tracking-wider text-stone-900 mb-6 leading-tight">
-                  Clean split.<br /><span className="font-normal text-amber-600">~12.5% commission.</span>
+                  Clean split.<br /><span className="font-normal text-amber-600">Zero upfront cost.</span>
                 </motion.h2>
                 <motion.div variants={fadeUp} className="grid grid-cols-2 gap-6 mt-8">
                   <div className="bg-stone-50 p-5">
@@ -591,9 +665,9 @@ export default function OshomProposal() {
             </motion.h2>
             <motion.div variants={stagger} className="grid grid-cols-1 md:grid-cols-2 gap-12">
               {[
-                { title: '+55% Revenue', desc: '9 billion IDR in net incremental revenue on top of normal hotel operations. Total combined revenue goes from 16.1B to 25.1B IDR.' },
+                { title: '+73% Revenue', desc: '11.8 billion IDR in net incremental revenue on top of normal hotel operations. Total combined revenue goes from 16.1B to 27.9B IDR.' },
                 { title: '100% Occupancy', desc: 'Every wedding fills all 17 rooms, guaranteed. Compare that to your current 47–61% occupancy from walk-in tourists.' },
-                { title: 'Advance Cash Flow', desc: '3.8 billion IDR in deposits received 12–18 months before weddings. Guaranteed working capital vs uncertain hotel bookings.' },
+                { title: 'Advance Cash Flow', desc: '5 billion IDR in deposits received 12–18 months before weddings. Guaranteed working capital vs uncertain hotel bookings.' },
                 { title: 'Fill Weak Months', desc: 'Weddings book into your lowest-occupancy months first. November (29.8%), April (34.4%), May (35.3%) — exactly when you need revenue most.' },
                 { title: 'Zero Sales Cost', desc: 'We handle all marketing, sales, enquiry management, and conversion. Your team doesn\'t touch sales. Commission only on delivered revenue.' },
                 { title: 'Content & Brand', desc: 'Every wedding generates professional photos and testimonials. Builds Oshom\'s reputation as a premier wedding destination.' },
