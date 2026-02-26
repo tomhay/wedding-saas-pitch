@@ -12,6 +12,7 @@ const navigation = [
   { id: 'products', label: 'Products' },
   { id: 'buyout-model', label: 'Buyout Model' },
   { id: 'revenue', label: 'Revenue' },
+  { id: 'yield', label: 'Yield' },
   { id: 'calendar', label: 'Calendar' },
   { id: 'cashflow', label: 'Cash Flow' },
   { id: 'partnership', label: 'Partnership' },
@@ -182,7 +183,7 @@ export default function OshomProposal() {
           <div className="max-w-3xl mx-auto text-center">
             <motion.p variants={fadeUp} className="text-xs tracking-[0.25em] uppercase text-amber-600 mb-4">The Opportunity</motion.p>
             <motion.h2 variants={fadeUp} className="text-3xl md:text-4xl font-bold uppercase tracking-wider text-stone-900 mb-6 leading-tight">
-              Fill your calendar.<br /><span className="font-normal text-amber-600">Boost revenue 73%.</span>
+              Fill your calendar.<br /><span className="font-normal text-amber-600">Boost revenue 75%.</span>
             </motion.h2>
             <motion.p variants={fadeUp} className="text-sm text-stone-500 leading-relaxed max-w-2xl mx-auto">
               Oshom has 18 rooms, world-class F&amp;B, and a stunning venue &mdash; but at 47% occupancy in 2025,
@@ -474,7 +475,7 @@ export default function OshomProposal() {
           <div className="max-w-6xl mx-auto">
             <motion.p variants={fadeUp} className="text-xs tracking-[0.25em] uppercase text-amber-600 mb-4">Annual Revenue</motion.p>
             <motion.h2 variants={fadeUp} className="text-3xl md:text-4xl font-bold uppercase tracking-wider text-stone-900 mb-6 leading-tight">
-              50 weddings.<br /><span className="font-normal text-amber-600">+73% revenue.</span>
+              50 weddings.<br /><span className="font-normal text-amber-600">+75% revenue.</span>
             </motion.h2>
             <motion.p variants={fadeUp} className="text-sm text-stone-500 leading-relaxed max-w-xl mb-8">
               Based on 33 two-night and 17 three-night weddings (matching
@@ -498,15 +499,119 @@ export default function OshomProposal() {
               </table>
             </motion.div>
             <motion.div variants={stagger} className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
-              <BigNumberCard number="+11.8B" label="IDR net revenue increase after displacement" />
-              <BigNumberCard number="+73%" label="Increase on 2026 budgeted room revenue" />
-              <BigNumberCard number="27.9B" label="IDR total combined revenue vs 16.1B budget" />
+              <BigNumberCard number="+12.0B" label="IDR net revenue increase after displacement" />
+              <BigNumberCard number="+75%" label="Increase on 2026 budgeted room revenue" />
+              <BigNumberCard number="28.1B" label="IDR total combined revenue vs 16.1B budget" />
+            </motion.div>
+          </div>
+        </motion.section>
+
+        {/* YIELD ANALYSIS */}
+        <motion.section id="yield" className="py-24 px-6 bg-white" initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger}>
+          <div className="max-w-6xl mx-auto">
+            <motion.p variants={fadeUp} className="text-xs tracking-[0.25em] uppercase text-amber-600 mb-4">Yield Analysis</motion.p>
+            <motion.h2 variants={fadeUp} className="text-3xl md:text-4xl font-bold uppercase tracking-wider text-stone-900 mb-6 leading-tight">
+              3.5x your<br /><span className="font-normal text-amber-600">normal yield.</span>
+            </motion.h2>
+            <motion.p variants={fadeUp} className="text-sm text-stone-500 leading-relaxed max-w-xl mb-12">
+              Every wedding night earns 3.5 times what a normal hotel night generates.
+              Here&apos;s how your current revenue per room-night compares to wedding days.
+            </motion.p>
+
+            {/* Current yield stats */}
+            <motion.div variants={fadeUp} className="mb-12">
+              <h3 className="text-base font-bold uppercase tracking-wider text-stone-900 mb-4">Your Current Numbers</h3>
+              <div className="overflow-x-auto">
+                <table className="w-full text-sm">
+                  <thead>
+                    <tr className="border-b-2 border-amber-600 bg-stone-50">
+                      <th className="text-left p-3 text-[11px] tracking-wider uppercase text-amber-600">Metric</th>
+                      <th className="text-right p-3 text-[11px] tracking-wider uppercase text-amber-600">Value</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr className="border-b border-stone-200"><td className="p-3">Total room-nights per year</td><td className="p-3 text-right font-mono">6,570</td></tr>
+                    <tr className="border-b border-stone-200"><td className="p-3">2025 occupancy</td><td className="p-3 text-right font-mono">47%</td></tr>
+                    <tr className="border-b border-stone-200"><td className="p-3">Occupied nights per year</td><td className="p-3 text-right font-mono">3,088</td></tr>
+                    <tr className="border-b border-stone-200"><td className="p-3">2026 budgeted revenue</td><td className="p-3 text-right font-mono">16,100,000,000 IDR</td></tr>
+                    <tr className="border-b border-stone-200"><td className="p-3">ADR (average daily rate)</td><td className="p-3 text-right font-mono">5,214,000 IDR</td></tr>
+                    <tr className="border-b border-stone-200"><td className="p-3">RevPAR (revenue per available room)</td><td className="p-3 text-right font-mono">2,451,000 IDR</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </motion.div>
+
+            {/* Yield comparison bars */}
+            <motion.div variants={fadeUp} className="mb-12">
+              <h3 className="text-base font-bold uppercase tracking-wider text-stone-900 mb-4">Revenue Per Room-Night</h3>
+              <div className="space-y-4">
+                <div>
+                  <div className="flex justify-between text-xs uppercase tracking-wider text-stone-500 mb-1">
+                    <span>Normal hotel (RevPAR)</span><span className="font-mono">2.45M IDR</span>
+                  </div>
+                  <div className="h-10 bg-stone-100 overflow-hidden">
+                    <div className="bg-stone-300 h-full flex items-center px-3 text-stone-600 text-[11px] font-bold" style={{ width: '29%' }}>2.45M</div>
+                  </div>
+                </div>
+                <div>
+                  <div className="flex justify-between text-xs uppercase tracking-wider text-stone-500 mb-1">
+                    <span>Normal hotel (ADR &mdash; occupied nights only)</span><span className="font-mono">5.2M IDR</span>
+                  </div>
+                  <div className="h-10 bg-stone-100 overflow-hidden">
+                    <div className="bg-stone-400 h-full flex items-center px-3 text-white text-[11px] font-bold" style={{ width: '61%' }}>5.2M</div>
+                  </div>
+                </div>
+                <div>
+                  <div className="flex justify-between text-xs uppercase tracking-wider text-amber-600 mb-1">
+                    <span>Wedding days (per room-night)</span><span className="font-mono font-bold">8.5M IDR</span>
+                  </div>
+                  <div className="h-10 bg-amber-50 overflow-hidden">
+                    <div className="bg-amber-600 h-full flex items-center px-3 text-white text-[11px] font-bold" style={{ width: '100%' }}>8.5M &mdash; 3.5x RevPAR</div>
+                  </div>
+                </div>
+              </div>
+            </motion.div>
+
+            {/* P&L impact table */}
+            <motion.div variants={fadeUp} className="mb-12">
+              <h3 className="text-base font-bold uppercase tracking-wider text-stone-900 mb-4">Net Impact on Annual Revenue</h3>
+              <div className="overflow-x-auto">
+                <table className="w-full text-sm">
+                  <thead>
+                    <tr className="border-b-2 border-amber-600 bg-stone-50">
+                      <th className="text-left p-3 text-[11px] tracking-wider uppercase text-amber-600"></th>
+                      <th className="text-right p-3 text-[11px] tracking-wider uppercase text-amber-600">IDR</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr className="border-b border-stone-200"><td className="p-3">Current budgeted revenue</td><td className="p-3 text-right font-mono">16,100,000,000</td></tr>
+                    <tr className="border-b border-stone-200 text-stone-400"><td className="p-3">Displaced hotel revenue on wedding days (47% occ &times; 1,989 room-nights)</td><td className="p-3 text-right font-mono">-4,900,000,000</td></tr>
+                    <tr className="border-b border-stone-200"><td className="p-3">Remaining normal hotel revenue</td><td className="p-3 text-right font-mono">11,200,000,000</td></tr>
+                    <tr className="border-b border-stone-200 text-amber-700 font-bold"><td className="p-3">Wedding revenue (Oshom keeps)</td><td className="p-3 text-right font-mono">+16,920,000,000</td></tr>
+                    <tr className="border-b-2 border-amber-600 font-bold bg-amber-50"><td className="p-3">New Annual Total</td><td className="p-3 text-right font-mono text-lg">28,100,000,000</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </motion.div>
+
+            <motion.div variants={stagger} className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <BigNumberCard number="3.5x" label="Wedding yield vs normal RevPAR" />
+              <BigNumberCard number="30%" label="Of room-nights used for weddings" />
+              <BigNumberCard number="60%" label="Of total revenue from those wedding nights" />
+            </motion.div>
+
+            <motion.div variants={fadeUp} className="bg-amber-50 border-l-4 border-amber-600 p-8 mt-8">
+              <p className="text-sm text-stone-900 leading-relaxed">
+                <strong>Weddings use 30% of your room-nights but generate 60% of your total revenue.</strong> The remaining 70% of
+                your calendar still runs as a normal hotel earning 11.2 billion IDR. This isn&apos;t a pivot &mdash;
+                it&apos;s an overlay that nearly doubles your revenue without changing how you operate the other 248 days.
+              </p>
             </motion.div>
           </div>
         </motion.section>
 
         {/* CALENDAR IMPACT */}
-        <motion.section id="calendar" className="py-24 px-6 bg-white" initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger}>
+        <motion.section id="calendar" className="py-24 px-6 bg-stone-50" initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger}>
           <div className="max-w-6xl mx-auto">
             <motion.p variants={fadeUp} className="text-xs tracking-[0.25em] uppercase text-amber-600 mb-4">Calendar Impact</motion.p>
             <motion.h2 variants={fadeUp} className="text-3xl md:text-4xl font-bold uppercase tracking-wider text-stone-900 mb-8 leading-tight">
@@ -547,7 +652,7 @@ export default function OshomProposal() {
         </motion.section>
 
         {/* CASH FLOW */}
-        <motion.section id="cashflow" className="py-24 px-6 bg-stone-50" initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger}>
+        <motion.section id="cashflow" className="py-24 px-6 bg-white" initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger}>
           <div className="max-w-6xl mx-auto">
             <motion.p variants={fadeUp} className="text-xs tracking-[0.25em] uppercase text-amber-600 mb-4">Cash Flow</motion.p>
             <motion.h2 variants={fadeUp} className="text-3xl md:text-4xl font-bold uppercase tracking-wider text-stone-900 mb-6 leading-tight">
@@ -666,7 +771,7 @@ export default function OshomProposal() {
             </motion.h2>
             <motion.div variants={stagger} className="grid grid-cols-1 md:grid-cols-2 gap-12">
               {[
-                { title: '+73% Revenue', desc: '11.8 billion IDR in net incremental revenue on top of normal hotel operations. Total combined revenue goes from 16.1B to 27.9B IDR.' },
+                { title: '+75% Revenue', desc: '12.0 billion IDR in net incremental revenue on top of normal hotel operations. Total combined revenue goes from 16.1B to 28.1B IDR.' },
                 { title: '100% Occupancy', desc: 'Every wedding fills all 17 rooms, guaranteed. Compare that to your current 47–61% occupancy from walk-in tourists.' },
                 { title: 'Advance Cash Flow', desc: '5 billion IDR in deposits received 12–18 months before weddings. Guaranteed working capital vs uncertain hotel bookings.' },
                 { title: 'Fill Weak Months', desc: 'Weddings book into your lowest-occupancy months first. November (29.8%), April (34.4%), May (35.3%) — exactly when you need revenue most.' },
