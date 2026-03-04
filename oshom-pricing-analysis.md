@@ -3,6 +3,25 @@
 > **Purpose:** Internal pricing thinking for review before presenting to Oshom.
 > **Last updated:** March 4, 2026
 > **Status:** DRAFT — needs confirmation
+> **Data source:** Oshom 2025 actuals + 2026 budget (see `financials/oshom-hotel-data-2025-2026.md`)
+
+---
+
+## Oshom's Actual Numbers (Baseline)
+
+Before reviewing our pricing, here's what Oshom actually does:
+
+| Metric | 2025 Actual | 2026 Budget |
+|--------|------------|------------|
+| Annual occupancy | 47.4% | 61.0% |
+| Rooms occupied | 2,861 | 3,997 |
+| Avg room rate (ADR) | 3,308,732 IDR | 4,028,398 IDR |
+| Room revenue | 9.47B IDR | 16.10B IDR |
+| Banquet revenue | 877M IDR | 1.84B IDR |
+| Room nights available | 6,033 | 6,552 |
+
+**Weakest months (2025 occupancy):** Nov 29.8%, Apr 34.4%, Mar 35.3%, Jan 39.5%
+**Strongest months (2025 occupancy):** Aug 70.1%, Oct 62.0%, Sep 61.7%
 
 ---
 
@@ -67,6 +86,13 @@ The buyout model works like this:
 - F&B is the **same for 2-night and 3-night** (wedding reception is one event regardless)
 - Premium and Luxury tiers are placeholder — "coming soon"
 
+### Reality check vs Oshom data
+
+Oshom's existing F&B revenue per occupied room night (2025):
+- Total F&B 2025: ~3.65B IDR (sum of monthly) / 2,861 rooms occupied = **~1,276,000 IDR F&B per occupied room night**
+- Our proposed F&B per head (1,600,000 sell / 1,360,000 buy) is in a similar ballpark but for a premium wedding event
+- Wedding F&B at 108.8M buy per event (80 guests) vs their current banquet revenue of **877M for the entire year** — one wedding equals ~12% of their 2025 annual banquet revenue
+
 **Questions:**
 - Is 700K food + 900K drinks realistic for Oshom's kitchen/bar?
 - How does this compare to Oshom's existing F&B pricing?
@@ -88,10 +114,30 @@ The buyout model works like this:
 - 2-night: 17 × 3.5M × 2 = 119M sell / 101.15M buy
 - 3-night: 17 × 3.5M × 3 = 178.5M sell / 151.725M buy
 
+### Reality check vs Oshom data
+
+| Metric | Our Proposal (Buy) | Oshom 2025 Actual ADR | Oshom 2026 Budget ADR |
+|--------|-------------------|----------------------|----------------------|
+| Per room/night | 2,975,000 | 3,308,732 | 4,028,398 |
+| vs 2025 actual | **-10.1%** | — | — |
+| vs 2026 budget | **-26.2%** | — | — |
+
+**This is the biggest pricing tension.** Our buy price of 2.975M is:
+- 10% below what they actually achieved in 2025
+- 26% below what they're budgeting for 2026
+
+However, on wedding days Oshom gets **100% occupancy** (17 rooms) vs their average 47-61%. So the revenue per night is:
+- Normal night (2025): 18 rooms × 47.4% occ × 3.31M ADR = **28.2M IDR**
+- Normal night (2026 budget): 18 rooms × 61% occ × 4.03M ADR = **44.2M IDR**
+- Wedding night (our proposal): 17 rooms × 100% occ × 2.975M = **50.6M IDR buy**
+
+**Even at a lower per-room rate, wedding nights generate more total room revenue than a normal night** because of guaranteed 100% occupancy. This is the key argument.
+
 **Questions:**
 - How does 3.5M/night compare to Oshom's published rack rate?
 - Is this competitive for the Nuanu/Tabanan area?
 - Previous version used 18 rooms — now 17. Is 1 room held for the couple (included in buyout)?
+- **Should we raise the buy price closer to their 2026 budget ADR?** At 4.0M sell / 3.4M buy, total room revenue per wedding night = 57.8M — even stronger argument.
 
 ---
 
@@ -156,6 +202,60 @@ The **Feb 23 commit** (current) differs from the **earlier version** (which was 
 
 ---
 
+## Revenue Impact Analysis (Using Real Data)
+
+### What Oshom loses on wedding days (displaced revenue)
+
+A wedding takes 18 rooms for 2-3 nights. What would those rooms have earned normally?
+
+**2025 actual basis:**
+- 2-night wedding displaces: 18 rooms × 2 nights × 47.4% occ × 3.31M ADR = **56.4M IDR**
+- 3-night wedding displaces: 18 rooms × 3 nights × 47.4% occ × 3.31M ADR = **84.6M IDR**
+
+**2026 budget basis:**
+- 2-night displaces: 18 × 2 × 61% × 4.03M = **88.5M IDR**
+- 3-night displaces: 18 × 3 × 61% × 4.03M = **132.7M IDR**
+
+### Net incremental revenue per wedding (what Oshom gains ABOVE normal)
+
+| Scenario | 2-Night Buy Revenue | Displaced (2026 basis) | Net Incremental |
+|----------|-------------------|----------------------|-----------------|
+| Venue Buyout | 101,150,000 | — | 101,150,000 |
+| F&B (80 guests) | 108,800,000 | — | 108,800,000 |
+| Guest Rooms | 101,150,000 | 88,500,000 | 12,650,000 |
+| **Total** | **311,100,000** | **88,500,000** | **222,600,000** |
+
+| Scenario | 3-Night Buy Revenue | Displaced (2026 basis) | Net Incremental |
+|----------|-------------------|----------------------|-----------------|
+| Venue Buyout | 130,900,000 | — | 130,900,000 |
+| F&B (80 guests) | 108,800,000 | — | 108,800,000 |
+| Guest Rooms | 151,725,000 | 132,700,000 | 19,025,000 |
+| **Total** | **391,425,000** | **132,700,000** | **258,725,000** |
+
+**Even after accounting for displaced normal bookings, each wedding adds 222-258M IDR net to Oshom.**
+
+### Annual impact (50 weddings vs 2026 budget)
+
+| Item | Value |
+|------|-------|
+| Oshom 2026 budget (room revenue) | 16,099,491,042 |
+| Wedding revenue (50 weddings, Oshom keeps) | 16,920,525,000 |
+| Displaced normal revenue (117 wedding days) | ~5,200,000,000 |
+| **Net incremental from weddings** | **~11,720,000,000** |
+| **Total projected revenue** | **~27,820,000,000** |
+| **Increase over 2026 budget** | **+73%** |
+
+The "+73% revenue" claim on the pitch page checks out against the 2026 room budget of 16.1B.
+
+### Calendar impact
+
+- 50 weddings × avg 2.34 nights = **117 wedding days** out of 365 = **32% of calendar**
+- Remaining 248 days for normal hotel operations
+- Wedding days = 100% occupancy guaranteed vs 61% budget average
+- Weddings skew to weak months (Nov-Apr) where occupancy is 34-51% — this is where displacement cost is lowest
+
+---
+
 ## Open Questions for Review
 
 1. **Buyout + rooms double-count?** The buyout is 119M and rooms are 119M — does the couple pay both, or do rooms offset the buyout? The page says rooms offset, but the totals add both. Clarify the actual money flow.
@@ -168,6 +268,10 @@ The **Feb 23 commit** (current) differs from the **earlier version** (which was 
 
 5. **GBP vs AUD?** Previous version showed couple prices in GBP, current in AUD. Which market are we targeting?
 
-6. **The "+73% revenue" claim** — what's the baseline? What is Oshom's current annual revenue that this is compared against?
+6. ~~**The "+73% revenue" claim** — what's the baseline?~~ **ANSWERED:** 2026 room budget is 16.1B. Wedding revenue of 16.9B (buy) minus ~5.2B displaced = +11.7B net = +73%. Checks out.
 
 7. **Vedas benchmark still valid?** Previous version made a strong case benchmarking to Vedas. Should we bring that back or keep it simpler?
+
+8. **Room rate tension (NEW).** Our buy price (2.975M/night) is 26% below Oshom's 2026 budget ADR (4.03M). However, 100% occupancy on wedding nights means higher total revenue per night than normal operations. Is this argument strong enough, or should we raise our room rate?
+
+9. **Seasonal opportunity (NEW).** Oshom's weakest months (Nov 29.8%, Apr 34.4%) are when weddings book. Displacement cost in these months is much lower (~28M vs ~88M on 2026 budget basis). Should we pitch seasonal pricing with lower rates in weak months to maximize the "net incremental" argument?
