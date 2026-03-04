@@ -272,6 +272,18 @@ Out-of-pocket drops to **201,376,471** — meaningfully cheaper than Vedas. This
 
 Even the cheapest wedding option delivers **~3× their normal nightly revenue.**
 
+### Plus: Guest In-Resort Spend (Non-Wedding Days)
+
+Guests staying on-site (~35 pax across 18 rooms) spend an estimated **500,000 /person/day** on food, drinks, and incidentals on non-wedding days. This goes directly to Oshom — not through BaliLove.
+
+| | 2-Night (1 extra day) | 3-Night (2 extra days) |
+|--|----------------------|----------------------|
+| On-site guests | ~35 | ~35 |
+| Daily spend per guest | 500,000 | 500,000 |
+| **Extra Oshom revenue** | **17,500,000** | **35,000,000** |
+
+This is **on top of** the wedding revenue above and **on top of** cash bar revenue on the wedding day itself.
+
 **On weak months** (Nov at 29.8% occ, ~13.5M/night actual):
 
 | Scenario | Revenue/Night | vs Weak Month Actual |
@@ -292,7 +304,11 @@ F&B mix assumption: 50% base, 35% standard, 15% premium
 | Accommodation buyout (33 × 174.2M + 17 × 261.4M) | 10,293,720,000 |
 | Venue fees (50 × 40M) | 2,000,000,000 |
 | F&B (weighted avg ~93M buy/wedding × 50) | 4,650,000,000 |
-| **Total to Oshom** | **16,943,720,000** |
+| **Total to Oshom (through BL)** | **16,943,720,000** |
+| | |
+| Guest in-resort spend (non-wedding days) | ~1,172,500,000 |
+| Cash bar on wedding days (est. 35 guests × 300K) | ~525,000,000 |
+| **Total incl. direct Oshom revenue** | **~18,641,220,000** |
 
 ### Displacement Cost
 
@@ -312,7 +328,7 @@ F&B mix assumption: 50% base, 35% standard, 15% premium
 | **Net incremental** | **11,782,981,000** | **13,909,323,000** |
 | **% increase on room revenue** | **+73%** | **+147%** |
 
-**Plus:** Cash bar revenue on wedding days (guests buying drinks) goes directly to Oshom — not in our numbers.
+**Note:** The net incremental above is based only on revenue through BaliLove. Including guest in-resort spend (~1.17B) and wedding day cash bar (~525M), total incremental is closer to **+84% vs 2026 budget**.
 
 ### BaliLove Annual Commission
 
@@ -345,7 +361,7 @@ Weddings target weak months (Nov-Apr) where occupancy is 30-50%. Displacement co
 - 100% occupancy on wedding days vs 61% average ✓
 - Revenue per wedding night: **3-4× normal** ✓
 - +73% annual revenue increase (net of displacement) ✓
-- Cash bar revenue as bonus (not in our numbers) ✓
+- Guest in-resort spend (~1.17B/yr) + cash bar (~525M/yr) on top ✓
 - Only uses 32% of calendar — 68% remains normal hotel ✓
 
 ### Couple
