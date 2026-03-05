@@ -13,11 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "LoveOS | Investor Pitch",
-  description: "The wedding software hotels actually need. A battle-tested platform helping hotels capture the $120K+ revenue opportunity from every wedding.",
-  icons: {
-    icon: '/favicon.svg',
-  },
+  title: "Bali Love — Partnership Proposals",
+  description: "Venue partnership proposals by Bali Love",
 };
 
 export default function RootLayout({
