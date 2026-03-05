@@ -6,6 +6,7 @@
 luna-proposal/
 ├── README.md           (this file)
 ├── PROPOSAL.md         (main written proposal)
+├── KICKOFF.md          (kick-off process and timeline)
 ├── DATA_SOURCES.md     (where the numbers come from)
 └── deck/
     └── OUTLINE.md      (presentation slide outline)
@@ -16,6 +17,8 @@ luna-proposal/
 - [x] Written proposal draft
 - [x] Deck outline
 - [x] Data sources documented
+- [x] Luna agreed to partnership
+- [x] Kick-off plan created
 - [ ] Deck design/build
 - [ ] Review with Luna numbers
 - [ ] Final polish
