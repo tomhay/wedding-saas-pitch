@@ -17,6 +17,7 @@ const navigation = [
   { id: 'partnership', label: 'Partnership' },
   { id: 'how-it-works', label: 'How It Works' },
   { id: 'benefits', label: 'Benefits' },
+  { id: 'pricing-strategy', label: 'The Plan' },
   { id: 'next-steps', label: 'Next Steps' },
 ];
 
@@ -677,6 +678,133 @@ export default function OshomProposal() {
                   <div className="text-sm text-stone-500 leading-relaxed">{benefit.desc}</div>
                 </motion.div>
               ))}
+            </motion.div>
+          </div>
+        </motion.section>
+
+        {/* PRICING STRATEGY — THE PLAN */}
+        <motion.section id="pricing-strategy" className="py-24 px-6 bg-white" initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger}>
+          <div className="max-w-6xl mx-auto">
+            <motion.p variants={fadeUp} className="text-xs tracking-[0.25em] uppercase text-amber-600 mb-4">The Plan</motion.p>
+            <motion.h2 variants={fadeUp} className="text-3xl md:text-4xl font-bold uppercase tracking-wider text-stone-900 mb-6 leading-tight">
+              Volume first.<br /><span className="font-normal text-amber-600">Then optimise.</span>
+            </motion.h2>
+            <motion.p variants={fadeUp} className="text-sm text-stone-500 leading-relaxed max-w-xl mb-12">
+              100% occupancy on wedding days is the prize. Our strategy is to win volume at competitive pricing,
+              get bookings in the bank, build cash flow and confidence in the system &mdash; then work the
+              revenue up over time. Our team has done this 300+ times. We know how to fill a calendar.
+            </motion.p>
+
+            {/* The core insight */}
+            <motion.div variants={fadeUp} className="bg-amber-50 border-l-4 border-amber-600 p-8 mb-12">
+              <p className="text-sm text-stone-900 leading-relaxed">
+                <strong>Why start competitive?</strong> 70% of destination wedding couples budget $30&ndash;35K AUD.
+                At $35K we capture the mass market &mdash; not just the top 30%. That means more bookings, faster.
+                More bookings means more revenue, more content, more referrals, and the data to push prices up with confidence.
+              </p>
+            </motion.div>
+
+            {/* Three phases */}
+            <motion.div variants={stagger} className="space-y-6 mb-12">
+              {[
+                {
+                  phase: 'Phase 1',
+                  title: 'Fill the Calendar',
+                  timeline: 'Now \u2192 May 2026',
+                  target: '20 bookings',
+                  points: [
+                    'Launch at $35K \u2014 beat every competitor on price',
+                    'Get bookings in the bank and deposits flowing',
+                    'Build confidence in the system, the team, and the process',
+                    'Deliver exceptional weddings \u2014 create the Oshom portfolio',
+                  ],
+                  highlight: '20 weddings booked by end of May. Cash in the bank. Calendar filling up.',
+                },
+                {
+                  phase: 'Phase 2',
+                  title: 'Season-Based Pricing',
+                  timeline: 'Jun \u2192 Dec 2026',
+                  target: '35\u201340 total bookings',
+                  points: [
+                    '$35K off-peak (Nov\u2013Apr) \u2014 fill the weak months',
+                    '$40K peak season (May\u2013Oct) \u2014 premium positioning',
+                    'Upsell Premium F&B and extra nights from real booking data',
+                    'Testimonials and photos from real Oshom weddings drive higher conversion',
+                  ],
+                  highlight: 'Revenue per wedding starts climbing. Weak months are covered. Peak months earn a premium.',
+                },
+                {
+                  phase: 'Phase 3',
+                  title: 'Full Optimisation',
+                  timeline: '2027+',
+                  target: '50+ weddings per year',
+                  points: [
+                    'Dynamic pricing based on demand, season, and lead time',
+                    'Average wedding value pushes toward $40K+',
+                    'Data-backed confidence to maximise every booking',
+                    'Marketplace revenue from guest activities and vendor network',
+                  ],
+                  highlight: 'The system is proven. Revenue is optimised. The calendar runs itself.',
+                },
+              ].map((phase) => (
+                <motion.div key={phase.phase} variants={fadeUp} className="bg-stone-50 p-8">
+                  <div className="flex items-baseline gap-4 mb-2 flex-wrap">
+                    <span className="bg-amber-600 text-white text-xs font-bold px-3 py-1 tracking-wider">{phase.phase}</span>
+                    <h3 className="text-base font-bold uppercase tracking-wider text-stone-900">{phase.title}</h3>
+                  </div>
+                  <p className="text-xs text-stone-400 mb-4">{phase.timeline} &bull; Target: {phase.target}</p>
+                  <ul className="space-y-2 mb-4">
+                    {phase.points.map((point, i) => (
+                      <li key={i} className="text-xs text-stone-600 leading-relaxed pl-4 border-l-2 border-stone-200">{point}</li>
+                    ))}
+                  </ul>
+                  <p className="text-xs text-amber-700 font-bold bg-amber-50 p-3">{phase.highlight}</p>
+                </motion.div>
+              ))}
+            </motion.div>
+
+            {/* Volume comparison */}
+            <motion.div variants={fadeUp} className="mb-12">
+              <h3 className="text-base font-bold uppercase tracking-wider text-stone-900 mb-6">Why volume wins</h3>
+              <div className="overflow-x-auto">
+                <table className="w-full text-sm">
+                  <thead>
+                    <tr className="border-b-2 border-amber-600 bg-stone-50">
+                      <th className="text-left p-3 text-[11px] tracking-wider uppercase text-amber-600">Metric</th>
+                      <th className="text-right p-3 text-[11px] tracking-wider uppercase text-amber-600">20 weddings @ $35K</th>
+                      <th className="text-right p-3 text-[11px] tracking-wider uppercase text-amber-600">10 weddings @ $43K</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr className="border-b border-stone-200 bg-white"><td className="p-3">Calendar days used</td><td className="p-3 text-right font-mono">47 (13%)</td><td className="p-3 text-right font-mono">23 (6%)</td></tr>
+                    <tr className="border-b border-stone-200 bg-white"><td className="p-3">Oshom revenue</td><td className="p-3 text-right font-mono">5.8B IDR</td><td className="p-3 text-right font-mono">3.6B IDR</td></tr>
+                    <tr className="border-b border-stone-200 bg-white"><td className="p-3">Net incremental revenue</td><td className="p-3 text-right font-mono font-bold text-amber-700">+3.75B IDR</td><td className="p-3 text-right font-mono">+2.6B IDR</td></tr>
+                    <tr className="border-b border-stone-200 bg-white"><td className="p-3">Guest in-resort spend</td><td className="p-3 text-right font-mono">473M IDR</td><td className="p-3 text-right font-mono">228M IDR</td></tr>
+                  </tbody>
+                </table>
+              </div>
+              <div className="bg-amber-50 border-l-4 border-amber-600 p-6 mt-4">
+                <p className="text-sm text-stone-900 leading-relaxed">
+                  <strong>20 weddings at $35K delivers 44% more net revenue than 10 weddings at $43K</strong> &mdash;
+                  using only 13% of the calendar. Lower price, more bookings, more money.
+                </p>
+              </div>
+            </motion.div>
+
+            {/* The ask */}
+            <motion.div variants={fadeUp} className="bg-stone-900 text-white p-10">
+              <p className="text-xs tracking-[0.2em] uppercase text-amber-300 mb-4">What we need from you</p>
+              <h3 className="text-xl font-bold uppercase tracking-wider mb-4">Give us the pricing and the sales process.</h3>
+              <p className="text-sm text-white/70 leading-relaxed mb-6">
+                Our team has 300+ weddings of experience. We know exactly who&apos;s buying, what they want,
+                how to overcome every objection, and how to close. Give us full control of pricing and sales,
+                and we&apos;ll have 20 weddings booked by end of May &mdash; with deposits in your bank account.
+              </p>
+              <p className="text-sm text-white/70 leading-relaxed">
+                We&apos;ll work the total revenue and profit up over time. The first priority is getting
+                bookings in the bank, building cash flow, and proving the system works. That&apos;s what
+                we&apos;re best at.
+              </p>
             </motion.div>
           </div>
         </motion.section>
