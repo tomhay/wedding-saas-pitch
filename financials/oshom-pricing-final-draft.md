@@ -285,24 +285,26 @@ Guest room payments reduce the couple's buyout obligation.
 | Component | Oshom (Current §6-14) | Oshom ($35K §16) | Villa Vedas | BBG |
 |-----------|----------------------|------------------|-------------|-----|
 | Guests | 80 | 80 | 80 | 100 |
-| Buyout (2 nights) | $19,338 | $16,041 | $6,272 | $20,003 |
+| Buyout (2 nights) | $19,338 | $14,768 | $6,272 | $20,003 |
 | Event + banjar fee | $4,439 | $0 (rolled in) | $4,153 | $2,967 |
-| F&B (food + drinks) | $12,355 | $12,355 | $12,206 | $15,256 |
-| **Venue + F&B** | **$36,132** | **$28,396** | **$22,631** | **$38,226** |
-| Guest accom. offset | −$11,226 | −$11,226 | $0 (free) | −$18,606 |
-| **Venue cost to couple** | **$24,906** | **$17,170** | **$22,631** | **$19,620** |
-| BL vendor services | ~$16,173 | ~$16,173 | ~$16,173 | ~$16,173 |
-| **Total couple cost** | **~$41,080** | **~$33,343** | **~$38,804** | **~$35,793** |
+| F&B | $12,355 (Standard) | $14,479 (Premium) | $12,206 | $15,256 |
+| **Venue + F&B** | **$36,132** | **$29,247** | **$22,631** | **$38,226** |
+| Guest accom. offset | −$11,226 | −$10,086 | $0 (free) | −$18,606 |
+| **Venue cost to couple** | **$24,906** | **$19,161** | **$22,631** | **$19,620** |
+| BL vendor services | ~$16,173 | ~$16,154 | ~$16,173 | ~$16,173 |
+| **Total couple cost** | **~$41,080** | **$35,315** | **~$38,804** | **~$35,793** |
 
 ### Key Takeaways
 
 **At current pricing (~$41K),** Oshom is the most expensive option — $2.3K above Vedas and $5.3K above BBG. This is why the current pricing doesn't work.
 
-**At $35K revised pricing (~$33K actual),** Oshom becomes the cheapest option:
-- **$5,500 cheaper than Vedas** ($33.3K vs $38.8K)
-- **$2,450 cheaper than BBG** ($33.3K vs $35.8K)
+**At $35K revised pricing ($35,315 actual wishlist),** Oshom is the cheapest option:
+- **$3,500 cheaper than Vedas** ($35.3K vs $38.8K)
+- **$500 cheaper than BBG** ($35.3K vs $35.8K)
+- With **Premium F&B** (BBQ + Gold cocktails) — Standard would be even cheaper
 - 18 private hotel rooms vs 7 villa bedrooms (Vedas) or 50 shared tents (BBG)
-- In-house kitchen, no minimum F&B spend, no external caterer
+
+> **Confirmed from actual BaliLove wishlist:** Oshom at A$35,315 includes Premium F&B (80 pax), full hotel buyout (2 nights), event fee rolled in, 17-room guest payback at 3.5M/night. This is not a model — it's a real wishlist price.
 
 **Why Oshom wins at $35K:**
 - Only venue where the couple gets a full private hotel at the lowest total cost
@@ -686,8 +688,8 @@ Room rate derived from Standard F&B calculation, applied across all tiers.
 
 | Metric | Oshom @ $35K | Oshom @ $40K | Oshom Current | Villa Vedas | BBG |
 |--------|-------------|-------------|---------------|-------------|-----|
-| Couple total (AUD) | **~$33,300** | **~$38,400** | ~$41,100 | ~$38,800 | ~$35,800 |
-| Couple venue OOP (AUD) | $17,170 | $22,230 | $24,906 | $22,631 | $19,620 |
+| Couple total (AUD) | **$35,315** | **~$40,000** | ~$41,100 | ~$38,800 | ~$35,800 |
+| Couple venue OOP (AUD) | $19,161 | ~$24,000 | $24,906 | $22,631 | $19,620 |
 | Rooms/units on-site | **18** | **18** | **18** | 7 | 50 |
 | All guests on-site | **Yes** | **Yes** | **Yes** | No | Yes |
 | Guests pay for accom. | Yes | Yes | Yes | No (free) | Yes |
