@@ -61,31 +61,56 @@ Revenue per night on weakest months: ~13,500,000 - 22,000,000
 
 ---
 
-## 4. Vedas Benchmark (BaliLove's #1 Venue)
+## 4. Vedas & BBG Benchmarks (BaliLove's Top Venues)
 
-Villa Vedas: 8 rooms, 73 confirmed bookings for 2026.
+### Villa Vedas — BaliLove's #1 Venue
 
-| Item | Vedas Rate |
-|------|-----------|
-| Buyout/night (8 rooms, mid season) | 35,000,000 - 40,000,000 |
-| Per room/night | 4,375,000 - 5,000,000 |
-| Event fee | 45,000,000 + 4,000,000 banjar |
-| Food (Saffron Catering) | 950,000 /pax |
-| Drinks (open bar) | 1,150,000 /pax |
-| F&B total per head | 2,100,000 /pax |
+Villa Vedas: 7 bedrooms (sleeps 16), 73 confirmed bookings for 2026.
 
-### Vedas: What a Couple Pays (2-Night, Mid Season, 80 Guests)
+> **Correction (March 5):** Guests do NOT pay for accommodation at Vedas. The villa buyout includes all rooms — there is no guest offset. Previous estimates overstated F&B rates.
 
-| Component | Sell (couple pays) |
-|-----------|-------------------|
-| Accommodation (8 rooms × 2 nights × ~4,700,000) | 75,200,000 |
-| Event fee | 49,000,000 |
-| F&B (80 × 2,100,000) | 168,000,000 |
-| **Total** | **292,200,000** |
+**Actual wishlist pricing (AUD sell, 2-night, 80 guests):**
 
-Guest room offset: 8 rooms max. Remaining guests stay elsewhere.
-- Offset (8 × ~4,700,000 × 2): ~75,200,000
-- **Vedas couple out-of-pocket: ~217,000,000 - 265,000,000**
+| Component | AUD | IDR (×10,600) |
+|-----------|-----|---------------|
+| Villa buyout (2 nights) | $6,272 | 66,483,000 |
+| Event fee | $3,814 | 40,428,000 |
+| Banjar fee | $339 | 3,593,000 |
+| F&B food (Western Buffet, 80 pax) | $6,442 | 68,285,000 |
+| F&B drinks (Triple Spirits, 80 pax) | $5,764 | 61,098,000 |
+| **Total venue + F&B** | **$22,631** | **239,887,000** |
+| Guest accommodation offset | $0 | — |
+| **Couple venue OOP** | **$22,631** | **239,887,000** |
+
+- Per bedroom/night: A$3,136/night (A$448/bedroom/night)
+- F&B per head: A$153 (food $81 + drinks $72) = ~1,622,000 IDR
+- Min F&B spend: 40M IDR net per night
+- External caterer (Saffron Bali)
+- Max 16 guests on-site — everyone else stays elsewhere
+
+### Bali Beach Glamping (BBG)
+
+BBG: 50 luxury tents (sleeps ~120), west coast location 25min north of Canggu.
+
+**Actual wishlist pricing (AUD sell, 2-night, 100 guests):**
+
+| Component | AUD | IDR (×10,600) |
+|-----------|-----|---------------|
+| Resort buyout (50 tents, 2 nights) | $20,003 | 212,032,000 |
+| Event fee | $2,543 | 26,956,000 |
+| Banjar fee | $424 | 4,494,000 |
+| F&B food (International Buffet, 100 pax) | $8,052 | 85,351,000 |
+| F&B drinks (Beer & Cocktails, 100 pax) | $7,204 | 76,362,000 |
+| **Venue + F&B total** | **$38,226** | **405,195,000** |
+| Guest tent payback (49 tents × 2 nights) | −$18,606 | −197,224,000 |
+| **Couple venue OOP** | **$19,620** | **207,971,000** |
+
+- Per tent/night: A$200 buyout (~2.1M IDR)
+- Guest payback: A$190/tent/night (~2.0M IDR) — nearly offsets full buyout
+- F&B per head: A$153 (food $81 + drinks $72) = ~1,617,000 IDR
+- Min F&B spend: 60-90M IDR (weekday/weekend)
+- External caterer (Ravela Catering)
+- All ~100 guests can stay on-site
 
 ---
 
@@ -237,27 +262,53 @@ Guest room payments reduce the couple's buyout obligation.
 
 ---
 
-## 9. Oshom vs Vedas — Head-to-Head (2-Night, Standard, 80 Guests)
+## 9. Oshom vs Vedas vs BBG — Competitor Head-to-Head
 
-| | Oshom | Vedas (Mid Season) |
-|--|-------|-------------------|
-| Rooms on-site | **18** | 8 |
-| All guests stay together | **Yes** | No — most guests stay elsewhere |
-| Total couple pays (sell) | 383,011,765 | ~292,200,000 |
-| Guest rooms for offset | 17 | 8 |
-| Guest room rate (sell) | 3,500,000 /night | ~4,700,000 /night |
-| Guest offset | -119,000,000 | ~-75,200,000 |
-| **Couple out-of-pocket** | **264,011,765** | **~217,000,000 - 265,000,000** |
-| Cash bar available | **Yes** | No |
-| BYO alcohol | **Yes** | Yes (villa) |
-| No minimum spend | **Yes** | No (40M/night min) |
-| In-house kitchen | **Yes** | External caterer (Saffron) |
+> **Updated March 5:** Vedas guest accommodation corrected (guests stay free). BBG added from actual wishlists. Oshom shown at both current and revised $35K pricing.
 
-**Key takeaway:** Couple's out-of-pocket at Oshom (264M) is at the top of the Vedas range (217-265M). For comparable money, the couple gets a full private hotel vs an 8-room villa.
+### Venue Profiles
 
-### If couple chooses Base (cash bar) at Oshom:
+| | Oshom | Villa Vedas | Bali Beach Glamping |
+|--|-------|-------------|---------------------|
+| Type | Boutique hotel | Luxury beachfront villa | Glamping resort |
+| Accommodation | 18 rooms | 7 bedrooms (sleeps 16) | 50 tents (sleeps ~120) |
+| All guests on-site | **Yes** (~36 pax) | No — max 16 on-site | **Yes** (up to 120) |
+| Guests pay for accom. | **Yes** (3.5M/night) | **No** — included in buyout | **Yes** (~2M/tent/night) |
+| In-house kitchen | **Yes** | No (Saffron Catering) | No (Ravela Catering) |
+| Min F&B spend | **None** | 40M IDR net | 60–90M IDR |
+| BYO alcohol | Yes | Yes (villa) | TBC |
 
-Out-of-pocket drops to **201,376,471** — meaningfully cheaper than Vedas. This is the "no-brainer" option Selina described: cheaper than Vedas, more rooms, cash bar removes risk.
+### Total Couple Cost (2-Night Wedding, AUD)
+
+*From actual BaliLove wishlists. BL vendor services (planner, MUA, photo, DJ, celebrant, styling, sound, cake, transport) are ~A$16,173 across all venues.*
+
+| Component | Oshom (Current §6-14) | Oshom ($35K §16) | Villa Vedas | BBG |
+|-----------|----------------------|------------------|-------------|-----|
+| Guests | 80 | 80 | 80 | 100 |
+| Buyout (2 nights) | $19,338 | $16,041 | $6,272 | $20,003 |
+| Event + banjar fee | $4,439 | $0 (rolled in) | $4,153 | $2,967 |
+| F&B (food + drinks) | $12,355 | $12,355 | $12,206 | $15,256 |
+| **Venue + F&B** | **$36,132** | **$28,396** | **$22,631** | **$38,226** |
+| Guest accom. offset | −$11,226 | −$11,226 | $0 (free) | −$18,606 |
+| **Venue cost to couple** | **$24,906** | **$17,170** | **$22,631** | **$19,620** |
+| BL vendor services | ~$16,173 | ~$16,173 | ~$16,173 | ~$16,173 |
+| **Total couple cost** | **~$41,080** | **~$33,343** | **~$38,804** | **~$35,793** |
+
+### Key Takeaways
+
+**At current pricing (~$41K),** Oshom is the most expensive option — $2.3K above Vedas and $5.3K above BBG. This is why the current pricing doesn't work.
+
+**At $35K revised pricing (~$33K actual),** Oshom becomes the cheapest option:
+- **$5,500 cheaper than Vedas** ($33.3K vs $38.8K)
+- **$2,450 cheaper than BBG** ($33.3K vs $35.8K)
+- 18 private hotel rooms vs 7 villa bedrooms (Vedas) or 50 shared tents (BBG)
+- In-house kitchen, no minimum F&B spend, no external caterer
+
+**Why Oshom wins at $35K:**
+- Only venue where the couple gets a full private hotel at the lowest total cost
+- Guests pay a reasonable room rate (3.5M/night) which offsets the buyout
+- No minimum F&B spend removes friction — Vedas requires 40M, BBG requires 60–90M
+- In-house kitchen = better quality control and flexibility vs external caterers
 
 ---
 
@@ -568,7 +619,7 @@ Annual (50 weddings): ~1,172,500,000
 ### 16d. Annual Projections — 50 Weddings
 
 Mix: 33 × 2-night + 17 × 3-night (117 wedding days)
-F&B mix: 50% base, 35% standard, 15% premium (weighted avg ~93M buy/wedding)
+F&B mix: 70% standard, 30% premium (no cash bar — avg ~121M buy/wedding)
 Room rate derived from Standard F&B calculation, applied across all tiers.
 
 **3-night buyout (same room rate as 2-night):**
@@ -585,13 +636,12 @@ Room rate derived from Standard F&B calculation, applied across all tiers.
 |-----------|--------------|--------------|-------------|
 | Buyout — 33 × 2-night | 4,769,490,000 | 6,256,140,000 | — |
 | Buyout — 17 × 3-night | 3,685,566,000 | 4,834,120,000 | — |
-| **Buyout total** | **8,455,056,000** | **11,090,260,000** | **12,294,000,000**¹ |
-| F&B (50 × ~93M avg) | 4,650,000,000 | 4,650,000,000 | 4,650,000,000 |
-| **Total to Oshom (through BL)** | **13,105,000,000** | **15,740,000,000** | **16,944,000,000** |
+| **Buyout total** | **8,455,000,000** | **11,090,000,000** | **12,294,000,000**¹ |
+| F&B (50 × ~121M avg) | 6,074,000,000 | 6,074,000,000 | 6,074,000,000 |
+| **Total to Oshom (through BL)** | **14,529,000,000** | **17,164,000,000** | **18,368,000,000** |
 | | | | |
 | Guest in-resort spend | ~1,173,000,000 | ~1,173,000,000 | ~1,173,000,000 |
-| Cash bar on wedding days | ~525,000,000 | ~525,000,000 | ~525,000,000 |
-| **Total incl. direct revenue** | **~14,803,000,000** | **~17,438,000,000** | **~18,642,000,000** |
+| **Total incl. direct revenue** | **~15,702,000,000** | **~18,337,000,000** | **~19,541,000,000** |
 
 ¹ Current doc buyout total includes venue fees (2,000,000,000)
 
@@ -599,39 +649,51 @@ Room rate derived from Standard F&B calculation, applied across all tiers.
 
 | | $35K | $40K | Current Doc |
 |--|------|------|-------------|
-| Oshom revenue (through BL) | 13,105,000,000 | 15,740,000,000 | 16,944,000,000 |
+| Oshom revenue (through BL) | 14,529,000,000 | 17,164,000,000 | 18,368,000,000 |
 | Displaced revenue (117 × 44.1M) | −5,161,000,000 | −5,161,000,000 | −5,161,000,000 |
-| **Net incremental** | **7,944,000,000** | **10,579,000,000** | **11,783,000,000** |
-| **% increase on room revenue** | **+49%** | **+66%** | **+73%** |
+| **Net incremental** | **9,368,000,000** | **12,003,000,000** | **13,207,000,000** |
+| **% increase on room revenue** | **+58%** | **+75%** | **+82%** |
 
 #### BaliLove Annual Commission
 
 | | $35K | $40K | Current Doc |
 |--|------|------|-------------|
-| Total sell (50 weddings) | ~15,418,000,000 | ~18,518,000,000 | ~19,934,000,000 |
-| Total buy | ~13,105,000,000 | ~15,740,000,000 | ~16,944,000,000 |
-| **BL commission** | **~2,313,000,000** | **~2,778,000,000** | **~2,990,000,000** |
+| Total sell (50 weddings) | ~17,093,000,000 | ~20,193,000,000 | ~21,609,000,000 |
+| Total buy | ~14,529,000,000 | ~17,164,000,000 | ~18,368,000,000 |
+| **BL commission** | **~2,564,000,000** | **~3,029,000,000** | **~3,241,000,000** |
 
 ---
 
-### 16e. Comparison Table — All Price Points (2-Night Standard, 80 Guests)
+### 16e. Comparison Table — All Price Points (2-Night Standard)
 
-| Metric | $35K Oshom | $40K Oshom | Current Doc | Vedas (~$38K) | BBG (~$36K) |
-|--------|-----------|-----------|-------------|---------------|-------------|
-| Couple total (AUD) | **$35,000** | **$40,000** | ~$43,000 | ~$38,000 | ~$36,000 |
-| Couple venue OOP (IDR) | 182,000,000 | 235,000,000 | 264,012,000 | ~217–265M | — |
-| Rooms on-site | 18 | 18 | 18 | 8 | — |
-| Oshom net/room/night | 3,318,000 | 4,352,000 | 4,918,000² | — | — |
-| vs 2025 ADR (3.31M) | Match | +32% | +49% | — | — |
-| vs 2026 target (4.03M) | −18% | +8% | +22% | — | — |
-| Revenue/night (buy, all items) | 127,925,000 | 150,450,000 | 162,780,000 | — | — |
-| vs normal night (2026 budget) | 2.90× | 3.41× | 3.69× | — | — |
-| BL commission/wedding | 45,150,000 | 53,100,000 | 57,452,000 | — | — |
-| Annual Oshom rev (50 wed) | 13,105M | 15,740M | 16,944M | — | — |
-| Annual net incremental | +7,944M | +10,579M | +11,783M | — | — |
-| Annual BL commission | 2,313M | 2,778M | 2,990M | — | — |
+**Oshom revenue metrics:**
 
-² Current doc net/room/night includes venue fee equivalent (4.0M buyout + 0.9M venue fee per room/night)
+| Metric | $35K Oshom | $40K Oshom | Current Doc |
+|--------|-----------|-----------|-------------|
+| Oshom net/room/night | 3,318,000 | 4,352,000 | 4,918,000¹ |
+| vs 2025 ADR (3.31M) | Match | +32% | +49% |
+| vs 2026 target (4.03M) | −18% | +8% | +22% |
+| Revenue/night (buy, all items) | 127,925,000 | 150,450,000 | 162,780,000 |
+| vs normal night (2026 budget) | 2.90× | 3.41× | 3.69× |
+| BL commission/wedding | 45,150,000 | 53,100,000 | 57,452,000 |
+| Annual Oshom rev (50 wed) | 14,529M | 17,164M | 18,368M |
+| Annual net incremental | +9,368M | +12,003M | +13,207M |
+| Annual BL commission | 2,564M | 3,029M | 3,241M |
+
+¹ Current doc net/room/night includes venue fee equivalent (4.0M buyout + 0.9M venue fee per room/night)
+
+**Competitive position (from actual BaliLove wishlists):**
+
+| Metric | Oshom @ $35K | Oshom @ $40K | Oshom Current | Villa Vedas | BBG |
+|--------|-------------|-------------|---------------|-------------|-----|
+| Couple total (AUD) | **~$33,300** | **~$38,400** | ~$41,100 | ~$38,800 | ~$35,800 |
+| Couple venue OOP (AUD) | $17,170 | $22,230 | $24,906 | $22,631 | $19,620 |
+| Rooms/units on-site | **18** | **18** | **18** | 7 | 50 |
+| All guests on-site | **Yes** | **Yes** | **Yes** | No | Yes |
+| Guests pay for accom. | Yes | Yes | Yes | No (free) | Yes |
+| In-house kitchen | **Yes** | **Yes** | **Yes** | No | No |
+| Min F&B spend | **None** | **None** | **None** | 40M IDR | 60–90M IDR |
+| **Cheapest option?** | **Yes** | No (≈ Vedas) | No (most expensive) | — | — |
 
 ---
 
@@ -659,13 +721,13 @@ Mix scaled proportionally: 20 wed = 13×2-night + 7×3-night; 10 wed = 7×2-nigh
 | Metric | 20 weddings @ $35K | 10 weddings @ $43K |
 |--------|-------------------|-------------------|
 | Wedding days used | 47 (13% of calendar) | 23 (6% of calendar) |
-| Oshom revenue (through BL) | ~5,256,000,000 | ~3,334,000,000 |
+| Oshom revenue (through BL) | ~5,826,000,000 | ~3,619,000,000 |
 | Displaced revenue | −2,073,000,000 | −1,015,000,000 |
-| Net incremental | **+3,183,000,000** | **+2,319,000,000** |
-| BL commission | ~928,000,000 | ~588,000,000 |
+| Net incremental | **+3,753,000,000** | **+2,604,000,000** |
+| BL commission | ~1,028,000,000 | ~639,000,000 |
 | Guest in-resort spend | ~473,000,000 | ~228,000,000 |
 
-**$35K at 20 weddings delivers 37% more net revenue than $43K at 10 weddings** — using only 13% of the calendar vs 6%.
+**$35K at 20 weddings delivers 44% more net revenue than $43K at 10 weddings** — using only 13% of the calendar vs 6%.
 
 #### Why lower price = more weddings:
 
@@ -699,8 +761,8 @@ Mix scaled proportionally: 20 wed = 13×2-night + 7×3-night; 10 wed = 7×2-nigh
 - Oshom room rate matches their 2025 actual ADR — no discounting, just guaranteed occupancy
 - Even at the lowest price: **2.9× normal nightly revenue** per wedding night
 - Target 50+ weddings at maturity — fill the weak months (Nov–Apr) where occupancy drops to 30%
-- Annual net incremental to Oshom: **+7.9B IDR (+49% on room revenue)** at 50 weddings
-- Plus ~1.7B in direct guest spend (in-resort + cash bar) that bypasses BaliLove
+- Annual net incremental to Oshom: **+9.4B IDR (+58% on room revenue)** at 50 weddings
+- Plus ~1.2B in direct guest in-resort spend that bypasses BaliLove
 - **Risk:** Room rate sits at 2025 levels — Daisy may push back on not hitting 2026 targets. Counter: "100% occupancy on wedding days vs 47% average in 2025. You're making more money, just through volume."
 
 #### $40,000 — The Premium Play
@@ -708,8 +770,8 @@ Mix scaled proportionally: 20 wed = 13×2-night + 7×3-night; 10 wed = 7×2-nigh
 - "Still $2K cheaper than Vedas. Premium positioning with a full private hotel."
 - Room rate of 4.4M net **exceeds** Daisy's 2026 target ADR by 8% — easy sell to GM
 - **3.4× normal nightly revenue** per wedding night
-- Annual net incremental to Oshom: **+10.6B IDR (+66% on room revenue)** at 50 weddings
-- Plus ~1.7B in direct guest spend
+- Annual net incremental to Oshom: **+12.0B IDR (+75% on room revenue)** at 50 weddings
+- Plus ~1.2B in direct guest in-resort spend
 - **Risk:** Fewer leads convert at $40K — 70% of market budgets $30–35K. Counter: target the 30% premium segment, quality over quantity
 
 #### Recommended: Lead with $35K, Season-Based Uplift
