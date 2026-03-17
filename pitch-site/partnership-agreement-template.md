@@ -2,8 +2,8 @@
 
 **Between:**
 
-**Bali Love** (PT Bali Love Indonesia)
-Represented by: Tom [Surname], Founder
+**Bali Love** (comprising Hospo Hero Pty Ltd, trading as Bali Love, and its Indonesian affiliate Bali Cinta Wedding PT PMA), collectively referred to as "Bali Love"
+Represented by: Thomas Hay, Founder & CEO
 Email: tom@bali.love
 
 **and**
