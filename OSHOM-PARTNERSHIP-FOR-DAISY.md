@@ -14,7 +14,7 @@ A typical Bali Love wedding at Oshom looks like this:
 
 - **80 guests** fly in for a 2 or 3 night stay
 - **All 18 rooms** are exclusively booked for the wedding party
-- The couple pays for the **accommodation buyout, venue fee, food, and drinks**
+- The couple guarantees the **full accommodation buyout, venue fee, food, and drinks**
 - Bali Love manages the entire process from first enquiry to final goodbye
 
 **You run your hotel. We run the wedding.**
@@ -27,15 +27,17 @@ A typical Bali Love wedding at Oshom looks like this:
 
 | Revenue Stream | Oshom Receives |
 |----------------|----------------|
-| **Accommodation buyout** — all 18 rooms × 2 nights | **174,240,000** |
+| **Accommodation buyout** — all 18 rooms × 2 nights @ 2,975,000 | **107,100,000** |
 | **Venue fee** — exclusive use of event spaces | **40,000,000** |
 | **Food** — Family Style 3-course, 80 guests | **58,080,000** |
 | **Drinks** — Silver package (spirits), 80 guests | **53,240,000** |
 | **Guest spending** — bar, spa, dining on non-wedding days | **~17,500,000** |
 | | |
-| **Total Oshom receives per wedding** | **~343,060,000 IDR** |
+| **Total Oshom receives per wedding** | **~275,920,000 IDR** |
 
 All amounts are what Oshom receives (inclusive of your 21% tax & service). Bali Love's fee is built into the couple-facing price — you never see it or pay it.
+
+**Why the room rate works:** Your 2025 ADR was 3,308,000 at 47% occupancy. At 2,975,000/room you get a slightly lower rate — but every single room is full. Total room revenue per wedding night is **53,550,000** vs your normal night of **25,935,000**. That's more than double, guaranteed.
 
 ---
 
@@ -45,9 +47,9 @@ All amounts are what Oshom receives (inclusive of your 21% tax & service). Bali 
 |----------|-------------------|-----------|
 | **Normal night** (2025 actual) | 25,935,000 | 47% |
 | **Normal night** (2026 budget) | 44,109,000 | 61% |
-| **Wedding night** | **163,000,000** | **100%** |
+| **Wedding night** | **129,000,000** | **100%** |
 
-**A wedding night earns 3.7x your budgeted revenue and guarantees 100% occupancy.**
+**A wedding night earns 2.9x your budgeted revenue — and that's before guest spending at the bar and spa.**
 
 ### Month-by-Month: What a Wedding Night Earns vs a Normal Night
 
@@ -55,22 +57,22 @@ Based on your 2025 actual occupancy and room rates (18 rooms):
 
 | Month | Occupancy | Normal Night Revenue | Wedding Night Revenue | Multiple |
 |-------|-----------|----------------------|-----------------------|----------|
-| **Nov** | 29.8% | 13,400,000 | 163,000,000 | **12.2x** |
-| **Apr** | 34.4% | 19,400,000 | 163,000,000 | **8.4x** |
-| **Mar** | 35.3% | 20,400,000 | 163,000,000 | **8.0x** |
-| **Feb** | 40.8% | 23,300,000 | 163,000,000 | **7.0x** |
-| **Jun** | 40.6% | 23,100,000 | 163,000,000 | **7.1x** |
-| **Dec** | 41.4% | 24,700,000 | 163,000,000 | **6.6x** |
-| **Jan** | 39.5% | 29,300,000 | 163,000,000 | **5.6x** |
-| **May** | 49.3% | 27,900,000 | 163,000,000 | **5.8x** |
-| **Oct** | 62.0% | 33,200,000 | 163,000,000 | **4.9x** |
-| **Jul** | 53.9% | 34,700,000 | 163,000,000 | **4.7x** |
-| **Sep** | 61.7% | 35,900,000 | 163,000,000 | **4.5x** |
-| **Aug** | 70.1% | 48,000,000 | 163,000,000 | **3.4x** |
+| **Nov** | 29.8% | 13,400,000 | 129,000,000 | **9.6x** |
+| **Apr** | 34.4% | 19,400,000 | 129,000,000 | **6.6x** |
+| **Mar** | 35.3% | 20,400,000 | 129,000,000 | **6.3x** |
+| **Feb** | 40.8% | 23,300,000 | 129,000,000 | **5.5x** |
+| **Jun** | 40.6% | 23,100,000 | 129,000,000 | **5.6x** |
+| **Dec** | 41.4% | 24,700,000 | 129,000,000 | **5.2x** |
+| **Jan** | 39.5% | 29,300,000 | 129,000,000 | **4.4x** |
+| **May** | 49.3% | 27,900,000 | 129,000,000 | **4.6x** |
+| **Oct** | 62.0% | 33,200,000 | 129,000,000 | **3.9x** |
+| **Jul** | 53.9% | 34,700,000 | 129,000,000 | **3.7x** |
+| **Sep** | 61.7% | 35,900,000 | 129,000,000 | **3.6x** |
+| **Aug** | 70.1% | 48,000,000 | 129,000,000 | **2.7x** |
 
 Sorted by impact — your weakest months benefit the most. And those weak months (Nov–Apr) are exactly when destination weddings book.
 
-**Even in your best month (August at 70% occupancy), a wedding night still earns 3.4x more.**
+**Even in your best month (August at 70% occupancy), a wedding night still earns 2.7x more.**
 
 ---
 
@@ -78,11 +80,11 @@ Sorted by impact — your weakest months benefit the most. And those weak months
 
 | Revenue Stream | Oshom Receives |
 |----------------|----------------|
-| Accommodation buyout — 18 rooms × 3 nights | **261,360,000** |
+| Accommodation buyout — 18 rooms × 3 nights | **160,650,000** |
 | Venue fee | **40,000,000** |
 | Food + Drinks (Standard) | **111,320,000** |
 | Guest spending (2 extra days) | **~35,000,000** |
-| **Total** | **~447,680,000 IDR** |
+| **Total** | **~346,970,000 IDR** |
 
 ---
 
@@ -102,13 +104,23 @@ Your kitchen delivers the food and drinks. That's it. No external caterers on yo
 
 ## Accommodation Buyout Rate
 
-| | Per Room / Night | All 18 Rooms / Night |
-|--|-----------------|----------------------|
-| **Oshom receives** | 4,840,000 IDR | **87,120,000 IDR** |
+| | Per Room / Night |
+|--|-----------------|
+| **Oshom receives** | **2,975,000 IDR** |
+| All 18 rooms / night | **53,550,000 IDR** |
+| 2-night buyout | **107,100,000 IDR** |
+| 3-night buyout | **160,650,000 IDR** |
 
-- Based on Oshom net rate of 4,000,000/room/night (matching your 2026 budget ADR) + 21% tax & service
-- The couple guarantees the full buyout — Oshom is paid for all 18 rooms regardless
-- 2-night buyout: **174,240,000** | 3-night buyout: **261,360,000**
+The couple guarantees the full buyout — Oshom is paid for all 18 rooms regardless.
+
+**The trade-off:** The per-room rate is below your 2026 budget ADR of 4,028,000. But you get:
+- **100% occupancy** guaranteed (vs 47-61% normally)
+- **F&B revenue** of 111-145M per event on top of room revenue
+- **A venue fee** of 40M per event
+- **Guest spending** at the bar, spa, and restaurant on non-wedding days
+- **Deposits months in advance** — guaranteed cash flow
+
+A normal night earns you 25-44M total. A wedding night earns you **129M**. The room rate is lower. Everything else is higher.
 
 ---
 
@@ -124,11 +136,11 @@ Your kitchen delivers the food and drinks. That's it. No external caterers on yo
 
 | Revenue Stream | Annual |
 |----------------|--------|
-| Accommodation buyouts (50 weddings) | 10,193,000,000 |
+| Accommodation buyouts (50 weddings) | 6,433,500,000 |
 | Venue fees (50 weddings) | 2,000,000,000 |
 | F&B — Standard (80 guests × 50) | 5,566,000,000 |
 | Guest in-resort spending | ~1,200,000,000 |
-| **Total annual wedding revenue** | **~18,959,000,000 IDR** |
+| **Total annual wedding revenue** | **~15,200,000,000 IDR** |
 
 ### What this means for your total revenue
 
@@ -136,8 +148,8 @@ Your kitchen delivers the food and drinks. That's it. No external caterers on yo
 |--|----------------|
 | 2025 actual (no weddings) | 9.5 billion |
 | 2026 budget (no weddings) | 16.1 billion |
-| **2026 with 50 weddings** | **~29.8 billion** |
-| **Increase over budget** | **+85%** |
+| **2026 with 50 weddings** | **~26.1 billion** |
+| **Increase over budget** | **+62%** |
 
 Weddings only use 32% of your calendar. The other 248 days, you run your hotel exactly as normal.
 
@@ -177,7 +189,7 @@ Bali Love earns a commission that's built into the couple-facing price. You rece
 | | Normal Booking | Wedding Booking |
 |--|----------------|-----------------|
 | Occupancy | 47-61% | **100%** |
-| Revenue per night | 25-44M | **163M+** |
+| Revenue per night | 25-44M | **129M+** |
 | F&B revenue | Standard restaurant | **111-145M per event** |
 | Advance booking | Days/weeks ahead | **6-18 months ahead** |
 | Cash flow | On arrival | **Deposits months before** |
@@ -205,7 +217,7 @@ Villa Vedas now has 73 confirmed bookings for 2026 and couples book 12-18 months
 
 ## What We Need to Agree
 
-1. **Accommodation buyout rate:** 4,840,000/room/night (incl tax) → Oshom receives 87,120,000/night for all 18 rooms
+1. **Accommodation buyout rate:** 2,975,000/room/night → Oshom receives 53,550,000/night for all 18 rooms
 2. **Venue fee:** Oshom receives 40,000,000 per wedding event
 3. **F&B tiers:** Base / Standard / Premium at the rates above (your published menu prices)
 4. **Minimum stay:** 2 nights (3-night option available)
