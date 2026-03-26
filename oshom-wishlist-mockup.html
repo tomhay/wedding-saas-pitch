@@ -1,0 +1,1186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oshom x Bali Love — Wishlist</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --primary: #7c3aed;
+      --primary-light: #ede9fe;
+      --green: #16a34a;
+      --green-light: #dcfce7;
+      --amber: #d97706;
+      --amber-light: #fef3c7;
+      --red: #dc2626;
+      --red-light: #fee2e2;
+      --gray-50: #f9fafb;
+      --gray-100: #f3f4f6;
+      --gray-200: #e5e7eb;
+      --gray-300: #d1d5db;
+      --gray-400: #9ca3af;
+      --gray-500: #6b7280;
+      --gray-600: #4b5563;
+      --gray-700: #374151;
+      --gray-800: #1f2937;
+      --gray-900: #111827;
+      --radius: 12px;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: var(--gray-50);
+      color: var(--gray-900);
+      line-height: 1.5;
+    }
+
+    /* Top nav bar */
+    .topbar {
+      background: white;
+      border-bottom: 1px solid var(--gray-200);
+      padding: 12px 24px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .topbar .back {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      color: var(--gray-500);
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 500;
+    }
+    .topbar .back:hover { color: var(--primary); }
+    .topbar .back svg { width: 16px; height: 16px; }
+    .topbar .title {
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--gray-900);
+    }
+    .topbar .badge {
+      background: var(--primary-light);
+      color: var(--primary);
+      font-size: 11px;
+      font-weight: 600;
+      padding: 2px 8px;
+      border-radius: 999px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    /* Main layout */
+    .layout {
+      display: flex;
+      max-width: 1400px;
+      margin: 0 auto;
+      gap: 0;
+    }
+
+    /* Sidebar */
+    .sidebar {
+      width: 300px;
+      min-width: 300px;
+      padding: 24px;
+      border-right: 1px solid var(--gray-200);
+      background: white;
+      min-height: calc(100vh - 57px);
+      position: sticky;
+      top: 57px;
+      align-self: flex-start;
+    }
+    .sidebar-section {
+      margin-bottom: 28px;
+    }
+    .sidebar-label {
+      font-size: 11px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--gray-400);
+      margin-bottom: 8px;
+    }
+    .sidebar-value {
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--gray-800);
+    }
+    .sidebar-value.date {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .sidebar-value.date svg { width: 16px; height: 16px; color: var(--gray-400); }
+
+    .budget-card {
+      background: var(--gray-50);
+      border: 1px solid var(--gray-200);
+      border-radius: var(--radius);
+      padding: 16px;
+    }
+    .budget-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 6px 0;
+      font-size: 14px;
+    }
+    .budget-row .label { color: var(--gray-500); font-weight: 500; }
+    .budget-row .amount { font-weight: 600; color: var(--gray-800); font-variant-numeric: tabular-nums; }
+    .budget-row.total { border-top: 2px solid var(--gray-300); margin-top: 8px; padding-top: 12px; }
+    .budget-row.total .label { color: var(--gray-900); font-weight: 700; font-size: 15px; }
+    .budget-row.total .amount { color: var(--primary); font-weight: 700; font-size: 18px; }
+    .budget-row.savings .amount { color: var(--green); }
+
+    .guest-offset-note {
+      margin-top: 12px;
+      padding: 10px 12px;
+      background: var(--green-light);
+      border-radius: 8px;
+      font-size: 12px;
+      color: var(--green);
+      font-weight: 500;
+      line-height: 1.4;
+    }
+
+    .couple-oop {
+      margin-top: 12px;
+      padding: 12px;
+      background: var(--primary-light);
+      border-radius: 8px;
+    }
+    .couple-oop .label {
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--primary);
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+    .couple-oop .amount {
+      font-size: 22px;
+      font-weight: 700;
+      color: var(--primary);
+    }
+    .couple-oop .aud {
+      font-size: 13px;
+      color: var(--gray-500);
+      font-weight: 500;
+      margin-top: 2px;
+    }
+
+    .fx-note {
+      margin-top: 12px;
+      font-size: 11px;
+      color: var(--gray-400);
+      line-height: 1.4;
+    }
+
+    /* Main content */
+    .main {
+      flex: 1;
+      padding: 24px 32px;
+    }
+
+    /* Category sections */
+    .category-section {
+      margin-bottom: 32px;
+    }
+    .category-header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 16px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid var(--gray-200);
+    }
+    .category-icon {
+      width: 32px;
+      height: 32px;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+    }
+    .category-icon.venue { background: #dbeafe; }
+    .category-icon.fnb { background: #fce7f3; }
+    .category-icon.accom { background: #d1fae5; }
+    .category-icon.services { background: #fef3c7; }
+    .category-name {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--gray-800);
+    }
+    .category-count {
+      font-size: 12px;
+      color: var(--gray-400);
+      font-weight: 500;
+    }
+
+    /* Product cards */
+    .product-card {
+      background: white;
+      border: 1px solid var(--gray-200);
+      border-radius: var(--radius);
+      display: flex;
+      margin-bottom: 12px;
+      overflow: hidden;
+      transition: box-shadow 0.15s, border-color 0.15s;
+    }
+    .product-card:hover {
+      box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+      border-color: var(--gray-300);
+    }
+    .product-image {
+      width: 160px;
+      min-width: 160px;
+      min-height: 140px;
+      background-size: cover;
+      background-position: center;
+      position: relative;
+    }
+    .product-image .heart {
+      position: absolute;
+      top: 8px;
+      left: 8px;
+      width: 28px;
+      height: 28px;
+      background: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.15);
+    }
+    .product-image .heart svg { width: 14px; height: 14px; color: var(--red); fill: var(--red); }
+
+    .product-details {
+      flex: 1;
+      padding: 16px 20px;
+      display: flex;
+      flex-direction: column;
+    }
+    .product-title-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 2px;
+    }
+    .product-name {
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--gray-900);
+    }
+    .product-vendor {
+      font-size: 12px;
+      color: var(--primary);
+      font-weight: 500;
+      margin-bottom: 6px;
+    }
+    .product-desc {
+      font-size: 13px;
+      color: var(--gray-500);
+      margin-bottom: 10px;
+      line-height: 1.4;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    /* Quantity */
+    .qty-row {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 10px;
+    }
+    .qty-label {
+      font-size: 12px;
+      color: var(--gray-500);
+      font-weight: 500;
+    }
+    .qty-input {
+      width: 60px;
+      padding: 4px 8px;
+      border: 1px solid var(--gray-300);
+      border-radius: 6px;
+      font-size: 14px;
+      font-weight: 600;
+      text-align: center;
+      color: var(--gray-800);
+      font-family: inherit;
+    }
+    .qty-input:focus { outline: none; border-color: var(--primary); box-shadow: 0 0 0 2px var(--primary-light); }
+    .qty-note {
+      font-size: 11px;
+      color: var(--amber);
+      font-weight: 500;
+    }
+
+    /* Night info */
+    .night-info {
+      display: flex;
+      gap: 16px;
+      margin-bottom: 10px;
+      font-size: 12px;
+      color: var(--gray-500);
+    }
+    .night-info span { font-weight: 600; color: var(--gray-700); }
+
+    /* Price breakdown */
+    .price-breakdown {
+      margin-bottom: 8px;
+    }
+    .price-line {
+      display: flex;
+      justify-content: space-between;
+      padding: 3px 0;
+      font-size: 13px;
+    }
+    .price-line .label { color: var(--gray-500); }
+    .price-line .amount { color: var(--gray-700); font-weight: 500; font-variant-numeric: tabular-nums; }
+    .price-line.subtotal {
+      border-top: 1px solid var(--gray-200);
+      margin-top: 4px;
+      padding-top: 6px;
+    }
+    .price-line.subtotal .label { color: var(--gray-800); font-weight: 700; }
+    .price-line.subtotal .amount { color: var(--gray-900); font-weight: 700; }
+
+    /* Product total & actions */
+    .product-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: auto;
+      padding-top: 10px;
+      border-top: 1px solid var(--gray-100);
+    }
+    .product-total {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--gray-900);
+    }
+    .product-total .curr { font-size: 11px; color: var(--gray-400); font-weight: 500; }
+    .product-total .aud { font-size: 12px; color: var(--gray-400); font-weight: 500; display: block; }
+
+    .btn-cart {
+      padding: 8px 20px;
+      background: var(--primary);
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+      font-family: inherit;
+      transition: background 0.15s;
+    }
+    .btn-cart:hover { background: #6d28d9; }
+
+    /* Tier selector */
+    .tier-selector {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 12px;
+    }
+    .tier-btn {
+      padding: 6px 14px;
+      border: 1px solid var(--gray-300);
+      border-radius: 8px;
+      font-size: 12px;
+      font-weight: 600;
+      cursor: pointer;
+      background: white;
+      color: var(--gray-600);
+      font-family: inherit;
+      transition: all 0.15s;
+    }
+    .tier-btn:hover { border-color: var(--primary); color: var(--primary); }
+    .tier-btn.active {
+      background: var(--primary);
+      color: white;
+      border-color: var(--primary);
+    }
+
+    /* Night toggle (segmented control) */
+    .night-toggle-wrapper {
+      margin-bottom: 24px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+    .night-toggle-label {
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--gray-700);
+    }
+    .night-toggle {
+      display: inline-flex;
+      background: var(--gray-100);
+      border-radius: 12px;
+      padding: 4px;
+      gap: 0;
+    }
+    .night-toggle-btn {
+      padding: 10px 28px;
+      border: 2px solid transparent;
+      border-radius: 10px;
+      font-size: 15px;
+      font-weight: 700;
+      cursor: pointer;
+      background: transparent;
+      color: var(--gray-500);
+      font-family: inherit;
+      transition: all 0.2s;
+      letter-spacing: -0.01em;
+    }
+    .night-toggle-btn:hover {
+      color: var(--primary);
+    }
+    .night-toggle-btn.active {
+      background: var(--primary);
+      color: white;
+      border-color: var(--primary);
+      box-shadow: 0 2px 8px rgba(124, 58, 237, 0.25);
+    }
+
+    /* Commission bar (admin only) */
+    .admin-bar {
+      background: var(--amber-light);
+      border: 1px solid #fbbf24;
+      border-radius: 8px;
+      padding: 12px 16px;
+      margin-bottom: 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .admin-bar .label {
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--amber);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .admin-bar .details {
+      display: flex;
+      gap: 24px;
+    }
+    .admin-bar .detail {
+      text-align: right;
+    }
+    .admin-bar .detail .val {
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--gray-900);
+    }
+    .admin-bar .detail .sub {
+      font-size: 11px;
+      color: var(--gray-500);
+    }
+
+    .buy-sell-row {
+      display: flex;
+      justify-content: space-between;
+      font-size: 11px;
+      margin-top: 4px;
+    }
+    .buy-price { color: var(--amber); font-weight: 600; }
+    .sell-price { color: var(--primary); font-weight: 600; }
+    .commission-tag {
+      font-size: 10px;
+      background: var(--amber-light);
+      color: var(--amber);
+      padding: 1px 6px;
+      border-radius: 4px;
+      font-weight: 600;
+    }
+
+    /* Responsive */
+    @media (max-width: 900px) {
+      .sidebar { display: none; }
+      .layout { flex-direction: column; }
+      .product-image { width: 120px; min-width: 120px; min-height: 120px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top bar -->
+  <div class="topbar">
+    <a href="#" class="back">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+      Wishlists
+    </a>
+    <div class="title" id="topbar-title">Oshom Bali — 2-Night Wedding (80 Guests)</div>
+    <span class="badge">Template</span>
+  </div>
+
+  <div class="layout">
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+
+      <div class="sidebar-section">
+        <div class="sidebar-label">Wedding Date</div>
+        <div class="sidebar-value date">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+          September 12, 2026
+        </div>
+      </div>
+
+      <div class="sidebar-section">
+        <div class="sidebar-label">Check-in / Check-out</div>
+        <div class="sidebar-value date" id="sidebar-checkin">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+          Sep 11 — Sep 13, 2026
+        </div>
+        <div style="font-size:12px; color:var(--gray-400); margin-top:4px;" id="sidebar-nights-label">2 nights</div>
+      </div>
+
+      <div class="sidebar-section">
+        <div class="sidebar-label">Guests</div>
+        <div class="sidebar-value">80 adults</div>
+      </div>
+
+      <div class="sidebar-section">
+        <div class="sidebar-label">Budget & Totals</div>
+        <div class="budget-card">
+          <div class="budget-row">
+            <span class="label">Venue & Buyout</span>
+            <span class="amount" id="sidebar-venue-buyout">252,047,059</span>
+          </div>
+          <div class="budget-row">
+            <span class="label">F&B (Standard)</span>
+            <span class="amount" id="sidebar-fnb">130,964,706</span>
+          </div>
+          <div class="budget-row">
+            <span class="label" id="sidebar-rooms-label">Guest Rooms (17)</span>
+            <span class="amount" id="sidebar-rooms">119,000,000</span>
+          </div>
+          <div class="budget-row">
+            <span class="label">BL Services</span>
+            <span class="amount" id="sidebar-bl">171,434,800</span>
+          </div>
+          <div class="budget-row total">
+            <span class="label">Total</span>
+            <span class="amount" id="sidebar-total">673,446,565</span>
+          </div>
+          <div style="text-align:right; font-size:12px; color:var(--gray-400); margin-top:2px;" id="sidebar-total-aud">
+            ~A$63,561 AUD
+          </div>
+        </div>
+
+        <div class="guest-offset-note" id="sidebar-offset-note">
+          Guest room offset: -119,000,000 IDR<br>
+          17 rooms @ 3,500,000/night x 2 nights — guests pay directly
+        </div>
+
+        <div class="couple-oop">
+          <div class="label">Couple Out-of-Pocket</div>
+          <div class="amount" id="sidebar-oop">554,446,565 <span style="font-size:13px; font-weight:500;">IDR</span></div>
+          <div class="aud" id="sidebar-oop-aud">~A$52,325 AUD (incl. all BL services)</div>
+        </div>
+
+        <div class="fx-note">
+          Exchange rates change daily. All IDR prices are fixed; AUD amounts are indicative only.
+        </div>
+      </div>
+    </div>
+
+    <!-- Main content -->
+    <div class="main">
+
+      <!-- Admin commission bar -->
+      <div class="admin-bar">
+        <div class="label">Admin — Commission Summary (15%)</div>
+        <div class="details">
+          <div class="detail">
+            <div class="val" id="admin-commission-idr">57,451,765 IDR</div>
+            <div class="sub">BL Commission (venue)</div>
+          </div>
+          <div class="detail">
+            <div class="val" id="admin-commission-aud">~A$5,420</div>
+            <div class="sub">AUD equivalent</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Night toggle -->
+      <div class="night-toggle-wrapper">
+        <span class="night-toggle-label">Stay duration:</span>
+        <div class="night-toggle">
+          <button class="night-toggle-btn active" id="toggle-2n" onclick="selectNights(2)">2 Nights</button>
+          <button class="night-toggle-btn" id="toggle-3n" onclick="selectNights(3)">3 Nights</button>
+        </div>
+      </div>
+
+      <!-- ====== VENUE CATEGORY ====== -->
+      <div class="category-section">
+        <div class="category-header">
+          <div class="category-icon venue">🏨</div>
+          <div class="category-name">Venue</div>
+          <div class="category-count">2 products selected</div>
+        </div>
+
+        <!-- Product 1: Hotel Buyout -->
+        <div class="product-card">
+          <div class="product-image" style="background-image: url('https://oshombali.com/wp-content/uploads/2025/10/Sunbed-Pool-scaled.jpg')">
+            <div class="heart"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></div>
+          </div>
+          <div class="product-details">
+            <div class="product-title-row">
+              <div class="product-name">Oshom Full Hotel Buyout</div>
+              <span class="commission-tag">15% BL</span>
+            </div>
+            <div class="product-vendor">Oshom Bali</div>
+            <div class="product-desc">
+              Exclusive use of all 18 rooms (11 suites + 7 treehouses) for complete privacy. Includes breakfast for 2 per room, afternoon tea, evening turndown service, and complimentary Nuanu Creative City access.
+            </div>
+            <div class="night-info" id="buyout-night-info">
+              Min: <span>2 nights</span> &middot; Max: <span>3 nights</span> &middot; Selected: <span id="buyout-selected-nights">2 nights</span>
+            </div>
+            <div class="price-breakdown" id="buyout-prices">
+              <div class="price-line">
+                <span class="label" id="buyout-base-label">Base rate (18 rooms x 2 nights)</span>
+                <span class="amount" id="buyout-sell-amount">204,988,235 IDR</span>
+              </div>
+              <div class="buy-sell-row">
+                <span class="buy-price" id="buyout-buy">Buy: 174,240,000</span>
+                <span class="sell-price" id="buyout-sell">Sell: 204,988,235</span>
+              </div>
+              <div class="price-line subtotal">
+                <span class="label">Total</span>
+                <span class="amount" id="buyout-total">204,988,235 IDR</span>
+              </div>
+            </div>
+            <div class="product-footer">
+              <div class="product-total" id="buyout-footer-total">
+                204,988,235 <span class="curr">IDR</span>
+                <span class="aud" id="buyout-footer-aud">~A$19,338</span>
+              </div>
+              <button class="btn-cart">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 2: Venue/Event Fee -->
+        <div class="product-card">
+          <div class="product-image" style="background-image: url('https://oshombali.com/wp-content/uploads/2024/09/Oshom-Gallery-11-scaled.jpg')">
+            <div class="heart"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></div>
+          </div>
+          <div class="product-details">
+            <div class="product-title-row">
+              <div class="product-name">Oshom Venue Fee</div>
+              <span class="commission-tag">15% BL</span>
+            </div>
+            <div class="product-vendor">Oshom Bali</div>
+            <div class="product-desc">
+              Event access to The Lawn (350sqm ceremony & reception space), restaurant, rooftop, and all event spaces. Includes setup and breakdown time. Can be reduced for off-peak dates.
+            </div>
+            <div class="price-breakdown">
+              <div class="price-line">
+                <span class="label">Event fee (per event)</span>
+                <span class="amount">47,058,824 IDR</span>
+              </div>
+              <div class="buy-sell-row">
+                <span class="buy-price">Buy: 40,000,000</span>
+                <span class="sell-price">Sell: 47,058,824</span>
+              </div>
+              <div class="price-line subtotal">
+                <span class="label">Total</span>
+                <span class="amount">47,058,824 IDR</span>
+              </div>
+            </div>
+            <div class="product-footer">
+              <div class="product-total">
+                47,058,824 <span class="curr">IDR</span>
+                <span class="aud">~A$4,439</span>
+              </div>
+              <button class="btn-cart">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ====== F&B CATEGORY ====== -->
+      <div class="category-section">
+        <div class="category-header">
+          <div class="category-icon fnb">🍽</div>
+          <div class="category-name">Food & Beverage</div>
+          <div class="category-count">1 of 3 tiers selected</div>
+        </div>
+
+        <!-- Tier selector -->
+        <div style="margin-bottom: 16px;">
+          <div style="font-size:12px; color:var(--gray-500); margin-bottom:8px; font-weight:500;">Select F&B package tier:</div>
+          <div class="tier-selector">
+            <button class="tier-btn" onclick="selectTier('base', this)">Base — Food Only</button>
+            <button class="tier-btn active" onclick="selectTier('standard', this)">Standard — Food + Spirits</button>
+            <button class="tier-btn" onclick="selectTier('premium', this)">Premium — BBQ + Cocktails</button>
+          </div>
+        </div>
+
+        <!-- F&B Standard (active) -->
+        <div class="product-card" id="fnb-card">
+          <div class="product-image" style="background-image: url('https://oshombali.com/wp-content/uploads/2024/09/Oshom-Gallery-15-scaled.jpg')">
+            <div class="heart"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></div>
+          </div>
+          <div class="product-details">
+            <div class="product-title-row">
+              <div class="product-name" id="fnb-title">Oshom F&B — Standard (Food + Spirits)</div>
+              <span class="commission-tag">15% BL</span>
+            </div>
+            <div class="product-vendor">Oshom Bali — In-House Kitchen</div>
+            <div class="product-desc" id="fnb-desc">
+              Family Style 3-course dinner + Silver drinks package (sparkling, beer, soft drinks, juice, water, vodka, gin, rum, whiskey, tequila). All served by Oshom's in-house kitchen and bar team.
+            </div>
+            <div class="qty-row">
+              <span class="qty-label">Guests:</span>
+              <input type="number" class="qty-input" value="80" min="50" id="fnb-qty" onchange="updateFnB()">
+              <span class="qty-note">Min: 50 guests</span>
+            </div>
+            <div class="price-breakdown" id="fnb-prices">
+              <div class="price-line">
+                <span class="label">Food — Family Style 3-Course (80 pax)</span>
+                <span class="amount">68,329,412 IDR</span>
+              </div>
+              <div class="price-line">
+                <span class="label">Drinks — Silver / Spirits (80 pax)</span>
+                <span class="amount">62,635,294 IDR</span>
+              </div>
+              <div class="buy-sell-row">
+                <span class="buy-price">Buy: 111,320,000 (food 726K + drinks 665.5K /head)</span>
+                <span class="sell-price">Sell: 130,964,706 (1,637,059 /head)</span>
+              </div>
+              <div class="price-line subtotal">
+                <span class="label">Total (80 guests)</span>
+                <span class="amount">130,964,706 IDR</span>
+              </div>
+            </div>
+            <div class="product-footer">
+              <div class="product-total" id="fnb-total">
+                130,964,706 <span class="curr">IDR</span>
+                <span class="aud">~A$12,355</span>
+              </div>
+              <button class="btn-cart">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ====== ACCOMMODATION CATEGORY ====== -->
+      <div class="category-section">
+        <div class="category-header">
+          <div class="category-icon accom">🛏</div>
+          <div class="category-name">Guest Accommodation</div>
+          <div class="category-count">1 product selected</div>
+        </div>
+
+        <!-- Product: Guest Rooms -->
+        <div class="product-card">
+          <div class="product-image" style="background-image: url('https://oshombali.com/wp-content/uploads/2024/09/Oshom-Gallery-3-scaled.jpg')">
+            <div class="heart"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></div>
+          </div>
+          <div class="product-details">
+            <div class="product-title-row">
+              <div class="product-name">Oshom Guest Room</div>
+              <span style="font-size:11px; background:var(--green-light); color:var(--green); padding:2px 8px; border-radius:4px; font-weight:600;">GUEST PAYS</span>
+            </div>
+            <div class="product-vendor">Oshom Bali</div>
+            <div class="product-desc">
+              Mix of suites (65-129sqm) and treehouses. Guests book and pay for their own room at a discounted group rate. Revenue offsets the couple's buyout cost.
+            </div>
+            <div class="qty-row">
+              <span class="qty-label">Rooms:</span>
+              <input type="number" class="qty-input" value="17" min="1" max="17">
+              <span class="qty-note">Max: 17 rooms (1 held for couple)</span>
+            </div>
+            <div class="night-info" id="rooms-night-info">
+              Min: <span>2 nights</span> &middot; Max: <span>3 nights</span> &middot; Selected: <span id="rooms-selected-nights">2 nights</span>
+            </div>
+            <div class="price-breakdown" id="rooms-prices">
+              <div class="price-line">
+                <span class="label">Per room / night (sell)</span>
+                <span class="amount">3,500,000 IDR</span>
+              </div>
+              <div class="price-line">
+                <span class="label" id="rooms-calc-label">17 rooms x 2 nights</span>
+                <span class="amount" id="rooms-calc-amount">119,000,000 IDR</span>
+              </div>
+              <div class="buy-sell-row">
+                <span class="buy-price">Buy: 2,975,000 /room/night (Oshom keeps)</span>
+                <span class="sell-price">Sell: 3,500,000 /room/night (guest pays)</span>
+              </div>
+              <div class="price-line subtotal">
+                <span class="label">Total (offsets couple buyout)</span>
+                <span class="amount" style="color:var(--green);" id="rooms-total">-119,000,000 IDR</span>
+              </div>
+            </div>
+            <div class="product-footer">
+              <div class="product-total" style="color:var(--green);" id="rooms-footer-total">
+                -119,000,000 <span class="curr">IDR</span>
+                <span class="aud" id="rooms-footer-aud">~A$11,226 offset</span>
+              </div>
+              <button class="btn-cart">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ====== BL SERVICES CATEGORY ====== -->
+      <div class="category-section">
+        <div class="category-header">
+          <div class="category-icon services">💍</div>
+          <div class="category-name">Bali Love Services</div>
+          <div class="category-count">6 products</div>
+        </div>
+
+        <!-- Wedding Planner -->
+        <div class="product-card">
+          <div class="product-image" style="background: linear-gradient(135deg, #7c3aed22, #7c3aed11); display:flex; align-items:center; justify-content:center; font-size:40px;">📋</div>
+          <div class="product-details">
+            <div class="product-title-row">
+              <div class="product-name">Wedding Planning Service</div>
+            </div>
+            <div class="product-vendor">Bali Love</div>
+            <div class="product-desc">Full-service wedding planning and coordination. Timeline management, vendor coordination, run sheet, rehearsal, and day-of management.</div>
+            <div class="price-breakdown">
+              <div class="price-line subtotal">
+                <span class="label">Total</span>
+                <span class="amount">38,522,825 IDR</span>
+              </div>
+            </div>
+            <div class="product-footer">
+              <div class="product-total">38,522,825 <span class="curr">IDR</span><span class="aud">~A$3,635</span></div>
+              <button class="btn-cart">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Photo & Video -->
+        <div class="product-card">
+          <div class="product-image" style="background: linear-gradient(135deg, #7c3aed22, #7c3aed11); display:flex; align-items:center; justify-content:center; font-size:40px;">📸</div>
+          <div class="product-details">
+            <div class="product-title-row">
+              <div class="product-name">Photo & Video — 8 Hours</div>
+            </div>
+            <div class="product-vendor">Bali Love</div>
+            <div class="product-desc">8 hours coverage. Professional photographer and videographer with edited highlight reel and full gallery.</div>
+            <div class="price-breakdown">
+              <div class="price-line subtotal">
+                <span class="label">Total</span>
+                <span class="amount">30,715,405 IDR</span>
+              </div>
+            </div>
+            <div class="product-footer">
+              <div class="product-total">30,715,405 <span class="curr">IDR</span><span class="aud">~A$2,899</span></div>
+              <button class="btn-cart">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hair & Makeup -->
+        <div class="product-card">
+          <div class="product-image" style="background: linear-gradient(135deg, #7c3aed22, #7c3aed11); display:flex; align-items:center; justify-content:center; font-size:40px;">💄</div>
+          <div class="product-details">
+            <div class="product-title-row">
+              <div class="product-name">Hair & Makeup — Bride</div>
+            </div>
+            <div class="product-vendor">Bali Love</div>
+            <div class="product-desc">Bridal trial + wedding day styling. Includes transport to/from venue.</div>
+            <div class="price-breakdown">
+              <div class="price-line subtotal">
+                <span class="label">Total</span>
+                <span class="amount">2,616,965 IDR</span>
+              </div>
+            </div>
+            <div class="product-footer">
+              <div class="product-total">2,616,965 <span class="curr">IDR</span><span class="aud">~A$247</span></div>
+              <button class="btn-cart">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Entertainment -->
+        <div class="product-card">
+          <div class="product-image" style="background: linear-gradient(135deg, #7c3aed22, #7c3aed11); display:flex; align-items:center; justify-content:center; font-size:40px;">🎵</div>
+          <div class="product-details">
+            <div class="product-title-row">
+              <div class="product-name">Entertainment — DJ + Lawn Games</div>
+            </div>
+            <div class="product-vendor">Bali Love</div>
+            <div class="product-desc">Professional DJ for reception and 5 lawn games for cocktail hour.</div>
+            <div class="price-breakdown">
+              <div class="price-line subtotal">
+                <span class="label">Total</span>
+                <span class="amount">4,852,510 IDR</span>
+              </div>
+            </div>
+            <div class="product-footer">
+              <div class="product-total">4,852,510 <span class="curr">IDR</span><span class="aud">~A$458</span></div>
+              <button class="btn-cart">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sound & Lighting -->
+        <div class="product-card">
+          <div class="product-image" style="background: linear-gradient(135deg, #7c3aed22, #7c3aed11); display:flex; align-items:center; justify-content:center; font-size:40px;">🔊</div>
+          <div class="product-details">
+            <div class="product-title-row">
+              <div class="product-name">Sound System + Festoon Lights</div>
+            </div>
+            <div class="product-vendor">Bali Love</div>
+            <div class="product-desc">Full PA system for ceremony and reception, plus festoon lighting for lawn and reception area.</div>
+            <div class="price-breakdown">
+              <div class="price-line subtotal">
+                <span class="label">Total</span>
+                <span class="amount">15,129,660 IDR</span>
+              </div>
+            </div>
+            <div class="product-footer">
+              <div class="product-total">15,129,660 <span class="curr">IDR</span><span class="aud">~A$1,428</span></div>
+              <button class="btn-cart">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Celebrant -->
+        <div class="product-card">
+          <div class="product-image" style="background: linear-gradient(135deg, #7c3aed22, #7c3aed11); display:flex; align-items:center; justify-content:center; font-size:40px;">💒</div>
+          <div class="product-details">
+            <div class="product-title-row">
+              <div class="product-name">Celebrant</div>
+            </div>
+            <div class="product-vendor">Bali Love</div>
+            <div class="product-desc">Professional celebrant for ceremony. Includes rehearsal and ceremony coordination.</div>
+            <div class="price-breakdown">
+              <div class="price-line subtotal">
+                <span class="label">Total</span>
+                <span class="amount">79,597,435 IDR</span>
+              </div>
+            </div>
+            <div class="product-footer">
+              <div class="product-total">79,597,435 <span class="curr">IDR</span><span class="aud">~A$7,509</span></div>
+              <button class="btn-cart">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <script>
+    // ---- F&B Tier data (unchanged) ----
+    const tiers = {
+      base: {
+        title: 'Oshom F&B — Base (Food Only)',
+        desc: 'Family Style 3-course dinner. No drinks package included — BYO or order from Oshom bar menu on the night. Ideal for couples who want flexibility on beverages.',
+        prices: `
+          <div class="price-line">
+            <span class="label">Food — Family Style 3-Course (80 pax)</span>
+            <span class="amount">68,329,412 IDR</span>
+          </div>
+          <div class="buy-sell-row">
+            <span class="buy-price">Buy: 58,080,000 (726,000 /head)</span>
+            <span class="sell-price">Sell: 68,329,412 (854,118 /head)</span>
+          </div>
+          <div class="price-line subtotal">
+            <span class="label">Total (80 guests)</span>
+            <span class="amount">68,329,412 IDR</span>
+          </div>`,
+        total: '68,329,412 <span class="curr">IDR</span><span class="aud">~A$6,446</span>',
+        sidebarAmount: 68329412,
+        sidebarLabel: 'F&B (Base)'
+      },
+      standard: {
+        title: 'Oshom F&B — Standard (Food + Spirits)',
+        desc: 'Family Style 3-course dinner + Silver drinks package (sparkling, beer, soft drinks, juice, water, vodka, gin, rum, whiskey, tequila). All served by Oshom\'s in-house kitchen and bar team.',
+        prices: `
+          <div class="price-line">
+            <span class="label">Food — Family Style 3-Course (80 pax)</span>
+            <span class="amount">68,329,412 IDR</span>
+          </div>
+          <div class="price-line">
+            <span class="label">Drinks — Silver / Spirits (80 pax)</span>
+            <span class="amount">62,635,294 IDR</span>
+          </div>
+          <div class="buy-sell-row">
+            <span class="buy-price">Buy: 111,320,000 (food 726K + drinks 665.5K /head)</span>
+            <span class="sell-price">Sell: 130,964,706 (1,637,059 /head)</span>
+          </div>
+          <div class="price-line subtotal">
+            <span class="label">Total (80 guests)</span>
+            <span class="amount">130,964,706 IDR</span>
+          </div>`,
+        total: '130,964,706 <span class="curr">IDR</span><span class="aud">~A$12,355</span>',
+        sidebarAmount: 130964706,
+        sidebarLabel: 'F&B (Standard)'
+      },
+      premium: {
+        title: 'Oshom F&B — Premium (BBQ + Cocktails)',
+        desc: 'BBQ Family Style 3-course dinner + Gold drinks package (sparkling, beer, soft drinks, juice, water, spirits, plus 3 signature cocktails). Premium dining experience with Oshom\'s finest menu.',
+        prices: `
+          <div class="price-line">
+            <span class="label">Food — BBQ Family Style (80 pax)</span>
+            <span class="amount">96,800,000 IDR</span>
+          </div>
+          <div class="price-line">
+            <span class="label">Drinks — Gold / Cocktails (80 pax)</span>
+            <span class="amount">74,023,529 IDR</span>
+          </div>
+          <div class="buy-sell-row">
+            <span class="buy-price">Buy: 145,200,000 (food 1,028.5K + drinks 786.5K /head)</span>
+            <span class="sell-price">Sell: 170,823,529 (2,135,294 /head)</span>
+          </div>
+          <div class="price-line subtotal">
+            <span class="label">Total (80 guests)</span>
+            <span class="amount">170,823,529 IDR</span>
+          </div>`,
+        total: '170,823,529 <span class="curr">IDR</span><span class="aud">~A$16,116</span>',
+        sidebarAmount: 170823529,
+        sidebarLabel: 'F&B (Premium)'
+      }
+    };
+
+    // ---- State ----
+    let currentNights = 2;
+    let currentTier = 'standard';
+    const FX = 10600;
+    const BL_SERVICES = 171434800;
+    const VENUE_FEE_SELL = 47058824;
+
+    // Night-dependent data
+    const nightData = {
+      2: {
+        checkin: 'Sep 11 — Sep 13, 2026',
+        nightsLabel: '2 nights',
+        buyoutBuy: 174240000,
+        buyoutSell: 204988235,
+        buyoutBaseLabel: '18 rooms x 2 nights',
+        roomsCalcLabel: '17 rooms x 2 nights',
+        guestRoomOffset: 119000000,
+        topbarTitle: 'Oshom Bali — 2-Night Wedding (80 Guests)'
+      },
+      3: {
+        checkin: 'Sep 10 — Sep 13, 2026',
+        nightsLabel: '3 nights',
+        buyoutBuy: 261360000,
+        buyoutSell: 307482353,
+        buyoutBaseLabel: '18 rooms x 3 nights',
+        roomsCalcLabel: '17 rooms x 3 nights',
+        guestRoomOffset: 178500000,
+        topbarTitle: 'Oshom Bali — 3-Night Wedding (80 Guests)'
+      }
+    };
+
+    function fmt(n) {
+      return n.toLocaleString('en-US');
+    }
+
+    function fmtAud(idr) {
+      return Math.round(idr / FX).toLocaleString('en-US');
+    }
+
+    function selectNights(n) {
+      currentNights = n;
+      document.getElementById('toggle-2n').classList.toggle('active', n === 2);
+      document.getElementById('toggle-3n').classList.toggle('active', n === 3);
+      updateAll();
+    }
+
+    function selectTier(tier, btn) {
+      currentTier = tier;
+      document.querySelectorAll('.tier-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const data = tiers[tier];
+      document.getElementById('fnb-title').textContent = data.title;
+      document.getElementById('fnb-desc').textContent = data.desc;
+      document.getElementById('fnb-prices').innerHTML = data.prices;
+      document.getElementById('fnb-total').innerHTML = data.total;
+      updateAll();
+    }
+
+    function updateAll() {
+      const nd = nightData[currentNights];
+      const td = tiers[currentTier];
+
+      // Top bar
+      document.getElementById('topbar-title').textContent = nd.topbarTitle;
+
+      // Sidebar check-in
+      document.getElementById('sidebar-checkin').innerHTML =
+        '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg> ' + nd.checkin;
+      document.getElementById('sidebar-nights-label').textContent = nd.nightsLabel;
+
+      // Buyout card
+      document.getElementById('buyout-selected-nights').textContent = currentNights + ' nights';
+      document.getElementById('buyout-base-label').textContent = 'Base rate (' + nd.buyoutBaseLabel + ')';
+      document.getElementById('buyout-sell-amount').textContent = fmt(nd.buyoutSell) + ' IDR';
+      document.getElementById('buyout-buy').textContent = 'Buy: ' + fmt(nd.buyoutBuy);
+      document.getElementById('buyout-sell').textContent = 'Sell: ' + fmt(nd.buyoutSell);
+      document.getElementById('buyout-total').textContent = fmt(nd.buyoutSell) + ' IDR';
+      document.getElementById('buyout-footer-total').innerHTML =
+        fmt(nd.buyoutSell) + ' <span class="curr">IDR</span><span class="aud" id="buyout-footer-aud">~A$' + fmtAud(nd.buyoutSell) + '</span>';
+
+      // Guest rooms card
+      document.getElementById('rooms-selected-nights').textContent = currentNights + ' nights';
+      document.getElementById('rooms-calc-label').textContent = nd.roomsCalcLabel;
+      document.getElementById('rooms-calc-amount').textContent = fmt(nd.guestRoomOffset) + ' IDR';
+      document.getElementById('rooms-total').textContent = '-' + fmt(nd.guestRoomOffset) + ' IDR';
+      document.getElementById('rooms-footer-total').innerHTML =
+        '-' + fmt(nd.guestRoomOffset) + ' <span class="curr">IDR</span><span class="aud" id="rooms-footer-aud">~A$' + fmtAud(nd.guestRoomOffset) + ' offset</span>';
+
+      // Sidebar totals
+      const venueBuyout = nd.buyoutSell + VENUE_FEE_SELL;
+      const fnbAmount = td.sidebarAmount;
+      const roomsAmount = nd.guestRoomOffset;
+      const total = venueBuyout + fnbAmount + roomsAmount + BL_SERVICES;
+      const oop = total - roomsAmount;
+
+      document.getElementById('sidebar-venue-buyout').textContent = fmt(venueBuyout);
+      document.getElementById('sidebar-fnb').textContent = fmt(fnbAmount);
+      document.getElementById('sidebar-rooms').textContent = fmt(roomsAmount);
+      document.getElementById('sidebar-total').textContent = fmt(total);
+      document.getElementById('sidebar-total-aud').textContent = '~A$' + fmtAud(total) + ' AUD';
+
+      // Update F&B label in sidebar
+      document.querySelector('.budget-row:nth-child(2) .label').textContent = td.sidebarLabel;
+
+      // Offset note
+      document.getElementById('sidebar-offset-note').innerHTML =
+        'Guest room offset: -' + fmt(roomsAmount) + ' IDR<br>17 rooms @ 3,500,000/night x ' + currentNights + ' nights — guests pay directly';
+
+      // Couple OOP
+      document.getElementById('sidebar-oop').innerHTML =
+        fmt(oop) + ' <span style="font-size:13px; font-weight:500;">IDR</span>';
+      document.getElementById('sidebar-oop-aud').textContent =
+        '~A$' + fmtAud(oop) + ' AUD (incl. all BL services)';
+
+      // Commission (15% on venue items: buyout + venue fee)
+      // Commission = sell - buy for venue items
+      const buyoutCommission = nd.buyoutSell - nd.buyoutBuy;
+      const venueFeeCommission = VENUE_FEE_SELL - 40000000;
+      const totalCommission = buyoutCommission + venueFeeCommission;
+      document.getElementById('admin-commission-idr').textContent = fmt(totalCommission) + ' IDR';
+      document.getElementById('admin-commission-aud').textContent = '~A$' + fmtAud(totalCommission);
+    }
+  </script>
+
+</body>
+</html>
