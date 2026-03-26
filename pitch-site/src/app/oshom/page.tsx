@@ -178,8 +178,50 @@ export default function OshomProposal() {
           </motion.div>
         </section>
 
-        {/* THE OPPORTUNITY */}
-        <motion.section id="opportunity" className="py-24 px-6 bg-stone-50" initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger}>
+        {/* THE BIG NUMBERS */}
+        <motion.section id="opportunity" className="py-24 px-6 bg-stone-900 text-white" initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger}>
+          <div className="max-w-6xl mx-auto">
+            <motion.p variants={fadeUp} className="text-xs tracking-[0.25em] uppercase text-amber-300 mb-6 text-center">What This Partnership Delivers</motion.p>
+            <motion.div variants={stagger} className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+              <motion.div variants={fadeUp} className="text-center p-8 border border-white/10">
+                <div className="text-5xl md:text-6xl font-bold text-amber-400 mb-3 font-mono">~270M</div>
+                <div className="text-xs tracking-[0.2em] uppercase text-white/50 mb-2">IDR Per Wedding</div>
+                <div className="text-sm text-white/70">Revenue to Oshom from a single 2-night, 80-guest wedding</div>
+              </motion.div>
+              <motion.div variants={fadeUp} className="text-center p-8 border border-white/10">
+                <div className="text-5xl md:text-6xl font-bold text-amber-400 mb-3 font-mono">14.7B</div>
+                <div className="text-xs tracking-[0.2em] uppercase text-white/50 mb-2">IDR Per Year</div>
+                <div className="text-sm text-white/70">Annual wedding revenue from 50 weddings using just 32% of your calendar</div>
+              </motion.div>
+              <motion.div variants={fadeUp} className="text-center p-8 border border-white/10">
+                <div className="text-5xl md:text-6xl font-bold text-amber-400 mb-3 font-mono">+73%</div>
+                <div className="text-xs tracking-[0.2em] uppercase text-white/50 mb-2">Revenue Increase</div>
+                <div className="text-sm text-white/70">On top of your 2026 budgeted room revenue of 16.1B IDR</div>
+              </motion.div>
+            </motion.div>
+            <motion.div variants={stagger} className="grid grid-cols-2 md:grid-cols-4 gap-6">
+              <motion.div variants={fadeUp} className="text-center">
+                <div className="text-3xl font-bold text-white mb-1 font-mono">100%</div>
+                <div className="text-[10px] tracking-[0.15em] uppercase text-white/40">Occupancy on wedding days</div>
+              </motion.div>
+              <motion.div variants={fadeUp} className="text-center">
+                <div className="text-3xl font-bold text-white mb-1 font-mono">10x</div>
+                <div className="text-[10px] tracking-[0.15em] uppercase text-white/40">Revenue vs your weakest month</div>
+              </motion.div>
+              <motion.div variants={fadeUp} className="text-center">
+                <div className="text-3xl font-bold text-white mb-1 font-mono">248</div>
+                <div className="text-[10px] tracking-[0.15em] uppercase text-white/40">Days still normal hotel ops</div>
+              </motion.div>
+              <motion.div variants={fadeUp} className="text-center">
+                <div className="text-3xl font-bold text-white mb-1 font-mono">$0</div>
+                <div className="text-[10px] tracking-[0.15em] uppercase text-white/40">Cost to Oshom</div>
+              </motion.div>
+            </motion.div>
+          </div>
+        </motion.section>
+
+        {/* THE OPPORTUNITY — CONTEXT */}
+        <motion.section className="py-24 px-6 bg-stone-50" initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger}>
           <div className="max-w-3xl mx-auto text-center">
             <motion.p variants={fadeUp} className="text-xs tracking-[0.25em] uppercase text-amber-600 mb-4">The Opportunity</motion.p>
             <motion.h2 variants={fadeUp} className="text-3xl md:text-4xl font-bold uppercase tracking-wider text-stone-900 mb-6 leading-tight">
