@@ -25,17 +25,17 @@ A typical Bali Love wedding at Oshom looks like this:
 
 ### 2-Night Wedding — 80 Guests — Standard F&B
 
-| Revenue Stream | Oshom Receives |
-|----------------|----------------|
-| **Accommodation buyout** — all 18 rooms × 2 nights @ 2,975,000 | **107,100,000** |
-| **Venue fee** — exclusive use of event spaces | **40,000,000** |
-| **Food** — Family Style 3-course, 80 guests | **58,080,000** |
-| **Drinks** — Silver package (spirits), 80 guests | **53,240,000** |
-| **Guest spending** — bar, spa, dining on non-wedding days | **~17,500,000** |
-| | |
-| **Total Oshom receives per wedding** | **~275,920,000 IDR** |
+| Revenue Stream | Net | + 21% Tax & Service | Total to Oshom |
+|----------------|-----|---------------------|----------------|
+| **Accommodation buyout** — 18 rooms × 2 nights | 88,524,000 | 18,576,000 | **107,100,000** |
+| **Venue fee** — exclusive use of event spaces | 33,058,000 | 6,942,000 | **40,000,000** |
+| **Food** — Family Style 3-course, 80 guests | 48,000,000 | 10,080,000 | **58,080,000** |
+| **Drinks** — Silver package (spirits), 80 guests | 44,000,000 | 9,240,000 | **53,240,000** |
+| **Guest spending** — bar, spa, dining | — | — | **~17,500,000** |
+| | | | |
+| **Total** | **213,582,000** | **44,838,000** | **~275,920,000 IDR** |
 
-All amounts are what Oshom receives (inclusive of your 21% tax & service). Bali Love's fee is built into the couple-facing price — you never see it or pay it.
+Bali Love's fee is built into the couple-facing price — you never see it or pay it.
 
 **Why the room rate works:** Your 2025 ADR was 3,308,000 at 47% occupancy. At 2,975,000/room you get a slightly lower rate — but every single room is full. Total room revenue per wedding night is **53,550,000** vs your normal night of **25,935,000**. That's more than double, guaranteed.
 
@@ -78,25 +78,25 @@ Sorted by impact — your weakest months benefit the most. And those weak months
 
 ### 3-Night Wedding — Same 80 Guests
 
-| Revenue Stream | Oshom Receives |
-|----------------|----------------|
-| Accommodation buyout — 18 rooms × 3 nights | **160,650,000** |
-| Venue fee | **40,000,000** |
-| Food + Drinks (Standard) | **111,320,000** |
-| Guest spending (2 extra days) | **~35,000,000** |
-| **Total** | **~346,970,000 IDR** |
+| Revenue Stream | Net | + 21% Tax | Total to Oshom |
+|----------------|-----|-----------|----------------|
+| Accommodation buyout — 18 rooms × 3 nights | 132,786,000 | 27,864,000 | **160,650,000** |
+| Venue fee | 33,058,000 | 6,942,000 | **40,000,000** |
+| Food + Drinks (Standard) | 92,000,000 | 19,320,000 | **111,320,000** |
+| Guest spending | — | — | **~35,000,000** |
+| **Total** | **257,844,000** | **54,126,000** | **~346,970,000 IDR** |
 
 ---
 
-## F&B Options (Oshom Receives Per Head)
+## F&B Options
 
 These are based on your published menu prices. The couple chooses one tier:
 
-| Tier | Food | Drinks | Oshom Receives /head | 80 Guests |
-|------|------|--------|----------------------|-----------|
-| **Base** | Family Style 3-course | None (BYO/bar menu) | 726,000 | 58,080,000 |
-| **Standard** | Family Style 3-course | Silver (spirits) | 1,391,500 | 111,320,000 |
-| **Premium** | BBQ Family Style | Gold (cocktails) | 1,815,000 | 145,200,000 |
+| Tier | Food | Drinks | Net /head | + 21% Tax | Total /head | 80 Guests |
+|------|------|--------|-----------|-----------|-------------|-----------|
+| **Base** | Family Style 3-course | None (BYO/bar) | 600,000 | 126,000 | 726,000 | 58,080,000 |
+| **Standard** | Family Style 3-course | Silver (spirits) | 1,150,000 | 241,500 | 1,391,500 | 111,320,000 |
+| **Premium** | BBQ Family Style | Gold (cocktails) | 1,500,000 | 315,000 | 1,815,000 | 145,200,000 |
 
 Your kitchen delivers the food and drinks. That's it. No external caterers on your property.
 
@@ -104,12 +104,12 @@ Your kitchen delivers the food and drinks. That's it. No external caterers on yo
 
 ## Accommodation Buyout Rate
 
-| | Per Room / Night |
-|--|-----------------|
-| **Oshom receives** | **2,975,000 IDR** |
-| All 18 rooms / night | **53,550,000 IDR** |
-| 2-night buyout | **107,100,000 IDR** |
-| 3-night buyout | **160,650,000 IDR** |
+| | Net | + 21% Tax | Total |
+|--|-----|-----------|-------|
+| **Per room / night** | 2,459,000 | 516,000 | **2,975,000** |
+| **All 18 rooms / night** | 44,262,000 | 9,288,000 | **53,550,000** |
+| **2-night buyout** | 88,524,000 | 18,576,000 | **107,100,000** |
+| **3-night buyout** | 132,786,000 | 27,864,000 | **160,650,000** |
 
 The couple guarantees the full buyout — Oshom is paid for all 18 rooms regardless.
 
@@ -217,7 +217,7 @@ Villa Vedas now has 73 confirmed bookings for 2026 and couples book 12-18 months
 
 ## What We Need to Agree
 
-1. **Accommodation buyout rate:** 2,975,000/room/night → Oshom receives 53,550,000/night for all 18 rooms
+1. **Accommodation buyout rate:** 2,459,000 net/room/night + 21% tax = 2,975,000 total → Oshom receives 53,550,000/night for all 18 rooms
 2. **Venue fee:** Oshom receives 40,000,000 per wedding event
 3. **F&B tiers:** Base / Standard / Premium at the rates above (your published menu prices)
 4. **Minimum stay:** 2 nights (3-night option available)

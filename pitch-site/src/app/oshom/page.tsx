@@ -340,10 +340,10 @@ export default function OshomProposal() {
                     </tr>
                   </thead>
                   <tbody>
-                    <tr className="border-b border-stone-200"><td className="p-3">Accommodation buyout &mdash; 18 rooms &times; 2 nights</td><td className="p-3">Couple</td><td className="p-3 text-right font-mono">107,100,000</td></tr>
-                    <tr className="border-b border-stone-200"><td className="p-3">Venue fee &mdash; exclusive use of event spaces</td><td className="p-3">Couple</td><td className="p-3 text-right font-mono">40,000,000</td></tr>
-                    <tr className="border-b border-stone-200"><td className="p-3">Food &mdash; Family Style 3-course, 80 guests</td><td className="p-3">Couple</td><td className="p-3 text-right font-mono">58,080,000</td></tr>
-                    <tr className="border-b border-stone-200"><td className="p-3">Drinks &mdash; Silver package (spirits), 80 guests</td><td className="p-3">Couple</td><td className="p-3 text-right font-mono">53,240,000</td></tr>
+                    <tr className="border-b border-stone-200"><td className="p-3">Accommodation buyout &mdash; 18 rooms &times; 2 nights</td><td className="p-3">Couple</td><td className="p-3 text-right font-mono">107,100,000 <span className="text-[10px] text-stone-400 block">88.5M net + 18.6M tax</span></td></tr>
+                    <tr className="border-b border-stone-200"><td className="p-3">Venue fee &mdash; exclusive use of event spaces</td><td className="p-3">Couple</td><td className="p-3 text-right font-mono">40,000,000 <span className="text-[10px] text-stone-400 block">33.1M net + 6.9M tax</span></td></tr>
+                    <tr className="border-b border-stone-200"><td className="p-3">Food &mdash; Family Style 3-course, 80 guests</td><td className="p-3">Couple</td><td className="p-3 text-right font-mono">58,080,000 <span className="text-[10px] text-stone-400 block">48.0M net + 10.1M tax</span></td></tr>
+                    <tr className="border-b border-stone-200"><td className="p-3">Drinks &mdash; Silver package (spirits), 80 guests</td><td className="p-3">Couple</td><td className="p-3 text-right font-mono">53,240,000 <span className="text-[10px] text-stone-400 block">44.0M net + 9.2M tax</span></td></tr>
                     <tr className="border-b border-stone-200"><td className="p-3">Guest spending &mdash; bar, spa, dining on non-wedding days</td><td className="p-3">Guests</td><td className="p-3 text-right font-mono">~17,500,000</td></tr>
                     <tr className="border-b-2 border-amber-600 font-bold bg-white"><td className="p-3">Total per wedding</td><td className="p-3"></td><td className="p-3 text-right font-mono text-lg">~275,920,000</td></tr>
                   </tbody>
@@ -373,21 +373,21 @@ export default function OshomProposal() {
                       <td className="p-3 font-bold">Base</td>
                       <td className="p-3">Family Style 3-course</td>
                       <td className="p-3 text-stone-400">None (BYO/bar menu)</td>
-                      <td className="p-3 text-right font-mono">726,000</td>
+                      <td className="p-3 text-right font-mono">726,000 <span className="text-[10px] text-stone-400 block">600K net</span></td>
                       <td className="p-3 text-right font-mono">58,080,000</td>
                     </tr>
                     <tr className="border-b border-stone-200 bg-amber-50">
                       <td className="p-3 font-bold">Standard</td>
                       <td className="p-3">Family Style 3-course</td>
                       <td className="p-3">Silver (spirits)</td>
-                      <td className="p-3 text-right font-mono font-bold">1,391,500</td>
+                      <td className="p-3 text-right font-mono font-bold">1,391,500 <span className="text-[10px] text-stone-400 block font-normal">1.15M net</span></td>
                       <td className="p-3 text-right font-mono font-bold">111,320,000</td>
                     </tr>
                     <tr className="border-b border-stone-200">
                       <td className="p-3 font-bold">Premium</td>
                       <td className="p-3">BBQ Family Style</td>
                       <td className="p-3">Gold (cocktails)</td>
-                      <td className="p-3 text-right font-mono">1,815,000</td>
+                      <td className="p-3 text-right font-mono">1,815,000 <span className="text-[10px] text-stone-400 block">1.5M net</span></td>
                       <td className="p-3 text-right font-mono">145,200,000</td>
                     </tr>
                   </tbody>
@@ -407,15 +407,17 @@ export default function OshomProposal() {
                     </tr>
                   </thead>
                   <tbody>
-                    <tr className="border-b border-stone-200"><td className="p-3">Per room / night (incl 21% tax)</td><td className="p-3 text-right font-mono">2,975,000 IDR</td></tr>
-                    <tr className="border-b border-stone-200"><td className="p-3 font-bold">All 18 rooms / night</td><td className="p-3 text-right font-mono font-bold">53,550,000 IDR</td></tr>
-                    <tr className="border-b border-stone-200"><td className="p-3">2-night buyout</td><td className="p-3 text-right font-mono">107,100,000 IDR</td></tr>
-                    <tr className="border-b border-stone-200"><td className="p-3">3-night buyout</td><td className="p-3 text-right font-mono">160,650,000 IDR</td></tr>
+                    <tr className="border-b border-stone-200"><td className="p-3">Per room / night <span className="text-stone-400">(net)</span></td><td className="p-3 text-right font-mono">2,459,000 IDR</td></tr>
+                    <tr className="border-b border-stone-200"><td className="p-3">Per room / night <span className="text-stone-400">(incl 21% tax)</span></td><td className="p-3 text-right font-mono">2,975,000 IDR</td></tr>
+                    <tr className="border-b border-stone-200"><td className="p-3 font-bold">All 18 rooms / night <span className="text-stone-400 font-normal">(incl tax)</span></td><td className="p-3 text-right font-mono font-bold">53,550,000 IDR</td></tr>
+                    <tr className="border-b border-stone-200"><td className="p-3">2-night buyout</td><td className="p-3 text-right font-mono">107,100,000 IDR <span className="text-[10px] text-stone-400">(88.5M net + 18.6M tax)</span></td></tr>
+                    <tr className="border-b border-stone-200"><td className="p-3">3-night buyout</td><td className="p-3 text-right font-mono">160,650,000 IDR <span className="text-[10px] text-stone-400">(132.8M net + 27.9M tax)</span></td></tr>
                   </tbody>
                 </table>
               </div>
               <p className="text-xs text-stone-500 leading-relaxed mt-4">
-                Based on Oshom net rate of 2,975,000/room/night — competitive rate that guarantees 100% occupancy + 21% tax &amp; service.
+                Net rate of 2,459,000/room/night + 21% tax &amp; service = 2,975,000 total.
+                Competitive rate that guarantees 100% occupancy.
                 The couple guarantees the full buyout &mdash; Oshom is paid for all 18 rooms regardless.
               </p>
             </motion.div>
