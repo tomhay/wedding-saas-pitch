@@ -50,7 +50,28 @@ All amounts are what Oshom receives (inclusive of your 21% tax & service). Bali 
 
 **A wedding night earns 3x your budgeted revenue and guarantees 100% occupancy.**
 
-On your weakest months (Nov at 29.8%, Apr at 34.4%), a wedding night earns **10x** what you'd normally make.
+### Month-by-Month: What a Wedding Night Earns vs a Normal Night
+
+Based on your 2025 actual occupancy and room rates (18 rooms):
+
+| Month | Occupancy | Normal Night Revenue | Wedding Night Revenue | Multiple |
+|-------|-----------|----------------------|-----------------------|----------|
+| **Nov** | 29.8% | 13,400,000 | 135,000,000 | **10.1x** |
+| **Apr** | 34.4% | 19,400,000 | 135,000,000 | **7.0x** |
+| **Mar** | 35.3% | 20,400,000 | 135,000,000 | **6.6x** |
+| **Feb** | 40.8% | 23,300,000 | 135,000,000 | **5.8x** |
+| **Jun** | 40.6% | 23,100,000 | 135,000,000 | **5.8x** |
+| **Jan** | 39.5% | 29,300,000 | 135,000,000 | **4.6x** |
+| **Dec** | 41.4% | 24,700,000 | 135,000,000 | **5.5x** |
+| **May** | 49.3% | 27,900,000 | 135,000,000 | **4.8x** |
+| **Oct** | 62.0% | 33,200,000 | 135,000,000 | **4.1x** |
+| **Jul** | 53.9% | 34,700,000 | 135,000,000 | **3.9x** |
+| **Sep** | 61.7% | 35,900,000 | 135,000,000 | **3.8x** |
+| **Aug** | 70.1% | 48,000,000 | 135,000,000 | **2.8x** |
+
+Sorted by impact — your weakest months benefit the most. And those weak months (Nov–Apr) are exactly when destination weddings book.
+
+**Even in your best month (August at 70% occupancy), a wedding night still earns nearly 3x more.**
 
 ---
 
