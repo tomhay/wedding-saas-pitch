@@ -13,9 +13,8 @@ Bali Love fills your hotel with destination weddings. You provide rooms, food, a
 A typical Bali Love wedding at Oshom looks like this:
 
 - **80 guests** fly in for a 2 or 3 night stay
-- **17 rooms** are booked by wedding guests (they pay for their own rooms)
-- **1 suite** is for the couple (included in the wedding)
-- The couple pays for **food, drinks, and the venue** for their wedding day
+- **All 18 rooms** are exclusively booked for the wedding party
+- The couple pays for the **accommodation buyout, venue fee, food, and drinks**
 - Bali Love manages the entire process from first enquiry to final goodbye
 
 **You run your hotel. We run the wedding.**
@@ -26,15 +25,15 @@ A typical Bali Love wedding at Oshom looks like this:
 
 ### 2-Night Wedding — 80 Guests — Standard F&B
 
-| Revenue Stream | Who Pays | Oshom Receives |
-|----------------|----------|----------------|
-| **Guest rooms** — 17 rooms × 2 nights × 2,975,000 | Guests | **101,150,000** |
-| **Venue fee** — exclusive use of property | Couple | **40,000,000** |
-| **Food** — Family Style 3-course, 80 guests | Couple | **58,080,000** |
-| **Drinks** — Silver package (spirits), 80 guests | Couple | **53,240,000** |
-| **Guest spending** — bar, spa, dining on non-wedding days | Guests | **~17,500,000** |
-| | | |
-| **Total Oshom receives per wedding** | | **~269,970,000 IDR** |
+| Revenue Stream | Oshom Receives |
+|----------------|----------------|
+| **Accommodation buyout** — all 18 rooms × 2 nights | **174,240,000** |
+| **Venue fee** — exclusive use of event spaces | **40,000,000** |
+| **Food** — Family Style 3-course, 80 guests | **58,080,000** |
+| **Drinks** — Silver package (spirits), 80 guests | **53,240,000** |
+| **Guest spending** — bar, spa, dining on non-wedding days | **~17,500,000** |
+| | |
+| **Total Oshom receives per wedding** | **~343,060,000 IDR** |
 
 All amounts are what Oshom receives (inclusive of your 21% tax & service). Bali Love's fee is built into the couple-facing price — you never see it or pay it.
 
@@ -46,9 +45,9 @@ All amounts are what Oshom receives (inclusive of your 21% tax & service). Bali 
 |----------|-------------------|-----------|
 | **Normal night** (2025 actual) | 25,935,000 | 47% |
 | **Normal night** (2026 budget) | 44,109,000 | 61% |
-| **Wedding night** | **134,985,000** | **100%** |
+| **Wedding night** | **163,000,000** | **100%** |
 
-**A wedding night earns 3x your budgeted revenue and guarantees 100% occupancy.**
+**A wedding night earns 3.7x your budgeted revenue and guarantees 100% occupancy.**
 
 ### Month-by-Month: What a Wedding Night Earns vs a Normal Night
 
@@ -56,22 +55,22 @@ Based on your 2025 actual occupancy and room rates (18 rooms):
 
 | Month | Occupancy | Normal Night Revenue | Wedding Night Revenue | Multiple |
 |-------|-----------|----------------------|-----------------------|----------|
-| **Nov** | 29.8% | 13,400,000 | 135,000,000 | **10.1x** |
-| **Apr** | 34.4% | 19,400,000 | 135,000,000 | **7.0x** |
-| **Mar** | 35.3% | 20,400,000 | 135,000,000 | **6.6x** |
-| **Feb** | 40.8% | 23,300,000 | 135,000,000 | **5.8x** |
-| **Jun** | 40.6% | 23,100,000 | 135,000,000 | **5.8x** |
-| **Jan** | 39.5% | 29,300,000 | 135,000,000 | **4.6x** |
-| **Dec** | 41.4% | 24,700,000 | 135,000,000 | **5.5x** |
-| **May** | 49.3% | 27,900,000 | 135,000,000 | **4.8x** |
-| **Oct** | 62.0% | 33,200,000 | 135,000,000 | **4.1x** |
-| **Jul** | 53.9% | 34,700,000 | 135,000,000 | **3.9x** |
-| **Sep** | 61.7% | 35,900,000 | 135,000,000 | **3.8x** |
-| **Aug** | 70.1% | 48,000,000 | 135,000,000 | **2.8x** |
+| **Nov** | 29.8% | 13,400,000 | 163,000,000 | **12.2x** |
+| **Apr** | 34.4% | 19,400,000 | 163,000,000 | **8.4x** |
+| **Mar** | 35.3% | 20,400,000 | 163,000,000 | **8.0x** |
+| **Feb** | 40.8% | 23,300,000 | 163,000,000 | **7.0x** |
+| **Jun** | 40.6% | 23,100,000 | 163,000,000 | **7.1x** |
+| **Dec** | 41.4% | 24,700,000 | 163,000,000 | **6.6x** |
+| **Jan** | 39.5% | 29,300,000 | 163,000,000 | **5.6x** |
+| **May** | 49.3% | 27,900,000 | 163,000,000 | **5.8x** |
+| **Oct** | 62.0% | 33,200,000 | 163,000,000 | **4.9x** |
+| **Jul** | 53.9% | 34,700,000 | 163,000,000 | **4.7x** |
+| **Sep** | 61.7% | 35,900,000 | 163,000,000 | **4.5x** |
+| **Aug** | 70.1% | 48,000,000 | 163,000,000 | **3.4x** |
 
 Sorted by impact — your weakest months benefit the most. And those weak months (Nov–Apr) are exactly when destination weddings book.
 
-**Even in your best month (August at 70% occupancy), a wedding night still earns nearly 3x more.**
+**Even in your best month (August at 70% occupancy), a wedding night still earns 3.4x more.**
 
 ---
 
@@ -79,11 +78,11 @@ Sorted by impact — your weakest months benefit the most. And those weak months
 
 | Revenue Stream | Oshom Receives |
 |----------------|----------------|
-| Guest rooms — 17 rooms × 3 nights | **151,725,000** |
+| Accommodation buyout — 18 rooms × 3 nights | **261,360,000** |
 | Venue fee | **40,000,000** |
 | Food + Drinks (Standard) | **111,320,000** |
 | Guest spending (2 extra days) | **~35,000,000** |
-| **Total** | **~338,045,000 IDR** |
+| **Total** | **~447,680,000 IDR** |
 
 ---
 
@@ -101,19 +100,15 @@ Your kitchen delivers the food and drinks. That's it. No external caterers on yo
 
 ---
 
-## Guest Room Rate
+## Accommodation Buyout Rate
 
-| | Per Room / Night |
-|--|-----------------|
-| **What guests pay** | 3,500,000 IDR |
-| **What Oshom receives** | 2,975,000 IDR |
+| | Per Room / Night | All 18 Rooms / Night |
+|--|-----------------|----------------------|
+| **Oshom receives** | 4,840,000 IDR | **87,120,000 IDR** |
 
-- Guests book their own rooms through Bali Love
-- 17 rooms available per wedding (1 held for the couple)
-- 2 or 3 night minimum stay
-- 3,500,000 is competitive for the area — guests expect to pay for their own accommodation at a destination wedding
-
-**Reality check:** Your 2025 average room rate was 3,308,000 at 47% occupancy. Wedding nights give you 2,975,000 per room but at **100% occupancy** — so total room revenue per night is **higher** than a normal night.
+- Based on Oshom net rate of 4,000,000/room/night (matching your 2026 budget ADR) + 21% tax & service
+- The couple guarantees the full buyout — Oshom is paid for all 18 rooms regardless
+- 2-night buyout: **174,240,000** | 3-night buyout: **261,360,000**
 
 ---
 
@@ -124,18 +119,25 @@ Your kitchen delivers the food and drinks. That's it. No external caterers on yo
 | Weddings per year | 50 |
 | Wedding days per year | 117 (32% of your calendar) |
 | Days for normal hotel ops | 248 (68% of your calendar) |
-| **Annual wedding revenue to Oshom** | **~16.9 billion IDR** |
-| Guest in-resort spending (extra) | ~1.2 billion IDR |
-| **Total additional revenue** | **~18.1 billion IDR** |
+
+### Annual Revenue to Oshom
+
+| Revenue Stream | Annual |
+|----------------|--------|
+| Accommodation buyouts (50 weddings) | 10,193,000,000 |
+| Venue fees (50 weddings) | 2,000,000,000 |
+| F&B — Standard (80 guests × 50) | 5,566,000,000 |
+| Guest in-resort spending | ~1,200,000,000 |
+| **Total annual wedding revenue** | **~18,959,000,000 IDR** |
 
 ### What this means for your total revenue
 
-| | Annual Room Revenue |
-|--|---------------------|
+| | Annual Revenue |
+|--|----------------|
 | 2025 actual (no weddings) | 9.5 billion |
 | 2026 budget (no weddings) | 16.1 billion |
-| **2026 with 50 weddings** | **~27.8 billion** |
-| **Increase over budget** | **+73%** |
+| **2026 with 50 weddings** | **~29.8 billion** |
+| **Increase over budget** | **+85%** |
 
 Weddings only use 32% of your calendar. The other 248 days, you run your hotel exactly as normal.
 
@@ -175,7 +177,7 @@ Bali Love earns a commission that's built into the couple-facing price. You rece
 | | Normal Booking | Wedding Booking |
 |--|----------------|-----------------|
 | Occupancy | 47-61% | **100%** |
-| Revenue per night | 25-44M | **135M+** |
+| Revenue per night | 25-44M | **163M+** |
 | F&B revenue | Standard restaurant | **111-145M per event** |
 | Advance booking | Days/weeks ahead | **6-18 months ahead** |
 | Cash flow | On arrival | **Deposits months before** |
@@ -203,7 +205,7 @@ Villa Vedas now has 73 confirmed bookings for 2026 and couples book 12-18 months
 
 ## What We Need to Agree
 
-1. **Room rate:** Guests pay 3,500,000/night → Oshom receives 2,975,000/night
+1. **Accommodation buyout rate:** 4,840,000/room/night (incl tax) → Oshom receives 87,120,000/night for all 18 rooms
 2. **Venue fee:** Oshom receives 40,000,000 per wedding event
 3. **F&B tiers:** Base / Standard / Premium at the rates above (your published menu prices)
 4. **Minimum stay:** 2 nights (3-night option available)
