@@ -51,6 +51,18 @@ Bali Love's fee is built into the couple-facing price — you never see it or pa
 
 **A wedding night earns 2.9x your budgeted revenue — and that's before guest spending at the bar and spa.**
 
+### Revenue Per Room: Wedding vs Normal
+
+| | ADR / ARR Per Room | Occupancy | RevPAR |
+|--|-------------------|-----------|--------|
+| **Normal** (2025 actual) | 3,308,732 | 47% | 1,568,339 |
+| **Normal** (2026 budget) | 4,028,398 | 61% | 2,457,323 |
+| **Wedding night** | **7,178,333** | **100%** | **7,178,333** |
+
+The wedding ARR of 7,178,333/room includes the accommodation buyout, venue fee, and F&B spread across all 18 rooms. Even though the room rate alone (2,975,000) is below your ADR, the total revenue per room is **2.2x your normal rate** — because every wedding brings venue fees and F&B revenue on top.
+
+**Wedding RevPAR is 4.6x your 2025 RevPAR** — higher rate AND 100% occupancy.
+
 ### Month-by-Month: What a Wedding Night Earns vs a Normal Night
 
 Based on your 2025 actual occupancy and room rates (18 rooms):

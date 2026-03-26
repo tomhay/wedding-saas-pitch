@@ -565,11 +565,12 @@ export default function OshomProposal() {
           <div className="max-w-6xl mx-auto">
             <motion.p variants={fadeUp} className="text-xs tracking-[0.25em] uppercase text-amber-600 mb-4">Yield Analysis</motion.p>
             <motion.h2 variants={fadeUp} className="text-3xl md:text-4xl font-bold uppercase tracking-wider text-stone-900 mb-6 leading-tight">
-              3.5x your<br /><span className="font-normal text-amber-600">normal yield.</span>
+              4.6x your<br /><span className="font-normal text-amber-600">normal RevPAR.</span>
             </motion.h2>
             <motion.p variants={fadeUp} className="text-sm text-stone-500 leading-relaxed max-w-xl mb-12">
-              Every wedding night earns 3.5 times what a normal hotel night generates.
-              Here&apos;s how your current revenue per room-night compares to wedding days.
+              Even though the room rate is competitive, total revenue per room on wedding nights is
+              7.2M IDR &mdash; because every wedding brings venue fees and F&amp;B revenue on top.
+              Higher effective rate AND 100% occupancy.
             </motion.p>
 
             {/* Current yield stats */}
@@ -588,8 +589,10 @@ export default function OshomProposal() {
                     <tr className="border-b border-stone-200"><td className="p-3">2025 occupancy</td><td className="p-3 text-right font-mono">47%</td></tr>
                     <tr className="border-b border-stone-200"><td className="p-3">Occupied nights per year</td><td className="p-3 text-right font-mono">3,088</td></tr>
                     <tr className="border-b border-stone-200"><td className="p-3">2026 budgeted revenue</td><td className="p-3 text-right font-mono">16,100,000,000 IDR</td></tr>
-                    <tr className="border-b border-stone-200"><td className="p-3">ADR (average daily rate)</td><td className="p-3 text-right font-mono">5,214,000 IDR</td></tr>
-                    <tr className="border-b border-stone-200"><td className="p-3">RevPAR (revenue per available room)</td><td className="p-3 text-right font-mono">2,451,000 IDR</td></tr>
+                    <tr className="border-b border-stone-200"><td className="p-3">ADR (average daily rate)</td><td className="p-3 text-right font-mono">3,308,732 IDR <span className="text-[10px] text-stone-400">(2025 actual)</span></td></tr>
+                    <tr className="border-b border-stone-200"><td className="p-3">ADR (2026 budget)</td><td className="p-3 text-right font-mono">4,028,398 IDR</td></tr>
+                    <tr className="border-b border-stone-200"><td className="p-3">RevPAR (2025 actual)</td><td className="p-3 text-right font-mono">1,568,339 IDR</td></tr>
+                    <tr className="border-b border-stone-200"><td className="p-3">RevPAR (2026 budget)</td><td className="p-3 text-right font-mono">2,457,323 IDR</td></tr>
                   </tbody>
                 </table>
               </div>
@@ -601,26 +604,34 @@ export default function OshomProposal() {
               <div className="space-y-4">
                 <div>
                   <div className="flex justify-between text-xs uppercase tracking-wider text-stone-500 mb-1">
-                    <span>Normal hotel (RevPAR)</span><span className="font-mono">2.45M IDR</span>
+                    <span>Normal RevPAR (2025)</span><span className="font-mono">1.57M IDR</span>
                   </div>
                   <div className="h-10 bg-stone-100 overflow-hidden">
-                    <div className="bg-stone-300 h-full flex items-center px-3 text-stone-600 text-[11px] font-bold" style={{ width: '29%' }}>2.45M</div>
+                    <div className="bg-stone-300 h-full flex items-center px-3 text-stone-600 text-[11px] font-bold" style={{ width: '22%' }}>1.57M</div>
                   </div>
                 </div>
                 <div>
                   <div className="flex justify-between text-xs uppercase tracking-wider text-stone-500 mb-1">
-                    <span>Normal hotel (ADR &mdash; occupied nights only)</span><span className="font-mono">5.2M IDR</span>
+                    <span>Normal ADR (2025 &mdash; occupied nights only)</span><span className="font-mono">3.31M IDR</span>
                   </div>
                   <div className="h-10 bg-stone-100 overflow-hidden">
-                    <div className="bg-stone-400 h-full flex items-center px-3 text-white text-[11px] font-bold" style={{ width: '61%' }}>5.2M</div>
+                    <div className="bg-stone-400 h-full flex items-center px-3 text-white text-[11px] font-bold" style={{ width: '46%' }}>3.31M</div>
+                  </div>
+                </div>
+                <div>
+                  <div className="flex justify-between text-xs uppercase tracking-wider text-stone-500 mb-1">
+                    <span>Normal ADR (2026 budget)</span><span className="font-mono">4.03M IDR</span>
+                  </div>
+                  <div className="h-10 bg-stone-100 overflow-hidden">
+                    <div className="bg-stone-500 h-full flex items-center px-3 text-white text-[11px] font-bold" style={{ width: '56%' }}>4.03M</div>
                   </div>
                 </div>
                 <div>
                   <div className="flex justify-between text-xs uppercase tracking-wider text-amber-600 mb-1">
-                    <span>Wedding days (per room-night)</span><span className="font-mono font-bold">8.5M IDR</span>
+                    <span>Wedding ARR (rooms + venue + F&amp;B per room)</span><span className="font-mono font-bold">7.18M IDR</span>
                   </div>
                   <div className="h-10 bg-amber-50 overflow-hidden">
-                    <div className="bg-amber-600 h-full flex items-center px-3 text-white text-[11px] font-bold" style={{ width: '100%' }}>8.5M &mdash; 3.5x RevPAR</div>
+                    <div className="bg-amber-600 h-full flex items-center px-3 text-white text-[11px] font-bold" style={{ width: '100%' }}>7.18M &mdash; 4.6x RevPAR, 100% occupancy</div>
                   </div>
                 </div>
               </div>
@@ -649,9 +660,9 @@ export default function OshomProposal() {
             </motion.div>
 
             <motion.div variants={stagger} className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <BigNumberCard number="3.5x" label="Wedding yield vs normal RevPAR" />
-              <BigNumberCard number="30%" label="Of room-nights used for weddings" />
-              <BigNumberCard number="60%" label="Of total revenue from those wedding nights" />
+              <BigNumberCard number="4.6x" label="Wedding RevPAR vs normal RevPAR" />
+              <BigNumberCard number="7.18M" label="IDR effective revenue per room on wedding nights" />
+              <BigNumberCard number="2.2x" label="Wedding ARR vs your normal ADR" />
             </motion.div>
 
             <motion.div variants={fadeUp} className="bg-amber-50 border-l-4 border-amber-600 p-8 mt-8">
