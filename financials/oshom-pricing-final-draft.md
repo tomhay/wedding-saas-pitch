@@ -134,6 +134,8 @@ We need a price that satisfies three parties:
 
 ## 6. Recommended Pricing
 
+> **⚠️ Note (March 6):** Sections 6–14 are the original pricing analysis with separate venue/event fees and a Base (cash bar) tier. **Section 16 supersedes these** — it rolls the event fee into the buyout, drops the cash bar tier entirely (we don't do cash bars), and works backwards from the couple's AUD total. Use Section 16 numbers for all presentations and discussions.
+
 ### 6a. Accommodation Buyout (Full Hotel — 18 Rooms)
 
 Priced at Oshom's 2026 budget ADR of ~4,000,000 net/room/night (rounded for clean numbers):
@@ -166,13 +168,14 @@ Starting point is 40M buy (incl tax). This is a **potential discount lever** —
 
 Using Oshom's actual published menu prices as the net base:
 
-#### Base Tier — Food Only
+#### Base Tier — Food Only + Cash Bar
 
-Couple pays for food only. Drinks are not included.
+Couple pays for food. Guests buy their own drinks at the bar.
 
 | Item | Oshom Net | Buy (incl tax) | Sell | × 80 Guests (Buy) | × 80 Guests (Sell) |
 |------|-----------|---------------|------|-------------------|-------------------|
 | Food (Family Style 3-course) | 600,000 | 726,000 | 854,118 | 58,080,000 | 68,329,412 |
+| Drinks | Cash bar — guests pay Oshom directly | | | — | — |
 | **Total per head** | **600,000** | **726,000** | **854,118** | **58,080,000** | **68,329,412** |
 
 #### Standard Tier — Food + Silver Drinks (Spirits)
@@ -213,7 +216,7 @@ Guest room payments go directly to reduce the couple's buyout obligation. BaliLo
 |-----------|-----------|---------------|-------------------|---------------|
 | Accommodation buyout | 144,000,000 | 174,240,000 | 204,988,235 | 30,748,235 |
 | Venue/event fee | 33,057,851 | 40,000,000 | 47,058,824 | 7,058,824 |
-| F&B Base (food only) | 48,000,000 | 58,080,000 | 68,329,412 | 10,249,412 |
+| F&B Base (food + cash bar) | 48,000,000 | 58,080,000 | 68,329,412 | 10,249,412 |
 | **TOTAL — BASE** | **225,057,851** | **272,320,000** | **320,376,471** | **48,056,471** |
 | | | | | |
 | F&B Standard (food + Silver) | 92,000,000 | 111,320,000 | 130,964,706 | 19,644,706 |
@@ -228,7 +231,7 @@ Guest room payments go directly to reduce the couple's buyout obligation. BaliLo
 |-----------|-----------|---------------|-------------------|---------------|
 | Accommodation buyout | 216,000,000 | 261,360,000 | 307,482,353 | 46,122,353 |
 | Venue/event fee | 33,057,851 | 40,000,000 | 47,058,824 | 7,058,824 |
-| F&B Base (food only) | 48,000,000 | 58,080,000 | 68,329,412 | 10,249,412 |
+| F&B Base (food + cash bar) | 48,000,000 | 58,080,000 | 68,329,412 | 10,249,412 |
 | **TOTAL — BASE** | **297,057,851** | **359,440,000** | **422,870,588** | **63,430,588** |
 | | | | | |
 | F&B Standard | 92,000,000 | 111,320,000 | 130,964,706 | 19,644,706 |
@@ -247,7 +250,7 @@ Guest room payments reduce the couple's buyout obligation.
 
 | F&B Tier | Total Sell | Guest Offset (17 rooms) | Couple Out-of-Pocket |
 |----------|-----------|------------------------|---------------------|
-| Base (food only) | 320,376,471 | -119,000,000 | **201,376,471** |
+| Base (cash bar) | 320,376,471 | -119,000,000 | **201,376,471** |
 | Standard | 383,011,765 | -119,000,000 | **264,011,765** |
 | Premium | 422,870,588 | -119,000,000 | **303,870,588** |
 
@@ -255,7 +258,7 @@ Guest room payments reduce the couple's buyout obligation.
 
 | F&B Tier | Total Sell | Guest Offset (17 rooms) | Couple Out-of-Pocket |
 |----------|-----------|------------------------|---------------------|
-| Base (food only) | 422,870,588 | -178,500,000 | **244,370,588** |
+| Base (cash bar) | 422,870,588 | -178,500,000 | **244,370,588** |
 | Standard | 485,505,882 | -178,500,000 | **307,005,882** |
 | Premium | 525,364,706 | -178,500,000 | **346,864,706** |
 
@@ -318,9 +321,10 @@ Guest room payments reduce the couple's buyout obligation.
 | Scenario | Oshom Revenue/Night (Buy, incl tax) | vs 2026 Budget |
 |----------|-------------------------------------|---------------|
 | Normal night (2026 budget) | 44,108,879 | 1.0× |
-| Wedding — Base (food only) | 136,160,000 | **3.09×** |
 | Wedding — Standard | 162,780,000 | **3.69×** |
 | Wedding — Premium | 179,720,000 | **4.07×** |
+
+> *Note: These use §6–14 pricing (separate venue fee). At §16 $35K pricing, Standard = 127,925,000/night (2.90×), Premium = 144,865,000/night (3.28×).*
 
 Even the cheapest wedding option delivers **~3× their normal nightly revenue.**
 
@@ -334,20 +338,22 @@ Guests staying on-site (~35 pax across 18 rooms) spend an estimated **500,000 /p
 | Daily spend per guest | 500,000 | 500,000 |
 | **Extra Oshom revenue** | **17,500,000** | **35,000,000** |
 
-This is **on top of** the wedding revenue above.
+This is **on top of** the wedding revenue above and **on top of** guest bar spend on the wedding day itself.
 
 **On weak months** (Nov at 29.8% occ, ~13.5M/night actual):
 
 | Scenario | Revenue/Night | vs Weak Month Actual |
 |----------|--------------|---------------------|
-| Wedding — Base | 136,160,000 | **10.1×** |
+| Wedding — Standard | 162,780,000 | **12.1×** |
 
 ---
 
 ## 11. Annual Projection (50 Weddings)
 
+> **⚠️ Superseded by Section 16d.** This section uses the original pricing (separate venue fees, cash bar Base tier, old F&B mix). See Section 16d for current $35K/$40K projections with 70% standard / 30% premium mix and no cash bar.
+
 Mix: 33 × 2-night + 17 × 3-night
-F&B mix assumption: 50% base, 35% standard, 15% premium
+F&B mix assumption: 50% base, 35% standard, 15% premium *(outdated — see §16d: 70% standard, 30% premium, no cash bar)*
 
 ### Revenue to Oshom (Buy, incl tax)
 
@@ -359,7 +365,8 @@ F&B mix assumption: 50% base, 35% standard, 15% premium
 | **Total to Oshom (through BL)** | **16,943,720,000** |
 | | |
 | Guest in-resort spend (non-wedding days) | ~1,172,500,000 |
-| **Total incl. direct Oshom revenue** | **~18,116,220,000** |
+| Guest bar spend on wedding days (est. 35 guests × 300K) | ~525,000,000 |
+| **Total incl. direct Oshom revenue** | **~18,641,220,000** |
 
 ### Displacement Cost
 
@@ -379,7 +386,7 @@ F&B mix assumption: 50% base, 35% standard, 15% premium
 | **Net incremental** | **11,782,981,000** | **13,909,323,000** |
 | **% increase on room revenue** | **+73%** | **+147%** |
 
-**Note:** The net incremental above is based only on revenue through BaliLove. Including guest in-resort spend (~1.17B), total incremental is closer to **+80% vs 2026 budget**.
+**Note:** The net incremental above is based only on revenue through BaliLove. Including guest in-resort spend (~1.17B) and wedding day guest bar spend (~525M), total incremental is closer to **+84% vs 2026 budget**.
 
 ### BaliLove Annual Commission
 
@@ -400,25 +407,27 @@ F&B mix assumption: 50% base, 35% standard, 15% premium
 | Wedding day occupancy | 100% (guaranteed) |
 | Normal day occupancy (2026 budget) | 61% |
 
-Weddings target weak months (Nov-Apr) where occupancy is 30-50%. Displacement cost is lowest when weddings are needed most.
+Weddings concentrate in dry season (Apr–Oct) at ~5–6/month, with ~1–2/month in wet season (Nov–Mar). Many peak wedding months (Apr, Jun) overlap with Oshom's weakest occupancy months — displacement cost is lowest when weddings are needed most.
 
 ---
 
 ## 13. What Each Party Gets
 
+> **⚠️ Note:** This section reflects original §6–14 pricing. Updated figures at $35K are in §16. Cash bar tier has been dropped — we don't do cash bars.
+
 ### Daisy (Oshom)
 
-- Per-room rate at her 2026 budget ADR: **4,000,000 net/room/night** ✓
+- Per-room rate at her 2025 actual ADR: **3,318,000 net/room/night** at $35K ✓
 - 100% occupancy on wedding days vs 61% average ✓
-- Revenue per wedding night: **3-4× normal** ✓
-- +73% annual revenue increase (net of displacement) ✓
+- Revenue per wedding night: **2.9–3.3× normal** (Standard–Premium) ✓
+- +58% annual revenue increase at $35K (net of displacement) ✓
 - Guest in-resort spend (~1.17B/yr) on top ✓
 - Only uses 32% of calendar — 68% remains normal hotel ✓
 
 ### Couple
 
 - Full private hotel (18 rooms, all guests on-site) ✓
-- Out-of-pocket comparable to Vedas (264M standard) or cheaper (201M base) ✓
+- Out-of-pocket: ~$19,161 AUD venue OOP at $35K (after guest offset) ✓
 - BYO alcohol available ✓
 - No minimum spend — just pick a food tier ✓
 - Guest room rate: 3,500,000/night — reasonable ✓
@@ -427,7 +436,7 @@ Weddings target weak months (Nov-Apr) where occupancy is 30-50%. Displacement co
 
 - Guest room rate at 3,500,000 (at ceiling, not above) ✓
 - No minimum spend = removes friction ✓
-- Oshom Base package undercuts Vedas on OOP ✓
+- $35K total beats every competitor (Vedas $38.8K, BBG $35.8K) ✓
 - Full hotel proposition vs villa = clear differentiator ✓
 
 ### BaliLove
@@ -465,11 +474,11 @@ Weddings target weak months (Nov-Apr) where occupancy is 30-50%. Displacement co
 
 ### Resolved
 
-1. **Venue fee** — 40M buy (incl tax). Goes to Oshom via the standard chain (net + 21% tax + 15% BL). This is a **discount lever** — can be reduced or waived to close a sale on off-peak dates.
+1. **Venue fee** — Rolled into buyout in §16 pricing. No separate venue charge. *(In §6–14 it was 40M buy as a separate line — superseded.)*
 
-2. **BYO alcohol / Corkage** — No corkage. Too small an amount to fight over. Guests can bring their own and we'll serve it, but with a reasonable limit.
+2. **BYO alcohol / Corkage** — No corkage. Guests can bring their own and we'll serve it, but with a reasonable limit.
 
-3. **Non-wedding day F&B** — Aim to upsell functions (welcome dinner, recovery brunch) but no mandatory F&B on non-event days.
+3. **Non-wedding day F&B** — Guests order from Oshom's menu/bar on non-event days. Aim to upsell functions (welcome dinner, recovery brunch) but no mandatory F&B on non-event days. This revenue goes to Oshom directly. *(Note: We don't do cash bars — all F&B tiers include drinks packages.)*
 
 4. **Guest room rate discounting** — We'd suggest to Daisy that off-peak dates should have discounted guest room rates. Look at which months are struggling (Nov, Apr, Mar) and price guest rooms lower to drive bookings. This makes weddings more attractive in weak months and helps fill the calendar.
 
@@ -541,7 +550,7 @@ Oshom net ÷ 18 rooms ÷ 2 nights          = Net per room per night
 
 **Standard (3.3M net/room/night):** Matches Oshom's 2025 actual ADR (3.31M). Pitch: "Guaranteed at your proven rate, 100% occupancy."
 
-**Premium (2.5M net/room/night):** Below 2025 ADR — not recommended as standalone. Only viable if the room rate is set at the Standard level and Premium F&B is an upsell that increases the couple's total above $35K.
+> **⚠️ Important — Buyout is FIXED (March 6 clarification):** The buyout sell price is always **170,035,000** (derived from Standard F&B at $35K). It does NOT change based on the couple's F&B choice. The Premium column above is a theoretical "what if you held the total at exactly $35K with Premium F&B" — but that's not how it works in practice. If the couple picks Premium F&B, the buyout stays the same and their total increases above $35K (to ~$35,315 AUD per the actual wishlist). The buyout ADR is **3,318,000 net/room/night regardless of F&B tier**.
 
 #### Per-Wedding Revenue — $35K Standard (2-Night, 80 Guests)
 
@@ -580,7 +589,7 @@ Oshom net ÷ 18 rooms ÷ 2 nights          = Net per room per night
 
 **Standard (4.4M net/room/night):** 8% above 2026 target ADR (4.03M). Exceeds Daisy's budget goal — strong position.
 
-**Premium (3.6M net/room/night):** Close to 2026 target ADR. Defensible as the entry rate when Premium is framed as the standard offering.
+> **Same buyout logic as $35K:** Buyout is fixed at **223,035,000 sell** (Standard-derived). Premium F&B increases the couple's total above $40K — it doesn't reduce the buyout.
 
 #### Per-Wedding Revenue — $40K Standard (2-Night, 80 Guests)
 
@@ -617,8 +626,9 @@ Annual (50 weddings): ~1,172,500,000
 ### 16d. Annual Projections — 50 Weddings
 
 Mix: 33 × 2-night + 17 × 3-night (117 wedding days)
-F&B mix: 70% standard, 30% premium (avg ~121M buy/wedding)
-Room rate derived from Standard F&B calculation, applied across all tiers.
+F&B mix: 70% standard, 30% premium (no cash bar — avg ~121M buy/wedding)
+Room rate derived from Standard F&B calculation, **applied across all tiers** (buyout is fixed — F&B choice doesn't change it).
+Season: ~4 weddings/month avg. Peak (Apr–Oct) ~5–6/month, off-peak (Nov–Mar) ~1–2/month.
 
 **3-night buyout (same room rate as 2-night):**
 
@@ -758,7 +768,7 @@ Mix scaled proportionally: 20 wed = 13×2-night + 7×3-night; 10 wed = 7×2-nigh
 - "We beat every competitor on price. $35K total vs Vedas at $38K, BBG at $36K."
 - Oshom room rate matches their 2025 actual ADR — no discounting, just guaranteed occupancy
 - Even at the lowest price: **2.9× normal nightly revenue** per wedding night
-- Target 50+ weddings at maturity — fill the weak months (Nov–Apr) where occupancy drops to 30%
+- Target 50+ weddings at maturity (~4/month, mostly dry season Apr–Oct)
 - Annual net incremental to Oshom: **+9.4B IDR (+58% on room revenue)** at 50 weddings
 - Plus ~1.2B in direct guest in-resort spend that bypasses BaliLove
 - **Risk:** Room rate sits at 2025 levels — Daisy may push back on not hitting 2026 targets. Counter: "100% occupancy on wedding days vs 47% average in 2025. You're making more money, just through volume."
@@ -774,7 +784,7 @@ Mix scaled proportionally: 20 wed = 13×2-night + 7×3-night; 10 wed = 7×2-nigh
 
 #### Recommended: Lead with $35K, Season-Based Uplift
 
-**Off-peak (Nov–Apr):** $35K — "Beat everyone on price, fill empty rooms"
-**Peak (May–Oct):** $40K — "Premium positioning, higher margin, still under Vedas"
+**Off-peak (Nov–Mar):** $35K — "Beat everyone on price, fill empty rooms"
+**Peak (Apr–Oct):** $35K launch, moving to $40K once proven — "Premium positioning, higher margin, still under Vedas"
 
 This gives Selina two price cards and a simple story: the couple gets a better deal in the quiet season, and Oshom fills their weakest months first.
