@@ -6,18 +6,15 @@ import { useState, useEffect } from 'react';
 const FUND_PASSWORD = 'balilove2026';
 
 const navigation = [
-  { id: 'who-we-are', label: 'Who We Are' },
-  { id: 'track-record', label: 'Track Record' },
-  { id: 'the-ceiling', label: 'The Ceiling' },
-  { id: 'opportunity', label: 'The Opportunity' },
+  { id: 'asset', label: 'The Asset' },
+  { id: 'tenant', label: 'The Tenant' },
+  { id: 'returns', label: 'Your Returns' },
   { id: 'de-risk', label: 'The De-Risk' },
-  { id: 'model', label: 'Unit Economics' },
   { id: 'pipeline', label: 'Pipeline' },
   { id: 'vision', label: 'Vision' },
   { id: 'strategy', label: 'Strategy' },
   { id: 'structure', label: 'Structure' },
   { id: 'terms', label: 'Fund Terms' },
-  { id: 'returns', label: 'Returns' },
   { id: 'market', label: 'Market' },
   { id: 'team', label: 'Team' },
   { id: 'risks', label: 'Risks' },
@@ -33,15 +30,6 @@ const stagger = {
   visible: { transition: { staggerChildren: 0.1 } },
 };
 
-function StatCard({ number, label }: { number: string; label: string }) {
-  return (
-    <motion.div variants={fadeUp} className="text-center">
-      <div className="text-4xl md:text-5xl font-bold text-red mb-2 font-heading">{number}</div>
-      <div className="text-xs tracking-widest uppercase text-dark-red/60">{label}</div>
-    </motion.div>
-  );
-}
-
 function MetricRow({ label, value, highlight }: { label: string; value: string; highlight?: boolean }) {
   return (
     <div className={`flex justify-between items-center py-3 border-b border-dark-red/10 ${highlight ? 'font-bold' : ''}`}>
@@ -51,8 +39,8 @@ function MetricRow({ label, value, highlight }: { label: string; value: string; 
   );
 }
 
-function PropertyCard({ name, price, status, weddings, ebitda, description }: {
-  name: string; price: string; status: string; weddings: string; ebitda: string; description: string;
+function PropertyCard({ name, price, status, land, leaseType, description }: {
+  name: string; price: string; status: string; land: string; leaseType: string; description: string;
 }) {
   return (
     <motion.div variants={fadeUp} className="bg-white p-8 border-l-4 border-red">
@@ -67,12 +55,12 @@ function PropertyCard({ name, price, status, weddings, ebitda, description }: {
           <div className="text-sm font-bold font-heading text-dark-red">{price}</div>
         </div>
         <div>
-          <div className="text-xs text-dark-red/50 uppercase tracking-wider mb-1">Weddings/yr</div>
-          <div className="text-sm font-bold font-heading text-dark-red">{weddings}</div>
+          <div className="text-xs text-dark-red/50 uppercase tracking-wider mb-1">Land</div>
+          <div className="text-sm font-bold font-heading text-dark-red">{land}</div>
         </div>
         <div>
-          <div className="text-xs text-dark-red/50 uppercase tracking-wider mb-1">EBITDA</div>
-          <div className="text-sm font-bold font-heading text-red">{ebitda}</div>
+          <div className="text-xs text-dark-red/50 uppercase tracking-wider mb-1">Title</div>
+          <div className="text-sm font-bold font-heading text-red">{leaseType}</div>
         </div>
       </div>
     </motion.div>
@@ -191,332 +179,259 @@ export default function SingaporeFundPitch() {
             className="absolute inset-0 w-full h-full object-cover opacity-40"
           />
           <motion.div className="relative z-20 max-w-4xl" initial="hidden" animate="visible" variants={stagger}>
-            <motion.p variants={fadeUp} className="text-xs tracking-[0.25em] uppercase text-pale-pink mb-6">Asia&apos;s Dominant Destination Wedding Operator</motion.p>
+            <motion.p variants={fadeUp} className="text-xs tracking-[0.25em] uppercase text-pale-pink mb-6">Property Investment Opportunity</motion.p>
             <motion.h1 variants={fadeUp} className="text-4xl md:text-6xl font-bold uppercase tracking-wider mb-8 leading-tight font-heading">
-              Bali Love
+              Prime Bali Freehold.<br /><span className="text-pale-pink">Guaranteed Lease.</span>
             </motion.h1>
             <motion.p variants={fadeUp} className="text-lg md:text-xl text-white/90 max-w-2xl mx-auto leading-relaxed mb-4 font-secondary">
-              268 weddings booked. $13M revenue. 220% growth.<br />
-              <span className="text-pale-pink font-bold">Now we&apos;re buying the venues.</span>
+              Own freehold property in the world&apos;s top destination wedding market.<br />
+              <span className="text-pale-pink font-bold">Guaranteed revenue from an established operator. Zero operational headaches.</span>
             </motion.p>
             <motion.p variants={fadeUp} className="text-sm text-white/50 max-w-xl mx-auto mb-12 font-secondary">
-              Seven years building Asia&apos;s largest destination wedding company. The next chapter: own the properties, guarantee the revenue, capture 100% of venue yield.
+              Scarce freehold land appreciating 8-13% annually. Long-term commercial lease from a 7-year-old operator with 300+ events delivered. You own the property. We guarantee the income.
             </motion.p>
             <motion.div variants={fadeUp} className="grid grid-cols-2 md:grid-cols-4 gap-8">
               <div>
-                <div className="text-3xl md:text-4xl font-bold text-pale-pink font-heading">268</div>
-                <div className="text-xs text-white/50 uppercase tracking-wider mt-1">Weddings Booked</div>
+                <div className="text-3xl md:text-4xl font-bold text-pale-pink font-heading">8-13%</div>
+                <div className="text-xs text-white/50 uppercase tracking-wider mt-1">Annual Land Appreciation</div>
               </div>
               <div>
-                <div className="text-3xl md:text-4xl font-bold text-pale-pink font-heading">$13M</div>
-                <div className="text-xs text-white/50 uppercase tracking-wider mt-1">2026 Revenue</div>
+                <div className="text-3xl md:text-4xl font-bold text-pale-pink font-heading">18.2%</div>
+                <div className="text-xs text-white/50 uppercase tracking-wider mt-1">Freehold Supply (Scarce)</div>
               </div>
               <div>
-                <div className="text-3xl md:text-4xl font-bold text-pale-pink font-heading">220%</div>
-                <div className="text-xs text-white/50 uppercase tracking-wider mt-1">YoY Growth</div>
+                <div className="text-3xl md:text-4xl font-bold text-pale-pink font-heading">Guaranteed</div>
+                <div className="text-xs text-white/50 uppercase tracking-wider mt-1">Lease Income</div>
               </div>
               <div>
                 <div className="text-3xl md:text-4xl font-bold text-pale-pink font-heading">7yr</div>
-                <div className="text-xs text-white/50 uppercase tracking-wider mt-1">Operating Track Record</div>
+                <div className="text-xs text-white/50 uppercase tracking-wider mt-1">Operator Track Record</div>
               </div>
             </motion.div>
           </motion.div>
         </section>
 
-        {/* WHO WE ARE */}
-        <motion.section id="who-we-are" className="py-24 px-6 bg-white" initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger}>
+        {/* THE ASSET */}
+        <motion.section id="asset" className="py-24 px-6 bg-white" initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger}>
           <div className="max-w-3xl mx-auto">
-            <motion.p variants={fadeUp} className="text-xs tracking-[0.25em] uppercase text-red mb-4">Who We Are</motion.p>
+            <motion.p variants={fadeUp} className="text-xs tracking-[0.25em] uppercase text-red mb-4">The Asset</motion.p>
             <motion.h2 variants={fadeUp} className="text-3xl md:text-4xl font-bold uppercase tracking-wider text-dark-red mb-6 leading-tight font-heading">
-              Built From<br /><span className="font-normal text-red">Real Weddings</span>
-            </motion.h2>
-            <motion.p variants={fadeUp} className="text-sm text-dark-red/60 leading-relaxed max-w-2xl mb-8 font-secondary">
-              BaliLove has been operating since 2018. We are a full-service destination wedding company &mdash; not a marketplace, not a directory, not a tech startup hoping to find product-market fit. We plan, coordinate, style, produce content for, and execute weddings in Bali for couples from around the world.
-            </motion.p>
-            <motion.p variants={fadeUp} className="text-sm text-dark-red/60 leading-relaxed max-w-2xl mb-12 font-secondary">
-              64 people work for us full-time: sales teams converting leads, planners designing weddings, coordinators running the day, stylists on-site, a content team filming and editing, and a technology team building the platform that ties it all together. We have completed over 300 weddings and have 268 more booked in our pipeline.
-            </motion.p>
-
-            {/* Revenue Stack Diagram */}
-            <motion.div variants={fadeUp} className="grid grid-cols-1 md:grid-cols-4 gap-0 mb-8">
-              {/* Pillar 1 */}
-              <div className="bg-white border border-dark-red/10 p-6 relative">
-                <div className="text-[10px] tracking-[0.15em] uppercase text-dark-red/40 mb-3">Current</div>
-                <h4 className="font-heading font-bold text-dark-red text-base uppercase tracking-wide mb-4">Wedding</h4>
-                <div className="space-y-1 mb-6">
-                  <p className="text-xs font-bold text-dark-red/80">Wedding Planning</p>
-                  <p className="text-xs text-dark-red/50">Wedding Coordination</p>
-                  <p className="text-xs text-dark-red/50">Styling</p>
-                  <p className="text-xs text-dark-red/50">Content Production</p>
-                  <p className="text-xs text-dark-red/50">Vendor Booking</p>
-                </div>
-                <div className="pt-4 border-t border-dark-red/10">
-                  <div className="text-xs text-dark-red/40">Ave. gross profit</div>
-                  <div className="text-lg font-bold font-heading text-dark-red">$11,365</div>
-                </div>
-                <div className="hidden md:flex absolute right-0 top-1/2 -translate-y-1/2 translate-x-1/2 z-10 w-6 h-6 bg-dark-red/10 items-center justify-center text-dark-red/40 text-xs font-bold">&rarr;</div>
-              </div>
-
-              {/* Pillar 2 */}
-              <div className="bg-white border border-dark-red/10 p-6 relative">
-                <div className="text-[10px] tracking-[0.15em] uppercase text-dark-red/40 mb-3">Current</div>
-                <h4 className="font-heading font-bold text-dark-red text-base uppercase tracking-wide mb-4">Additional Events</h4>
-                <div className="space-y-1 mb-6">
-                  <p className="text-xs font-bold text-dark-red/80">Event Planning</p>
-                  <p className="text-xs text-dark-red/50">Bucks</p>
-                  <p className="text-xs text-dark-red/50">Hens</p>
-                  <p className="text-xs text-dark-red/50">Rehearsal Dinners</p>
-                  <p className="text-xs text-dark-red/50">Recovery Days</p>
-                </div>
-                <div className="pt-4 border-t border-dark-red/10">
-                  <div className="text-xs text-dark-red/40">Ave. gross profit</div>
-                  <div className="text-lg font-bold font-heading text-dark-red">$1,392</div>
-                </div>
-                <div className="hidden md:flex absolute right-0 top-1/2 -translate-y-1/2 translate-x-1/2 z-10 w-6 h-6 bg-dark-red/10 items-center justify-center text-dark-red/40 text-xs font-bold">+</div>
-              </div>
-
-              {/* Pillar 3 */}
-              <div className="bg-white border border-dark-red/10 p-6 relative">
-                <div className="text-[10px] tracking-[0.15em] uppercase text-sky-blue/80 mb-3">In Development</div>
-                <h4 className="font-heading font-bold text-dark-red text-base uppercase tracking-wide mb-4">Guests</h4>
-                <div className="space-y-1 mb-6">
-                  <p className="text-xs font-bold text-dark-red/80">Guest Services</p>
-                  <p className="text-xs text-dark-red/50">Accommodation</p>
-                  <p className="text-xs text-dark-red/50">Tours</p>
-                  <p className="text-xs text-dark-red/50">Activities</p>
-                  <p className="text-xs text-dark-red/50">Beauty &amp; Wellness</p>
-                </div>
-                <div className="pt-4 border-t border-dark-red/10">
-                  <div className="text-xs text-dark-red/40">Gross profit</div>
-                  <div className="text-lg font-bold font-heading text-dark-red">$2,130</div>
-                </div>
-                <div className="hidden md:flex absolute right-0 top-1/2 -translate-y-1/2 translate-x-1/2 z-10 w-6 h-6 bg-dark-red/10 items-center justify-center text-dark-red/40 text-xs font-bold">+</div>
-              </div>
-
-              {/* Pillar 4 */}
-              <div className="bg-white border-2 border-red/30 p-6">
-                <div className="text-[10px] tracking-[0.15em] uppercase text-red mb-3">Coming Soon</div>
-                <h4 className="font-heading font-bold text-dark-red text-base uppercase tracking-wide mb-4">Owned Venue</h4>
-                <div className="space-y-1 mb-6">
-                  <p className="text-xs font-bold text-dark-red/80">Venue Fees</p>
-                  <p className="text-xs text-dark-red/50">BL earns commissions from venues but misses out on the venue fees</p>
-                  <p className="text-xs font-bold text-dark-red/80 mt-2">Food &amp; Beverage</p>
-                </div>
-                <div className="pt-4 border-t border-red/20">
-                  <div className="text-xs text-dark-red/40">EBITDA</div>
-                  <div className="text-lg font-bold font-heading text-red">$11,761</div>
-                </div>
-              </div>
-            </motion.div>
-
-            {/* Total */}
-            <motion.div variants={fadeUp} className="bg-pale-pink/40 border-2 border-red p-6 flex flex-col md:flex-row items-center justify-between">
-              <div className="text-sm text-dark-red/60 font-secondary mb-2 md:mb-0">
-                Gross Profit Per Wedding (with owned venue)
-              </div>
-              <div className="text-4xl md:text-5xl font-bold text-red font-heading">$26,648</div>
-            </motion.div>
-
-            <motion.div variants={fadeUp} className="mt-6 text-center">
-              <p className="text-[10px] tracking-[0.15em] uppercase text-dark-red/30">Powered by Bali.Love Proprietary Software</p>
-            </motion.div>
-          </div>
-        </motion.section>
-
-        {/* TRACK RECORD */}
-        <motion.section id="track-record" className="py-24 px-6 bg-pale-pink/20" initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger}>
-          <div className="max-w-3xl mx-auto">
-            <motion.p variants={fadeUp} className="text-xs tracking-[0.25em] uppercase text-red mb-4">Track Record</motion.p>
-            <motion.h2 variants={fadeUp} className="text-3xl md:text-4xl font-bold uppercase tracking-wider text-dark-red mb-6 leading-tight font-heading">
-              What We&apos;ve<br /><span className="font-normal text-red">Already Done</span>
+              Bali Freehold.<br /><span className="font-normal text-red">Structurally Scarce.</span>
             </motion.h2>
             <motion.p variants={fadeUp} className="text-sm text-dark-red/60 leading-relaxed max-w-2xl mb-12 font-secondary">
-              $5.4M in 2025 revenue. $13M projected for 2026. 220% year-on-year growth. These are not forecasts from a pitch deck &mdash; this is a running business with real couples, real weddings, and real revenue tracked in Xero.
+              Bali freehold land (Hak Milik) is one of Asia&apos;s most structurally constrained property assets. Only 18.2% of listed supply is freehold. Cultural inheritance practices mean it rarely changes hands. An agricultural land conversion ban further constrains new supply. The result: consistent long-term appreciation with strong downside protection.
             </motion.p>
-            <motion.div variants={stagger} className="grid grid-cols-2 md:grid-cols-3 gap-8 mb-12">
-              <motion.div variants={fadeUp} className="text-center">
-                <div className="text-3xl md:text-4xl font-bold text-red font-heading">$5.4M</div>
-                <div className="text-xs text-dark-red/50 uppercase tracking-wider mt-2">2025 Revenue (AUD)</div>
+
+            <motion.div variants={stagger} className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+              <motion.div variants={fadeUp} className="bg-pale-pink/20 p-6">
+                <div className="text-2xl font-bold text-red font-heading mb-1">8-13%</div>
+                <div className="text-xs text-dark-red/50 uppercase tracking-wider mb-2">Annual Appreciation (Prime Areas)</div>
+                <div className="text-xs text-dark-red/40 font-secondary">Uluwatu, Canggu, Seminyak clifftop &amp; beachfront parcels. Consistent over 10+ years.</div>
               </motion.div>
-              <motion.div variants={fadeUp} className="text-center">
-                <div className="text-3xl md:text-4xl font-bold text-red font-heading">$13M</div>
-                <div className="text-xs text-dark-red/50 uppercase tracking-wider mt-2">2026 Projected</div>
+              <motion.div variants={fadeUp} className="bg-pale-pink/20 p-6">
+                <div className="text-2xl font-bold text-red font-heading mb-1">+51%</div>
+                <div className="text-xs text-dark-red/50 uppercase tracking-wider mb-2">Post-COVID Surge (2021-2024)</div>
+                <div className="text-xs text-dark-red/40 font-secondary">Cumulative appreciation. Quality assets recovered within 2-3 years of the downturn.</div>
               </motion.div>
-              <motion.div variants={fadeUp} className="text-center">
-                <div className="text-3xl md:text-4xl font-bold text-red font-heading">220%</div>
-                <div className="text-xs text-dark-red/50 uppercase tracking-wider mt-2">YoY Growth</div>
+              <motion.div variants={fadeUp} className="bg-pale-pink/20 p-6">
+                <div className="text-2xl font-bold text-red font-heading mb-1">18.2%</div>
+                <div className="text-xs text-dark-red/50 uppercase tracking-wider mb-2">Freehold Share of Supply</div>
+                <div className="text-xs text-dark-red/40 font-secondary">81.8% of listed property is leasehold. Freehold is structurally scarce and getting scarcer.</div>
               </motion.div>
-              <motion.div variants={fadeUp} className="text-center">
-                <div className="text-3xl md:text-4xl font-bold text-red font-heading">300+</div>
-                <div className="text-xs text-dark-red/50 uppercase tracking-wider mt-2">Weddings Completed</div>
-              </motion.div>
-              <motion.div variants={fadeUp} className="text-center">
-                <div className="text-3xl md:text-4xl font-bold text-red font-heading">268</div>
-                <div className="text-xs text-dark-red/50 uppercase tracking-wider mt-2">Booked Pipeline</div>
-              </motion.div>
-              <motion.div variants={fadeUp} className="text-center">
-                <div className="text-3xl md:text-4xl font-bold text-red font-heading">64</div>
-                <div className="text-xs text-dark-red/50 uppercase tracking-wider mt-2">Team Members</div>
+              <motion.div variants={fadeUp} className="bg-pale-pink/20 p-6">
+                <div className="text-2xl font-bold text-red font-heading mb-1">6.95M</div>
+                <div className="text-xs text-dark-red/50 uppercase tracking-wider mb-2">2025 International Arrivals</div>
+                <div className="text-xs text-dark-red/40 font-secondary">New record. Surpassed pre-COVID peak. Tourism = 21.75% of Bali GDP.</div>
               </motion.div>
             </motion.div>
-            <motion.div variants={fadeUp} className="bg-white p-8 border-l-4 border-red">
-              <div className="text-xs tracking-widest uppercase text-red mb-3">Growth Trajectory</div>
+
+            <motion.div variants={fadeUp} className="bg-sky-blue/20 p-8 border-l-4 border-sky-blue mb-8">
+              <div className="text-xs tracking-widest uppercase text-dark-red/50 mb-3">Government Infrastructure Bet</div>
               <p className="text-sm text-dark-red/70 font-secondary leading-relaxed">
-                We grew from $5.4M to $13M in a single year. Zero external funding. Zero paid advertising. 100% organic growth driven by word-of-mouth, SEO, and operational excellence. This is a business that has been compounding for seven years.
+                Indonesia is investing $3B in a new North Bali International Airport (50M passenger capacity, designated National Strategic Project), expanding Ngurah Rai from 24M to 32M capacity, and planning a $20B Bali MRT system (2031 target). This is not speculative &mdash; the Indonesian government is making a generational bet on Bali tourism.
+              </p>
+            </motion.div>
+
+            <motion.div variants={fadeUp} className="bg-dark-red text-white p-8">
+              <div className="text-xs tracking-widest uppercase text-pale-pink mb-3">Regulatory Advantage</div>
+              <p className="text-sm text-white/70 font-secondary leading-relaxed">
+                Recent crackdowns demolished 48 illegal structures at Bingin Beach alone. ~50% of non-hotel accommodations lack proper documentation. We operate through fully compliant PT PMA structures with established legal counsel. As regulation tightens, properly documented freehold becomes more valuable and the cowboy operators get wiped out.
               </p>
             </motion.div>
           </div>
         </motion.section>
 
-        {/* THE CEILING */}
-        <motion.section id="the-ceiling" className="py-24 px-6 bg-white" initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger}>
+        {/* THE TENANT */}
+        <motion.section id="tenant" className="py-24 px-6 bg-pale-pink/20" initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger}>
           <div className="max-w-3xl mx-auto">
-            <motion.p variants={fadeUp} className="text-xs tracking-[0.25em] uppercase text-red mb-4">The Ceiling</motion.p>
+            <motion.p variants={fadeUp} className="text-xs tracking-[0.25em] uppercase text-red mb-4">The Tenant</motion.p>
             <motion.h2 variants={fadeUp} className="text-3xl md:text-4xl font-bold uppercase tracking-wider text-dark-red mb-6 leading-tight font-heading">
-              Why Growth<br /><span className="font-normal text-red">Hits a Wall</span>
+              Established Operator.<br /><span className="font-normal text-red">Long-Term Lease.</span>
             </motion.h2>
             <motion.p variants={fadeUp} className="text-sm text-dark-red/60 leading-relaxed max-w-2xl mb-12 font-secondary">
-              We grew 220% from 2025 to 2026. But without venue ownership, growth drops to roughly 30% the following year. The reason is simple: <strong>venues are our product, but we don&apos;t control them.</strong>
+              Your properties come with a long-term commercial lease from BaliLove &mdash; Bali&apos;s dominant destination wedding operator. Operating since 2018. Over 300 weddings delivered. 64 full-time staff. This is your tenant. They guarantee your revenue.
             </motion.p>
 
-            <motion.div variants={stagger} className="space-y-6 mb-12">
-              <motion.div variants={fadeUp} className="bg-pale-pink/30 p-6 border-l-4 border-dark-red/20">
-                <h4 className="font-bold text-dark-red text-sm mb-2 font-heading uppercase tracking-wide">We Don&apos;t Control Quality</h4>
-                <p className="text-sm text-dark-red/60 font-secondary">We send couples to third-party venues and hope the product meets our standard. When it doesn&apos;t, our brand takes the hit.</p>
+            <motion.div variants={stagger} className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-12">
+              <motion.div variants={fadeUp} className="text-center">
+                <div className="text-3xl font-bold text-red font-heading">7yr</div>
+                <div className="text-xs text-dark-red/50 uppercase tracking-wider mt-2">Operating History</div>
               </motion.div>
-              <motion.div variants={fadeUp} className="bg-pale-pink/30 p-6 border-l-4 border-dark-red/20">
-                <h4 className="font-bold text-dark-red text-sm mb-2 font-heading uppercase tracking-wide">We Don&apos;t Control Availability</h4>
-                <p className="text-sm text-dark-red/60 font-secondary">Peak dates sell out. Venues prioritise their own bookings. We lose couples because the venues we need aren&apos;t available when our couples want them.</p>
+              <motion.div variants={fadeUp} className="text-center">
+                <div className="text-3xl font-bold text-red font-heading">300+</div>
+                <div className="text-xs text-dark-red/50 uppercase tracking-wider mt-2">Events Delivered</div>
               </motion.div>
-              <motion.div variants={fadeUp} className="bg-pale-pink/30 p-6 border-l-4 border-dark-red/20">
-                <h4 className="font-bold text-dark-red text-sm mb-2 font-heading uppercase tracking-wide">We Don&apos;t Control Revenue</h4>
-                <p className="text-sm text-dark-red/60 font-secondary">We pay venue owners 30-40% of every couple&apos;s spend. That&apos;s $4-5M per year going to landlords who contribute nothing to the wedding experience.</p>
+              <motion.div variants={fadeUp} className="text-center">
+                <div className="text-3xl font-bold text-red font-heading">64</div>
+                <div className="text-xs text-dark-red/50 uppercase tracking-wider mt-2">Full-Time Staff</div>
+              </motion.div>
+              <motion.div variants={fadeUp} className="text-center">
+                <div className="text-3xl font-bold text-red font-heading">268</div>
+                <div className="text-xs text-dark-red/50 uppercase tracking-wider mt-2">Weddings Booked</div>
               </motion.div>
             </motion.div>
 
-            <motion.div variants={fadeUp} className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div className="bg-dark-red/5 p-8 text-center">
-                <div className="text-xs tracking-widest uppercase text-dark-red/40 mb-3">Without Venue Ownership</div>
-                <div className="text-4xl font-bold text-dark-red/40 font-heading mb-2">~30%</div>
-                <div className="text-sm text-dark-red/40">Growth next year</div>
-              </div>
-              <div className="bg-red/5 p-8 border-2 border-red text-center">
-                <div className="text-xs tracking-widest uppercase text-red mb-3">With Venue Ownership</div>
-                <div className="text-4xl font-bold text-red font-heading mb-2">Uncapped</div>
-                <div className="text-sm text-dark-red/60">Control product, availability &amp; revenue</div>
-              </div>
+            <motion.div variants={fadeUp} className="bg-white p-8 border-l-4 border-red mb-8">
+              <div className="text-xs tracking-widest uppercase text-red mb-3">Why This Tenant Matters</div>
+              <p className="text-sm text-dark-red/70 font-secondary leading-relaxed">
+                A typical Bali wedding venue earns 7-8% cap rate with passive ownership. The same venue, operated by BaliLove under a guaranteed lease, delivers significantly higher returns to you as landlord. The difference: BaliLove has the sales engine, the team, and the 268-wedding pipeline to fill your calendar year-round. You don&apos;t need to find tenants. You already have one.
+              </p>
+            </motion.div>
+
+            <motion.div variants={fadeUp} className="bg-dark-red/5 p-8">
+              <div className="text-xs tracking-widest uppercase text-dark-red/50 mb-3">Co-Investment</div>
+              <p className="text-sm text-dark-red/70 font-secondary leading-relaxed">
+                BaliLove co-invests alongside fund investors in many deals. Our capital sits beside yours. We have skin in the game on both sides &mdash; as operator guaranteeing the lease and as co-investor in the property. Our interests are fully aligned.
+              </p>
             </motion.div>
           </div>
         </motion.section>
 
-        {/* THE OPPORTUNITY */}
-        <motion.section id="opportunity" className="py-24 px-6 bg-pale-pink/20" initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger}>
+        {/* YOUR RETURNS */}
+        <motion.section id="returns" className="py-24 px-6 bg-dark-red text-white" initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger}>
           <div className="max-w-3xl mx-auto">
-            <motion.p variants={fadeUp} className="text-xs tracking-[0.25em] uppercase text-red mb-4">The Opportunity</motion.p>
-            <motion.h2 variants={fadeUp} className="text-3xl md:text-4xl font-bold uppercase tracking-wider text-dark-red mb-6 leading-tight font-heading">
-              Own The Venues.<br /><span className="font-normal text-red">Capture The Yield.</span>
+            <motion.p variants={fadeUp} className="text-xs tracking-[0.25em] uppercase text-pale-pink mb-4">Your Returns</motion.p>
+            <motion.h2 variants={fadeUp} className="text-3xl md:text-4xl font-bold uppercase tracking-wider text-white mb-6 leading-tight font-heading">
+              Three Layers<br /><span className="font-normal text-pale-pink">Of Return</span>
             </motion.h2>
-            <motion.p variants={fadeUp} className="text-sm text-dark-red/60 leading-relaxed max-w-2xl mb-12 font-secondary">
-              The natural next step: acquire the venues where our weddings already happen. Post-acquisition, BaliLove transitions to booking exclusively at owned properties. Every couple in our pipeline flows through your real estate. You own the property. You capture 100% of the venue revenue.
+            <motion.p variants={fadeUp} className="text-sm text-white/70 leading-relaxed max-w-2xl mb-12 font-secondary">
+              This isn&apos;t a single bet. Your investment generates returns across three distinct layers &mdash; guaranteed cash, structural appreciation, and development upside.
             </motion.p>
-            <motion.div variants={stagger} className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-              <motion.div variants={fadeUp} className="bg-white p-8">
-                <div className="text-xs tracking-widest uppercase text-dark-red/50 mb-4">What Venue Owners Earn Today</div>
-                <div className="text-4xl font-bold text-dark-red font-heading mb-2">$4-5M</div>
-                <div className="text-sm text-dark-red/60">Per Year from BL Weddings</div>
-                <div className="mt-4 text-xs text-dark-red/40 font-secondary">We pay 30-40% of $73K per wedding<br />to venue owners we don&apos;t control.<br />That&apos;s the yield you capture.</div>
+
+            <motion.div variants={stagger} className="space-y-6 mb-12">
+              <motion.div variants={fadeUp} className="bg-white/5 border border-white/10 p-8">
+                <div className="flex items-start gap-4">
+                  <div className="w-10 h-10 bg-pale-pink text-dark-red flex items-center justify-center text-sm font-bold flex-shrink-0 font-heading">1</div>
+                  <div>
+                    <h4 className="font-bold text-pale-pink mb-2 font-heading text-sm uppercase tracking-wide">Guaranteed Lease Income</h4>
+                    <p className="text-sm text-white/60 font-secondary leading-relaxed">
+                      BaliLove signs a long-term commercial lease guaranteeing baseline revenue to the property. Contractual cash flow from day one. The lease starts at a conservative yield and grows over time as operations scale and rents increase.
+                    </p>
+                  </div>
+                </div>
               </motion.div>
-              <motion.div variants={fadeUp} className="bg-red/5 p-8 border-2 border-red">
-                <div className="text-xs tracking-widest uppercase text-red mb-4">Fund-Owned Venue Returns</div>
-                <div className="text-4xl font-bold text-red font-heading mb-2">25-38%</div>
-                <div className="text-sm text-dark-red/60">Cash-on-Cash Yield</div>
-                <div className="mt-4 text-xs text-dark-red/40 font-secondary">Property EBITDA flows to fund investors.<br />BL operates under long-term lease.<br />Your return = property income.</div>
+              <motion.div variants={fadeUp} className="bg-white/5 border border-white/10 p-8">
+                <div className="flex items-start gap-4">
+                  <div className="w-10 h-10 bg-pale-pink text-dark-red flex items-center justify-center text-sm font-bold flex-shrink-0 font-heading">2</div>
+                  <div>
+                    <h4 className="font-bold text-pale-pink mb-2 font-heading text-sm uppercase tracking-wide">Freehold Capital Appreciation</h4>
+                    <p className="text-sm text-white/60 font-secondary leading-relaxed">
+                      Prime Bali freehold has appreciated 8-13% annually over the past decade. With only 18.2% of supply being freehold and an agricultural conversion ban limiting new supply, this is structural &mdash; not cyclical. Your land value compounds regardless of operational performance.
+                    </p>
+                  </div>
+                </div>
               </motion.div>
+              <motion.div variants={fadeUp} className="bg-white/5 border border-white/10 p-8">
+                <div className="flex items-start gap-4">
+                  <div className="w-10 h-10 bg-pale-pink text-dark-red flex items-center justify-center text-sm font-bold flex-shrink-0 font-heading">3</div>
+                  <div>
+                    <h4 className="font-bold text-pale-pink mb-2 font-heading text-sm uppercase tracking-wide">Development Upside</h4>
+                    <p className="text-sm text-white/60 font-secondary leading-relaxed">
+                      These properties are future sites for world-class destination wedding resorts. Fund investors have first right of refusal on development projects. We acquire prime land now, operate and cash-flow it, and build when the time is right. The development premium on top of land value is where outsized returns are created.
+                    </p>
+                  </div>
+                </div>
+              </motion.div>
+            </motion.div>
+
+            <motion.div variants={fadeUp} className="bg-white/10 p-8">
+              <div className="text-xs tracking-widest uppercase text-pale-pink mb-4">Illustrative Return Stack</div>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+                <div>
+                  <div className="text-2xl font-bold text-pale-pink font-heading">6-8%</div>
+                  <div className="text-xs text-white/50 mt-1">Guaranteed Lease Yield</div>
+                  <div className="text-xs text-white/30 mt-1">Contractual &bull; Day One</div>
+                </div>
+                <div>
+                  <div className="text-2xl font-bold text-pale-pink font-heading">8-13%</div>
+                  <div className="text-xs text-white/50 mt-1">Land Appreciation</div>
+                  <div className="text-xs text-white/30 mt-1">Structural &bull; Compounding</div>
+                </div>
+                <div>
+                  <div className="text-2xl font-bold text-pale-pink font-heading">TBD</div>
+                  <div className="text-xs text-white/50 mt-1">Development Premium</div>
+                  <div className="text-xs text-white/30 mt-1">Future &bull; First Right</div>
+                </div>
+              </div>
+              <div className="mt-6 pt-4 border-t border-white/10 text-center">
+                <div className="text-xs text-white/40">Combined indicative return (pre-development)</div>
+                <div className="text-3xl font-bold text-pale-pink font-heading mt-1">14-21%</div>
+                <div className="text-xs text-white/30 mt-1">Guaranteed cash + structural appreciation. No operational involvement required.</div>
+              </div>
             </motion.div>
           </div>
         </motion.section>
 
         {/* THE DE-RISK */}
-        <motion.section id="de-risk" className="py-24 px-6 bg-dark-red text-white" initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger}>
+        <motion.section id="de-risk" className="py-24 px-6 bg-white" initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger}>
           <div className="max-w-3xl mx-auto">
-            <motion.p variants={fadeUp} className="text-xs tracking-[0.25em] uppercase text-pale-pink mb-4">The De-Risk</motion.p>
-            <motion.h2 variants={fadeUp} className="text-3xl md:text-4xl font-bold uppercase tracking-wider text-white mb-6 leading-tight font-heading">
-              Guaranteed Revenue.<br /><span className="font-normal text-pale-pink">Proven Operator.</span>
+            <motion.p variants={fadeUp} className="text-xs tracking-[0.25em] uppercase text-red mb-4">The De-Risk</motion.p>
+            <motion.h2 variants={fadeUp} className="text-3xl md:text-4xl font-bold uppercase tracking-wider text-dark-red mb-6 leading-tight font-heading">
+              No Headaches.<br /><span className="font-normal text-red">No Vacancy Risk.</span>
             </motion.h2>
-            <motion.p variants={fadeUp} className="text-lg text-white/80 leading-relaxed max-w-2xl mb-12 font-secondary">
-              You&apos;re investing in real estate with guaranteed occupancy from a proven $13M operating business. The OpCo guarantees baseline revenue to the PropCo through a formal lease.
+            <motion.p variants={fadeUp} className="text-sm text-dark-red/60 leading-relaxed max-w-2xl mb-12 font-secondary">
+              This is not a speculative property play. Every property in the fund comes with three layers of protection that eliminate the risks that normally make offshore real estate uncomfortable.
             </motion.p>
 
             <motion.div variants={stagger} className="space-y-6 mb-12">
-              <motion.div variants={fadeUp} className="bg-white/5 border border-white/10 p-8">
-                <h4 className="font-bold text-pale-pink mb-2 font-heading text-sm uppercase tracking-wide">Long-Term Lease Guarantee</h4>
-                <p className="text-sm text-white/60 font-secondary leading-relaxed">
-                  BaliLove (OpCo) signs a long-term lease with the fund (PropCo), guaranteeing baseline revenue regardless of wedding volume. Long-term leases are gold in real estate &mdash; this isn&apos;t speculative demand, it&apos;s contractual revenue backed by a business doing $13M this year.
+              <motion.div variants={fadeUp} className="bg-pale-pink/20 p-8">
+                <h4 className="font-bold text-dark-red text-sm mb-2 font-heading uppercase tracking-wide">Guaranteed Baseline Lease</h4>
+                <p className="text-sm text-dark-red/60 font-secondary leading-relaxed">
+                  BaliLove signs a formal long-term lease guaranteeing baseline revenue to the property entity regardless of wedding volume. This is contractual income &mdash; not projected, not aspirational. The operator has 268 weddings already booked and 12-18 months of forward visibility.
                 </p>
               </motion.div>
-              <motion.div variants={fadeUp} className="bg-white/5 border border-white/10 p-8">
-                <h4 className="font-bold text-pale-pink mb-2 font-heading text-sm uppercase tracking-wide">268 Weddings Already Booked</h4>
-                <p className="text-sm text-white/60 font-secondary leading-relaxed">
-                  This isn&apos;t a forecast. 268 couples have already paid deposits and booked dates. That&apos;s 12-18 months of forward revenue visibility before a single new lead comes in. The demand is proven before your capital is deployed.
+              <motion.div variants={fadeUp} className="bg-pale-pink/20 p-8">
+                <h4 className="font-bold text-dark-red text-sm mb-2 font-heading uppercase tracking-wide">Freehold Ownership</h4>
+                <p className="text-sm text-dark-red/60 font-secondary leading-relaxed">
+                  You own the land. In one of the world&apos;s most desirable tourism markets. The property has value completely independent of the operator. If everything else fails, you hold appreciating freehold real estate in Bali. That&apos;s your floor.
                 </p>
               </motion.div>
-              <motion.div variants={fadeUp} className="bg-white/5 border border-white/10 p-8">
-                <h4 className="font-bold text-pale-pink mb-2 font-heading text-sm uppercase tracking-wide">You Own The Real Estate</h4>
-                <p className="text-sm text-white/60 font-secondary leading-relaxed">
-                  Worst case, you own property in one of the world&apos;s most desirable tourism markets. The venues have value independent of BaliLove. But with BaliLove as operator, they yield 25-38% instead of the 7-8% a passive owner earns.
+              <motion.div variants={fadeUp} className="bg-pale-pink/20 p-8">
+                <h4 className="font-bold text-dark-red text-sm mb-2 font-heading uppercase tracking-wide">Operator Co-Investment</h4>
+                <p className="text-sm text-dark-red/60 font-secondary leading-relaxed">
+                  BaliLove co-invests in the properties alongside fund investors. The operator&apos;s capital is at risk beside yours. Combined with the lease guarantee, this creates double alignment &mdash; we lose money if you lose money.
                 </p>
               </motion.div>
             </motion.div>
 
-            <motion.div variants={fadeUp} className="bg-white/10 border-2 border-pale-pink/40 p-8 text-center">
+            <motion.div variants={fadeUp} className="bg-dark-red text-white p-8 text-center">
               <p className="text-lg font-secondary leading-relaxed text-white/90">
-                &ldquo;You&apos;re investing in real estate with guaranteed occupancy<br className="hidden md:block" /> from a proven operator doing $13M in revenue.&rdquo;
+                You own freehold property. You collect guaranteed lease income.<br className="hidden md:block" />
+                The operator handles everything. You have zero operational involvement.
               </p>
             </motion.div>
           </div>
         </motion.section>
 
-        {/* UNIT ECONOMICS */}
-        <motion.section id="model" className="py-24 px-6 bg-white" initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger}>
-          <div className="max-w-3xl mx-auto">
-            <motion.p variants={fadeUp} className="text-xs tracking-[0.25em] uppercase text-red mb-4">Unit Economics</motion.p>
-            <motion.h2 variants={fadeUp} className="text-3xl md:text-4xl font-bold uppercase tracking-wider text-dark-red mb-6 leading-tight font-heading">
-              Your Property.<br /><span className="font-normal text-red">Your Yield.</span>
-            </motion.h2>
-            <motion.p variants={fadeUp} className="text-sm text-dark-red/60 leading-relaxed max-w-2xl mb-12 font-secondary">
-              The fund owns properties. BaliLove operates them under a long-term exclusive lease. All venue revenue flows to the fund entity. BL earns separately through its wedding planning fees &mdash; paid by couples, not by the fund.
-            </motion.p>
-
-            <motion.div variants={fadeUp} className="bg-red/5 p-8 border-2 border-red mb-12">
-              <div className="text-xs tracking-widest uppercase text-red mb-4">Example: Boutique Villa (Fund Acquisition)</div>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div>
-                  <MetricRow label="Your Investment (Property)" value="$920K" />
-                  <MetricRow label="Venue Revenue to Fund" value="$1.01M/yr" />
-                  <MetricRow label="Property Operating Costs" value="($485K)" />
-                  <MetricRow label="Property EBITDA (Your Return)" value="$525K/yr" highlight />
-                </div>
-                <div>
-                  <MetricRow label="Cash-on-Cash Yield" value="38%" highlight />
-                  <MetricRow label="Weddings Per Year" value="60" />
-                  <MetricRow label="EBITDA Margin" value="57%" />
-                  <MetricRow label="Payback Period" value="~21 months" highlight />
-                </div>
-              </div>
-              <div className="mt-4 text-xs text-dark-red/40 font-secondary">You own the villa. BL fills it with 60 weddings/year. Property EBITDA is yours.</div>
-            </motion.div>
-          </div>
-        </motion.section>
-
         {/* THE PIPELINE */}
-        <motion.section id="pipeline" className="py-24 px-6 bg-pale-pink/20" initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger}>
+        <motion.section id="pipeline" className="py-24 px-6 bg-pale-pink/10" initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger}>
           <div className="max-w-3xl mx-auto">
             <motion.p variants={fadeUp} className="text-xs tracking-[0.25em] uppercase text-red mb-4">The Pipeline</motion.p>
             <motion.h2 variants={fadeUp} className="text-3xl md:text-4xl font-bold uppercase tracking-wider text-dark-red mb-6 leading-tight font-heading">
-              Three Deals<br /><span className="font-normal text-red">In Progress</span>
+              Three Properties<br /><span className="font-normal text-red">In Progress</span>
             </motion.h2>
             <motion.p variants={fadeUp} className="text-sm text-dark-red/60 leading-relaxed max-w-2xl mb-12 font-secondary">
-              The fund has three properties at various stages of acquisition. Combined deployment of ~$7.7M generates projected $3.0M/year EBITDA &mdash; a 39% blended yield.
+              The fund has three properties at various stages of acquisition. Each comes with a long-term lease from BaliLove and is acquired through a compliant PT PMA structure.
             </motion.p>
 
             <motion.div variants={stagger} className="space-y-6 mb-12">
@@ -524,56 +439,32 @@ export default function SingaporeFundPitch() {
                 name="Property A — Riverside Estate"
                 price="$4.1M"
                 status="DD Completing"
-                weddings="72"
-                ebitda="$1.55M"
-                description="LOI signed. Due diligence completing. Lease-to-own structure — ~$750K upfront, 12-month grace period, purchase option at fixed price. Premium riverside estate, 72 weddings/year capacity."
+                land="Premium riverside"
+                leaseType="Lease-to-Own"
+                description="LOI signed. Due diligence completing. Lease-to-own structure — ~$750K upfront, 12-month grace period, purchase option at fixed price. Prime riverside location in established wedding corridor."
               />
               <PropertyCard
-                name="Property B — Boutique Villa (Leasehold)"
+                name="Property B — Boutique Villa"
                 price="$920K"
                 status="Negotiating"
-                weddings="60"
-                ebitda="$525K"
-                description="Terms agreed, final negotiation. Leasehold boutique villa ideal for elopements and micro-weddings. Template deal for the fund's acquisition strategy."
+                land="Clifftop / hillside"
+                leaseType="Leasehold"
+                description="Terms agreed, final negotiation. Boutique property ideal for intimate events. Low acquisition cost, high yield-on-cost. Template deal for the fund's acquisition strategy."
               />
               <PropertyCard
-                name="Property C — Beachfront Estate (Freehold)"
+                name="Property C — Beachfront Estate"
                 price="$6M"
                 status="Early Stage"
-                weddings="144"
-                ebitda="$960K"
-                description="Owner willing to sell. Freehold title. 12/month capacity. 386 historical events on record. BaliLove's highest-volume venue — 27% of annual couple pipeline."
+                land="Beachfront"
+                leaseType="Freehold"
+                description="Owner willing to sell. Freehold title. Large beachfront parcel with existing structures. 386 historical events on record. Prime development site for future resort build."
               />
             </motion.div>
 
-            {/* Portfolio Summary */}
-            <motion.div variants={fadeUp} className="bg-white p-8 mb-6">
-              <div className="text-xs tracking-widest uppercase text-dark-red/50 mb-4">Combined Portfolio (Initial 3 Deals)</div>
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-                <div className="text-center">
-                  <div className="text-2xl font-bold text-red font-heading">$7.7M</div>
-                  <div className="text-xs text-dark-red/50 mt-1">Total Deployed</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-2xl font-bold text-red font-heading">$3.0M</div>
-                  <div className="text-xs text-dark-red/50 mt-1">Annual EBITDA</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-2xl font-bold text-red font-heading">39%</div>
-                  <div className="text-xs text-dark-red/50 mt-1">Blended Yield</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-2xl font-bold text-red font-heading">276</div>
-                  <div className="text-xs text-dark-red/50 mt-1">Weddings/Year</div>
-                </div>
-              </div>
-            </motion.div>
-
-            {/* Beyond Initial Portfolio */}
             <motion.div variants={fadeUp} className="bg-sky-blue/20 p-8 border-l-4 border-sky-blue">
-              <div className="text-xs tracking-widest uppercase text-dark-red/50 mb-3">Beyond The Initial Portfolio</div>
+              <div className="text-xs tracking-widest uppercase text-dark-red/50 mb-3">Acquisition Pipeline</div>
               <p className="text-sm text-dark-red/70 font-secondary leading-relaxed">
-                Following a successful raise, we have a shortlist of additional venues to approach and will run an active acquisition campaign to build a deeper pipeline of targets. BaliLove operates across 50+ venues today &mdash; we know which owners are open to selling, which properties underperform their potential, and where our operating model creates the biggest uplift. The initial three deals are just the starting point.
+                BaliLove operates across 50+ venues today. We know which owners are open to selling, which properties underperform their potential, and where our operating model creates the biggest uplift. These three are the starting point &mdash; we have a deep shortlist for follow-on acquisitions.
               </p>
             </motion.div>
           </div>
@@ -584,40 +475,33 @@ export default function SingaporeFundPitch() {
           <div className="max-w-3xl mx-auto">
             <motion.p variants={fadeUp} className="text-xs tracking-[0.25em] uppercase text-pale-pink mb-4">The Vision</motion.p>
             <motion.h2 variants={fadeUp} className="text-3xl md:text-4xl font-bold uppercase tracking-wider text-white mb-6 leading-tight font-heading">
-              The Aman For<br /><span className="font-normal text-pale-pink">Destination Weddings</span>
+              Buy Land Today.<br /><span className="font-normal text-pale-pink">Build Resorts Tomorrow.</span>
             </motion.h2>
             <motion.p variants={fadeUp} className="text-sm text-white/70 leading-relaxed max-w-2xl mb-12 font-secondary">
-              A portfolio of design-led wedding venues, each a unique product &mdash; not a cookie-cutter hotel. Powered by AI technology that fills them. Operated by the team that&apos;s delivered 300+ weddings. Revenue-guaranteed by the operator through long-term leases.
+              Phase one: acquire prime freehold land, operate it with BaliLove, and collect guaranteed lease income while the land appreciates. Phase two: build world-class destination wedding resorts on that land. Fund investors have first right of refusal on every development.
             </motion.p>
 
             <motion.div variants={stagger} className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
               <motion.div variants={fadeUp} className="bg-white/5 border border-white/10 p-8">
                 <div className="text-xs tracking-widest uppercase text-pale-pink mb-3">Phase 1 &mdash; Now</div>
-                <h4 className="font-bold text-white mb-2 font-heading text-sm uppercase tracking-wide">Acquire &amp; Refurbish</h4>
+                <h4 className="font-bold text-white mb-2 font-heading text-sm uppercase tracking-wide">Acquire &amp; Operate</h4>
                 <p className="text-sm text-white/60 font-secondary">
-                  Buy existing properties with proven wedding demand. Refurbish with world-class design. Revenue from day one while renovation adds long-term value.
+                  Buy prime freehold in established wedding corridors. Lease to BaliLove. Collect guaranteed income. Refurbish where needed to increase asset value. Land appreciates while you earn cash yield.
                 </p>
               </motion.div>
               <motion.div variants={fadeUp} className="bg-white/5 border border-white/10 p-8">
                 <div className="text-xs tracking-widest uppercase text-pale-pink mb-3">Phase 2 &mdash; Future</div>
-                <h4 className="font-bold text-white mb-2 font-heading text-sm uppercase tracking-wide">Ground-Up Builds</h4>
+                <h4 className="font-bold text-white mb-2 font-heading text-sm uppercase tracking-wide">Develop &amp; Build</h4>
                 <p className="text-sm text-white/60 font-secondary">
-                  Purpose-built destination wedding venues. Total creative control. Unique architectural products that command premium pricing and become destination brands.
+                  Purpose-built destination wedding resorts designed by YSG Studio (AD100 listed, Australia&apos;s most awarded). Fund investors get first right of refusal on development. This is where land turns into a branded hospitality asset.
                 </p>
               </motion.div>
             </motion.div>
 
-            <motion.div variants={fadeUp} className="bg-white/10 p-8 mb-8">
+            <motion.div variants={fadeUp} className="bg-white/10 p-8">
               <div className="text-xs tracking-widest uppercase text-pale-pink mb-3">Design Partner &mdash; YSG Studio</div>
               <p className="text-sm text-white/60 font-secondary leading-relaxed">
-                Australia&apos;s most awarded interior design studio. AD100 listed. Hospitality portfolio includes Hotel Collectionist. Co-founded by Yasmine Saleh Ghoniem, host of ABC&apos;s Grand Designs Transformations.
-              </p>
-            </motion.div>
-
-            <motion.div variants={fadeUp} className="bg-white/10 border border-pale-pink/30 p-8">
-              <div className="text-xs tracking-widest uppercase text-pale-pink mb-3">Why Now</div>
-              <p className="text-sm text-white/60 font-secondary leading-relaxed">
-                We&apos;re about to launch <strong className="text-white">free AI wedding planning tools</strong> alongside a full rebrand. This will dramatically accelerate couple acquisition. <strong className="text-white">The biggest constraint is not demand &mdash; it&apos;s venue access.</strong> Every wedding that books into someone else&apos;s venue is yield that could have been yours. This is the window to own the properties before the demand wave hits.
+                AD100 listed (European Architectural Digest&apos;s top 100 designers worldwide). Hospitality portfolio includes Hotel Collectionist. Co-founded by Yasmine Saleh Ghoniem, host of ABC&apos;s Grand Designs Transformations. When we build, we build with the best.
               </p>
             </motion.div>
           </div>
@@ -628,7 +512,7 @@ export default function SingaporeFundPitch() {
           <div className="max-w-3xl mx-auto">
             <motion.p variants={fadeUp} className="text-xs tracking-[0.25em] uppercase text-red mb-4">The Strategy</motion.p>
             <motion.h2 variants={fadeUp} className="text-3xl md:text-4xl font-bold uppercase tracking-wider text-dark-red mb-6 leading-tight font-heading">
-              How The<br /><span className="font-normal text-red">Fund Works</span>
+              How It<br /><span className="font-normal text-red">Works</span>
             </motion.h2>
 
             <motion.div variants={stagger} className="space-y-6 mb-12">
@@ -636,28 +520,28 @@ export default function SingaporeFundPitch() {
                 <div className="w-10 h-10 bg-red text-white flex items-center justify-center text-sm font-bold flex-shrink-0">1</div>
                 <div>
                   <h4 className="font-bold text-dark-red mb-1 font-heading text-sm uppercase tracking-wide">Commit Capital</h4>
-                  <p className="text-sm text-dark-red/60 font-secondary">Investors commit $500K+ to the fund. Capital is not called upfront &mdash; it&apos;s drawn down per deal as each acquisition closes.</p>
+                  <p className="text-sm text-dark-red/60 font-secondary">Investors commit $500K+. Capital is not called upfront &mdash; it&apos;s drawn down per deal as each acquisition closes.</p>
                 </div>
               </motion.div>
               <motion.div variants={fadeUp} className="flex gap-6 items-start">
                 <div className="w-10 h-10 bg-red text-white flex items-center justify-center text-sm font-bold flex-shrink-0">2</div>
                 <div>
-                  <h4 className="font-bold text-dark-red mb-1 font-heading text-sm uppercase tracking-wide">Acquire Venues</h4>
-                  <p className="text-sm text-dark-red/60 font-secondary">Fund acquires wedding venues through Indonesian PT PMA entities (100% foreign-owned). Each property ring-fenced in its own sub-fund. BaliLove contracted as exclusive operator.</p>
+                  <h4 className="font-bold text-dark-red mb-1 font-heading text-sm uppercase tracking-wide">Acquire Property</h4>
+                  <p className="text-sm text-dark-red/60 font-secondary">Fund acquires freehold property through Indonesian PT PMA entities (100% foreign-owned). Each property ring-fenced in its own sub-entity. BaliLove signs a long-term lease on acquisition.</p>
                 </div>
               </motion.div>
               <motion.div variants={fadeUp} className="flex gap-6 items-start">
                 <div className="w-10 h-10 bg-red text-white flex items-center justify-center text-sm font-bold flex-shrink-0">3</div>
                 <div>
-                  <h4 className="font-bold text-dark-red mb-1 font-heading text-sm uppercase tracking-wide">Retain, Compound &amp; Lever</h4>
-                  <p className="text-sm text-dark-red/60 font-secondary">Years 1-5: retain all earnings and reinvest into additional acquisitions (22% corporate tax, no withholding on reinvested capital). Properties are highly cash-flow positive, enabling leverage &mdash; your initial investment compounds into a larger portfolio than equity alone would buy. Year 5+: flexibility to switch to income distributions or continue compounding.</p>
+                  <h4 className="font-bold text-dark-red mb-1 font-heading text-sm uppercase tracking-wide">Collect &amp; Compound</h4>
+                  <p className="text-sm text-dark-red/60 font-secondary">Lease income flows from day one. Early years: retain earnings and reinvest into additional acquisitions. The portfolio compounds &mdash; your initial investment grows into a larger land bank than equity alone would buy. Lease payments grow over time as operations scale.</p>
                 </div>
               </motion.div>
               <motion.div variants={fadeUp} className="flex gap-6 items-start">
                 <div className="w-10 h-10 bg-red text-white flex items-center justify-center text-sm font-bold flex-shrink-0">4</div>
                 <div>
                   <h4 className="font-bold text-dark-red mb-1 font-heading text-sm uppercase tracking-wide">Multiple Exit Paths</h4>
-                  <p className="text-sm text-dark-red/60 font-secondary">(1) Continue compounding &mdash; switch to income distributions when investors prefer yield over growth. (2) Selective property sales at appreciated values if advantageous. (3) Portfolio sale to hospitality group or incoming capital (Elite Havens sold for $15M). (4) REIT conversion for liquidity. Flexibility is the point &mdash; strong cash flows create options.</p>
+                  <p className="text-sm text-dark-red/60 font-secondary">(1) Switch to income distributions when investors prefer yield over growth. (2) Selective property sales at appreciated values. (3) Portfolio sale to hospitality group (Elite Havens sold for $15M). (4) Develop into resorts for step-change in value. (5) REIT conversion for liquidity. Strong assets create options.</p>
                 </div>
               </motion.div>
             </motion.div>
@@ -665,7 +549,7 @@ export default function SingaporeFundPitch() {
             <motion.div variants={fadeUp} className="bg-sky-blue/20 p-8 border-l-4 border-sky-blue">
               <div className="text-xs tracking-widest uppercase text-dark-red/50 mb-3">Why This Works</div>
               <p className="text-sm text-dark-red/70 font-secondary leading-relaxed">
-                Traditional property funds buy assets and <em>hope</em> for tenants. This fund buys venues for an operator that already has <strong>268 weddings booked</strong> and <strong>12-18 months forward visibility</strong>. The demand is proven before capital is deployed. Your investment is real estate &mdash; not equity in an operating company.
+                Traditional property funds buy assets and <em>hope</em> for tenants. This fund buys property for an operator that already has <strong>268 events booked</strong> and <strong>12-18 months forward visibility</strong>. You own the real estate. The lease is guaranteed. The land appreciates. And you have first right on the development upside.
               </p>
             </motion.div>
           </div>
@@ -679,10 +563,9 @@ export default function SingaporeFundPitch() {
               Clean Separation.<br /><span className="font-normal text-red">Connected By Lease.</span>
             </motion.h2>
             <motion.p variants={fadeUp} className="text-sm text-dark-red/60 leading-relaxed max-w-2xl mb-12 font-secondary">
-              Three entities, clearly separated. Investors invest in real estate (PropCo). BaliLove (OpCo) guarantees revenue through a long-term lease. A management company (GP) sits between them, handling acquisitions, asset management, and fund operations.
+              Three entities, clearly separated. Investors invest in real estate (PropCo). BaliLove (OpCo) guarantees revenue through a long-term lease. A management company (GP) handles acquisitions, asset management, and fund operations.
             </motion.p>
 
-            {/* Structure Diagram */}
             <motion.div variants={fadeUp} className="bg-white p-8 mb-8">
               <div className="text-xs tracking-widest uppercase text-dark-red/50 mb-6 text-center">Fund Architecture</div>
               <div className="space-y-4 font-secondary text-sm">
@@ -691,29 +574,29 @@ export default function SingaporeFundPitch() {
                 </div>
                 <div className="text-center text-dark-red/30 text-lg">&darr;</div>
                 <div className="text-center py-3 bg-sky-blue/30 text-dark-red font-bold">
-                  PropCo &mdash; Singapore Pooled Fund Vehicle
+                  PropCo &mdash; Singapore Fund Vehicle
                 </div>
-                <div className="text-center text-dark-red/30 text-xs">Owns the properties &mdash; your investment</div>
+                <div className="text-center text-dark-red/30 text-xs">Owns the freehold properties &mdash; your investment</div>
                 <div className="text-center text-dark-red/30 text-lg">&darr;</div>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
                   <div className="text-center py-3 bg-dark-red/5 text-dark-red text-xs">
-                    <strong>Sub-Fund A</strong><br />PT PMA &rarr; Property A
+                    <strong>PT PMA A</strong><br />Freehold &rarr; Property A
                   </div>
                   <div className="text-center py-3 bg-dark-red/5 text-dark-red text-xs">
-                    <strong>Sub-Fund B</strong><br />PT PMA &rarr; Property B
+                    <strong>PT PMA B</strong><br />Freehold &rarr; Property B
                   </div>
                   <div className="text-center py-3 bg-dark-red/5 text-dark-red text-xs">
-                    <strong>Sub-Fund C</strong><br />PT PMA &rarr; Property C
+                    <strong>PT PMA C</strong><br />Freehold &rarr; Property C
                   </div>
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-3 mt-4">
                   <div className="text-center py-3 bg-red/10 border-2 border-red/30 text-dark-red">
                     <strong className="text-red">Management Co</strong> (Tom Hay, GP)<br />
-                    <span className="text-xs text-dark-red/50">Acquisition fees + asset management fees + carry</span>
+                    <span className="text-xs text-dark-red/50">Acquisition fees + asset management + carry</span>
                   </div>
                   <div className="text-center py-3 border-2 border-dark-red/20 text-dark-red">
-                    <strong className="text-dark-red">Bali Love</strong> (OpCo, 100% Founder-Owned)<br />
-                    <span className="text-xs text-dark-red/50">Long-term lease &rarr; guarantees revenue to PropCo</span>
+                    <strong className="text-dark-red">Bali Love</strong> (OpCo &mdash; Tenant)<br />
+                    <span className="text-xs text-dark-red/50">Long-term lease &rarr; guaranteed revenue to PropCo</span>
                   </div>
                 </div>
               </div>
@@ -722,15 +605,15 @@ export default function SingaporeFundPitch() {
             <motion.div variants={stagger} className="grid grid-cols-1 md:grid-cols-3 gap-4">
               <motion.div variants={fadeUp} className="bg-white p-5">
                 <div className="text-xs font-bold text-dark-red uppercase tracking-wider mb-2">Ring-Fenced</div>
-                <p className="text-xs text-dark-red/50 font-secondary">Each property in its own sub-fund. One asset&apos;s performance doesn&apos;t affect others.</p>
+                <p className="text-xs text-dark-red/50 font-secondary">Each property in its own PT PMA. One asset&apos;s performance doesn&apos;t affect others.</p>
               </motion.div>
               <motion.div variants={fadeUp} className="bg-white p-5">
                 <div className="text-xs font-bold text-dark-red uppercase tracking-wider mb-2">Lease Guarantee</div>
-                <p className="text-xs text-dark-red/50 font-secondary">OpCo guarantees baseline revenue to PropCo through formal long-term lease. Contractual, not aspirational.</p>
+                <p className="text-xs text-dark-red/50 font-secondary">OpCo guarantees baseline revenue through formal long-term lease. Contractual, not aspirational.</p>
               </motion.div>
               <motion.div variants={fadeUp} className="bg-white p-5">
                 <div className="text-xs font-bold text-dark-red uppercase tracking-wider mb-2">Aligned Incentives</div>
-                <p className="text-xs text-dark-red/50 font-secondary">Management Co earns carry only above 12% hurdle. GP is aligned with investors &mdash; no outsized fees without outsized returns.</p>
+                <p className="text-xs text-dark-red/50 font-secondary">GP earns carry only above hurdle. BaliLove co-invests. Everyone loses together or wins together.</p>
               </motion.div>
             </motion.div>
           </div>
@@ -775,12 +658,8 @@ export default function SingaporeFundPitch() {
                   <span className="text-sm font-bold text-white font-heading">Per Deal (As Acquired)</span>
                 </div>
                 <div className="flex justify-between items-center p-6">
-                  <span className="text-sm text-white/60">Distributions</span>
-                  <span className="text-sm font-bold text-white font-heading">Yr 1-5 Retain &amp; Compound / Yr 5+ Flexible</span>
-                </div>
-                <div className="flex justify-between items-center p-6">
                   <span className="text-sm text-white/60">Structure</span>
-                  <span className="text-sm font-bold text-white font-heading">SG Pooled Vehicle (Counsel Advising)</span>
+                  <span className="text-sm font-bold text-white font-heading">SG Fund Vehicle (Counsel Advising)</span>
                 </div>
                 <div className="flex justify-between items-center p-6">
                   <span className="text-sm text-white/60">Key-Man</span>
@@ -803,67 +682,8 @@ export default function SingaporeFundPitch() {
           </div>
         </motion.section>
 
-        {/* PROJECTED RETURNS */}
-        <motion.section id="returns" className="py-24 px-6 bg-white" initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger}>
-          <div className="max-w-3xl mx-auto">
-            <motion.p variants={fadeUp} className="text-xs tracking-[0.25em] uppercase text-red mb-4">Projected Returns</motion.p>
-            <motion.h2 variants={fadeUp} className="text-3xl md:text-4xl font-bold uppercase tracking-wider text-dark-red mb-6 leading-tight font-heading">
-              Scenario<br /><span className="font-normal text-red">Analysis</span>
-            </motion.h2>
-            <motion.p variants={fadeUp} className="text-sm text-dark-red/60 leading-relaxed max-w-2xl mb-12 font-secondary">
-              Returns modelled on 7-year hold with earnings retained and reinvested into additional acquisitions. Venues are highly cash-flow positive, enabling debt leverage to magnify equity returns. 12% compounding hurdle protects downside &mdash; GP earns nothing until investors clear it.
-            </motion.p>
-
-            <motion.div variants={fadeUp} className="overflow-x-auto mb-12">
-              <table className="w-full text-sm">
-                <thead>
-                  <tr className="border-b-2 border-dark-red">
-                    <th className="text-left py-4 text-xs uppercase tracking-wider text-dark-red/50">Scenario</th>
-                    <th className="text-right py-4 text-xs uppercase tracking-wider text-dark-red/50">Yield</th>
-                    <th className="text-right py-4 text-xs uppercase tracking-wider text-dark-red/50">MOIC</th>
-                    <th className="text-right py-4 text-xs uppercase tracking-wider text-dark-red/50">IRR</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr className="border-b border-dark-red/10 bg-red/5">
-                    <td className="py-4 font-bold text-dark-red">Boutique Villa Model (Upside)</td>
-                    <td className="py-4 text-right font-heading text-red">38%</td>
-                    <td className="py-4 text-right font-heading text-red">10.6x</td>
-                    <td className="py-4 text-right font-heading text-red">40%</td>
-                  </tr>
-                  <tr className="border-b border-dark-red/10">
-                    <td className="py-4 font-bold text-dark-red">Conservative</td>
-                    <td className="py-4 text-right font-heading">25%</td>
-                    <td className="py-4 text-right font-heading">4.0x</td>
-                    <td className="py-4 text-right font-heading">22%</td>
-                  </tr>
-                  <tr className="border-b border-dark-red/10">
-                    <td className="py-4 font-bold text-dark-red">Downside</td>
-                    <td className="py-4 text-right font-heading">20%</td>
-                    <td className="py-4 text-right font-heading">2.8x</td>
-                    <td className="py-4 text-right font-heading">16%</td>
-                  </tr>
-                  <tr className="bg-dark-red/5">
-                    <td className="py-4 font-bold text-dark-red/50">Hurdle Rate</td>
-                    <td className="py-4 text-right font-heading text-dark-red/50">12%</td>
-                    <td className="py-4 text-right font-heading text-dark-red/50">2.2x</td>
-                    <td className="py-4 text-right font-heading text-dark-red/50">12%</td>
-                  </tr>
-                </tbody>
-              </table>
-            </motion.div>
-
-            <motion.div variants={fadeUp} className="bg-pale-pink/30 p-8">
-              <div className="text-xs tracking-widest uppercase text-dark-red/50 mb-3">Investor Protection</div>
-              <p className="text-sm text-dark-red/70 font-secondary leading-relaxed">
-                The 12% compounding hurdle means investors receive 2.2x their money before the GP earns any carry. In the downside scenario (20% yield), investors still achieve a 16% IRR and 2.8x MOIC over 7 years. The GP only participates in outsized returns.
-              </p>
-            </motion.div>
-          </div>
-        </motion.section>
-
         {/* MARKET CONTEXT */}
-        <motion.section id="market" className="py-24 px-6 bg-pale-pink/20" initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger}>
+        <motion.section id="market" className="py-24 px-6 bg-white" initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger}>
           <div className="max-w-3xl mx-auto">
             <motion.p variants={fadeUp} className="text-xs tracking-[0.25em] uppercase text-red mb-4">Market Context</motion.p>
             <motion.h2 variants={fadeUp} className="text-3xl md:text-4xl font-bold uppercase tracking-wider text-dark-red mb-6 leading-tight font-heading">
@@ -871,29 +691,29 @@ export default function SingaporeFundPitch() {
             </motion.h2>
 
             <motion.div variants={stagger} className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
-              <motion.div variants={fadeUp} className="bg-white p-6">
+              <motion.div variants={fadeUp} className="bg-pale-pink/20 p-6">
                 <div className="text-2xl font-bold text-red font-heading mb-1">7-8%</div>
                 <div className="text-xs text-dark-red/50 uppercase tracking-wider mb-2">Bali Cap Rates</div>
-                <div className="text-xs text-dark-red/40 font-secondary">300bps above gateway Asian markets</div>
+                <div className="text-xs text-dark-red/40 font-secondary">300bps above gateway Asian markets (SG, HK, Tokyo)</div>
               </motion.div>
-              <motion.div variants={fadeUp} className="bg-white p-6">
-                <div className="text-2xl font-bold text-red font-heading mb-1">15-20%</div>
-                <div className="text-xs text-dark-red/50 uppercase tracking-wider mb-2">Gross Rental Yields</div>
-                <div className="text-xs text-dark-red/40 font-secondary">Resort-integrated wedding venues</div>
+              <motion.div variants={fadeUp} className="bg-pale-pink/20 p-6">
+                <div className="text-2xl font-bold text-red font-heading mb-1">$36.5B</div>
+                <div className="text-xs text-dark-red/50 uppercase tracking-wider mb-2">Destination Wedding Market</div>
+                <div className="text-xs text-dark-red/40 font-secondary">Growing at 26% CAGR globally</div>
               </motion.div>
-              <motion.div variants={fadeUp} className="bg-white p-6">
-                <div className="text-2xl font-bold text-red font-heading mb-1">21.5%</div>
-                <div className="text-xs text-dark-red/50 uppercase tracking-wider mb-2">RevPAR Growth YoY</div>
-                <div className="text-xs text-dark-red/40 font-secondary">Accelerating tourism recovery</div>
+              <motion.div variants={fadeUp} className="bg-pale-pink/20 p-6">
+                <div className="text-2xl font-bold text-red font-heading mb-1">+37%</div>
+                <div className="text-xs text-dark-red/50 uppercase tracking-wider mb-2">RevPAR Above 2019 Peak</div>
+                <div className="text-xs text-dark-red/40 font-secondary">Bali hospitality has surpassed pre-COVID levels</div>
               </motion.div>
-              <motion.div variants={fadeUp} className="bg-white p-6">
+              <motion.div variants={fadeUp} className="bg-pale-pink/20 p-6">
                 <div className="text-2xl font-bold text-red font-heading mb-1">12% CAGR</div>
                 <div className="text-xs text-dark-red/50 uppercase tracking-wider mb-2">Indo Hospitality Growth</div>
-                <div className="text-xs text-dark-red/40 font-secondary">$2.06B → $3.65B by 2030</div>
+                <div className="text-xs text-dark-red/40 font-secondary">$2.06B &rarr; $3.65B by 2030</div>
               </motion.div>
             </motion.div>
 
-            <motion.div variants={fadeUp} className="bg-white p-8 mb-8">
+            <motion.div variants={fadeUp} className="bg-white border border-dark-red/10 p-8 mb-8">
               <div className="text-xs tracking-widest uppercase text-dark-red/50 mb-4">Comparable Transactions</div>
               <div className="space-y-3">
                 <div className="flex justify-between items-center py-2 border-b border-dark-red/5">
@@ -913,14 +733,14 @@ export default function SingaporeFundPitch() {
 
             <motion.div variants={fadeUp} className="bg-sky-blue/20 p-8 border-l-4 border-sky-blue">
               <p className="text-sm text-dark-red/70 font-secondary leading-relaxed">
-                <strong>Key insight:</strong> Bali wedding venues trade at 7-8% cap rates, but when operated by BaliLove yield 25-38% on equity. The arbitrage exists because most venue owners don&apos;t have a 64-person wedding operation filling their calendar.
+                <strong>Key insight:</strong> Bali freehold property trades at 7-8% cap rates. With a guaranteed lease from an established operator, your effective yield is significantly higher &mdash; and that&apos;s before land appreciation. The arbitrage exists because most property owners don&apos;t have a 64-person operation filling their venues year-round.
               </p>
             </motion.div>
           </div>
         </motion.section>
 
         {/* TEAM */}
-        <motion.section id="team" className="py-24 px-6 bg-white" initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger}>
+        <motion.section id="team" className="py-24 px-6 bg-pale-pink/20" initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger}>
           <div className="max-w-3xl mx-auto">
             <motion.p variants={fadeUp} className="text-xs tracking-[0.25em] uppercase text-red mb-4">The Team</motion.p>
             <motion.h2 variants={fadeUp} className="text-3xl md:text-4xl font-bold uppercase tracking-wider text-dark-red mb-12 leading-tight font-heading">
@@ -928,36 +748,28 @@ export default function SingaporeFundPitch() {
             </motion.h2>
 
             <motion.div variants={stagger} className="space-y-8">
-              <motion.div variants={fadeUp} className="flex gap-6 items-start p-6 bg-pale-pink/20">
+              <motion.div variants={fadeUp} className="flex gap-6 items-start p-6 bg-white">
                 <div className="w-16 h-16 bg-red text-white flex items-center justify-center text-xl font-bold flex-shrink-0 font-heading">TH</div>
                 <div>
                   <h4 className="font-bold text-dark-red font-heading text-sm uppercase tracking-wide">Tom Hay</h4>
                   <p className="text-xs text-red uppercase tracking-wider mb-2">Founder &amp; Fund Manager</p>
-                  <p className="text-sm text-dark-red/60 font-secondary">7 years building BaliLove from zero to Asia&apos;s largest destination wedding company. 300+ weddings, 64 staff, $13M revenue. Deep operator who knows every venue, vendor, and margin lever in Bali weddings.</p>
+                  <p className="text-sm text-dark-red/60 font-secondary">7 years building BaliLove into Bali&apos;s dominant destination wedding operator. 300+ events, 64 staff. Deep local relationships, established legal and banking infrastructure. Knows every venue, vendor, and deal structure on the island.</p>
                 </div>
               </motion.div>
-              <motion.div variants={fadeUp} className="flex gap-6 items-start p-6 bg-pale-pink/10">
-                <div className="w-16 h-16 bg-dark-red/80 text-white flex items-center justify-center text-xl font-bold flex-shrink-0 font-heading">D</div>
-                <div>
-                  <h4 className="font-bold text-dark-red font-heading text-sm uppercase tracking-wide">Diana</h4>
-                  <p className="text-xs text-red uppercase tracking-wider mb-2">Digital Transformation</p>
-                  <p className="text-sm text-dark-red/60 font-secondary">Director-level corporate background. Left corporate to build the technology and systems layer. Drives the platform that makes 64 staff operate like 200.</p>
-                </div>
-              </motion.div>
-              <motion.div variants={fadeUp} className="flex gap-6 items-start p-6 bg-pale-pink/10">
+              <motion.div variants={fadeUp} className="flex gap-6 items-start p-6 bg-white">
                 <div className="w-16 h-16 bg-dark-red/80 text-white flex items-center justify-center text-xl font-bold flex-shrink-0 font-heading">I</div>
                 <div>
                   <h4 className="font-bold text-dark-red font-heading text-sm uppercase tracking-wide">Imelda</h4>
                   <p className="text-xs text-red uppercase tracking-wider mb-2">Venue Relationships</p>
-                  <p className="text-sm text-dark-red/60 font-secondary">20 years at The Mulia and top Bali luxury venues. The relationships that open doors to off-market deals and preferred partnerships across the island.</p>
+                  <p className="text-sm text-dark-red/60 font-secondary">20 years at The Mulia and top Bali luxury venues. The relationships that open doors to off-market deals and preferred terms across the island.</p>
                 </div>
               </motion.div>
-              <motion.div variants={fadeUp} className="flex gap-6 items-start p-6 bg-pale-pink/10">
+              <motion.div variants={fadeUp} className="flex gap-6 items-start p-6 bg-white">
                 <div className="w-16 h-16 bg-dark-red/80 text-white flex items-center justify-center text-xl font-bold flex-shrink-0 font-heading">64</div>
                 <div>
                   <h4 className="font-bold text-dark-red font-heading text-sm uppercase tracking-wide">Operating Team</h4>
-                  <p className="text-xs text-red uppercase tracking-wider mb-2">Planners, Coordinators, Sales, Tech</p>
-                  <p className="text-sm text-dark-red/60 font-secondary">Full-stack wedding operation: sales team converting leads, planners coordinating events, coordinators executing on-day, tech team building the platform. Zero unwanted turnover.</p>
+                  <p className="text-xs text-red uppercase tracking-wider mb-2">Your Tenant&apos;s Workforce</p>
+                  <p className="text-sm text-dark-red/60 font-secondary">64 full-time staff across sales, planning, coordination, content, and technology. Zero unwanted turnover. This is the team that guarantees your lease income is backed by real operational capacity.</p>
                 </div>
               </motion.div>
             </motion.div>
@@ -965,7 +777,7 @@ export default function SingaporeFundPitch() {
         </motion.section>
 
         {/* RISKS */}
-        <motion.section id="risks" className="py-24 px-6 bg-pale-pink/20" initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger}>
+        <motion.section id="risks" className="py-24 px-6 bg-white" initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger}>
           <div className="max-w-3xl mx-auto">
             <motion.p variants={fadeUp} className="text-xs tracking-[0.25em] uppercase text-red mb-4">Transparency</motion.p>
             <motion.h2 variants={fadeUp} className="text-3xl md:text-4xl font-bold uppercase tracking-wider text-dark-red mb-12 leading-tight font-heading">
@@ -973,57 +785,57 @@ export default function SingaporeFundPitch() {
             </motion.h2>
 
             <motion.div variants={stagger} className="space-y-6">
-              <motion.div variants={fadeUp} className="bg-white p-6">
+              <motion.div variants={fadeUp} className="bg-pale-pink/10 p-6">
                 <div className="flex items-start gap-4">
                   <div className="w-2 h-2 bg-red rounded-full mt-2 flex-shrink-0" />
                   <div>
                     <h4 className="font-bold text-dark-red text-sm mb-1">First-time fund manager</h4>
                     <p className="text-sm text-dark-red/60 font-secondary">
-                      <strong className="text-dark-red/80">Mitigant:</strong> 7 years operating track record. 300+ weddings delivered. $13M revenue. This is an operator raising a fund, not a fund manager learning an industry. Independent Singapore-based fund administrator handles all compliance, NAV reporting, and capital calls.
+                      <strong className="text-dark-red/80">Mitigant:</strong> 7 years operating track record. 300+ events. This is an operator raising a fund, not a fund manager learning an industry. Independent Singapore-based fund administrator handles compliance, NAV reporting, and capital calls.
                     </p>
                   </div>
                 </div>
               </motion.div>
-              <motion.div variants={fadeUp} className="bg-white p-6">
+              <motion.div variants={fadeUp} className="bg-pale-pink/10 p-6">
                 <div className="flex items-start gap-4">
                   <div className="w-2 h-2 bg-red rounded-full mt-2 flex-shrink-0" />
                   <div>
                     <h4 className="font-bold text-dark-red text-sm mb-1">Operator dependency (key-man risk)</h4>
                     <p className="text-sm text-dark-red/60 font-secondary">
-                      <strong className="text-dark-red/80">Mitigant:</strong> Key-man clause suspends new deployments if Tom is incapacitated. 64-person team with zero unwanted turnover operates day-to-day without founder involvement. Senior leadership (Diana, Imelda) have full operational authority. Properties retain value regardless &mdash; fund owns the real estate.
+                      <strong className="text-dark-red/80">Mitigant:</strong> Key-man clause suspends new deployments if Tom is incapacitated. 64-person team operates day-to-day without founder involvement. Properties retain freehold value regardless of operator performance.
                     </p>
                   </div>
                 </div>
               </motion.div>
-              <motion.div variants={fadeUp} className="bg-white p-6">
+              <motion.div variants={fadeUp} className="bg-pale-pink/10 p-6">
                 <div className="flex items-start gap-4">
                   <div className="w-2 h-2 bg-red rounded-full mt-2 flex-shrink-0" />
                   <div>
                     <h4 className="font-bold text-dark-red text-sm mb-1">Tourism cyclicality</h4>
                     <p className="text-sm text-dark-red/60 font-secondary">
-                      <strong className="text-dark-red/80">Mitigant:</strong> 12-18 month forward pipeline (268 weddings already booked). Proven COVID recovery &mdash; weddings were first to return and grew through it. Couples book 12+ months ahead, providing recession-resistant visibility.
+                      <strong className="text-dark-red/80">Mitigant:</strong> Lease guarantee provides baseline income regardless of volume. 268 events already booked provides 12-18 months forward visibility. Bali tourism has surpassed pre-COVID peak. Freehold land value is independent of tourism cycles.
                     </p>
                   </div>
                 </div>
               </motion.div>
-              <motion.div variants={fadeUp} className="bg-white p-6">
+              <motion.div variants={fadeUp} className="bg-pale-pink/10 p-6">
                 <div className="flex items-start gap-4">
                   <div className="w-2 h-2 bg-red rounded-full mt-2 flex-shrink-0" />
                   <div>
                     <h4 className="font-bold text-dark-red text-sm mb-1">Currency risk (IDR/SGD)</h4>
                     <p className="text-sm text-dark-red/60 font-secondary">
-                      <strong className="text-dark-red/80">Mitigant:</strong> Revenue collected in USD-equivalent (couples pay in AUD/USD/GBP). Indonesian corporate tax at 22% with no withholding on reinvested earnings. Natural hedge: costs in IDR, revenue in hard currency.
+                      <strong className="text-dark-red/80">Mitigant:</strong> Lease payments denominated in hard currency (AUD/USD). Operating costs in IDR create a natural hedge. Indonesian corporate tax at 22% with no withholding on reinvested earnings.
                     </p>
                   </div>
                 </div>
               </motion.div>
-              <motion.div variants={fadeUp} className="bg-white p-6">
+              <motion.div variants={fadeUp} className="bg-pale-pink/10 p-6">
                 <div className="flex items-start gap-4">
                   <div className="w-2 h-2 bg-red rounded-full mt-2 flex-shrink-0" />
                   <div>
                     <h4 className="font-bold text-dark-red text-sm mb-1">Land ownership structure</h4>
                     <p className="text-sm text-dark-red/60 font-secondary">
-                      <strong className="text-dark-red/80">Mitigant:</strong> PT PMA structure (100% foreign-owned Indonesian company). Reputable Indonesian law firm advising. Standard structure used by major international investors in Bali hospitality.
+                      <strong className="text-dark-red/80">Mitigant:</strong> PT PMA structure (100% foreign-owned Indonesian company). Established Indonesian law firm on retainer. Standard structure used by major international investors in Bali hospitality. Regulatory crackdown on non-compliant operators increases value of properly structured holdings.
                     </p>
                   </div>
                 </div>
@@ -1053,7 +865,7 @@ export default function SingaporeFundPitch() {
               <motion.div variants={fadeUp} className="bg-white/5 border border-white/10 p-6">
                 <div className="text-2xl font-bold text-pale-pink font-heading mb-2">2</div>
                 <h4 className="text-sm font-bold uppercase tracking-wide mb-2">Site Visit</h4>
-                <p className="text-xs text-white/50 font-secondary">Visit Bali. See the properties. Meet the 64-person team in action.</p>
+                <p className="text-xs text-white/50 font-secondary">Visit Bali. Walk the properties. See the operation first-hand.</p>
               </motion.div>
               <motion.div variants={fadeUp} className="bg-white/5 border border-white/10 p-6">
                 <div className="text-2xl font-bold text-pale-pink font-heading mb-2">3</div>
@@ -1072,7 +884,7 @@ export default function SingaporeFundPitch() {
             <motion.div variants={fadeUp} className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-4 text-left">
               <div className="bg-white/5 border border-white/10 p-4">
                 <div className="text-xs text-white/70 font-bold uppercase tracking-wider mb-1">Available on Request</div>
-                <p className="text-xs text-white/40 font-secondary">Audited financials (Xero-backed), property valuations, management agreement template</p>
+                <p className="text-xs text-white/40 font-secondary">Property valuations, lease agreement template, Bali market research with 30+ cited sources</p>
               </div>
               <div className="bg-white/5 border border-white/10 p-4">
                 <div className="text-xs text-white/70 font-bold uppercase tracking-wider mb-1">Legal Counsel</div>
