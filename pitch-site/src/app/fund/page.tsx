@@ -16,6 +16,7 @@ const navigation = [
   { id: 'structure', label: 'Structure' },
   { id: 'terms', label: 'Fund Terms' },
   { id: 'market', label: 'Market' },
+  { id: 'founder', label: 'The Founder' },
   { id: 'team', label: 'Team' },
   { id: 'risks', label: 'Risks' },
   { id: 'next-steps', label: 'Next Steps' },
@@ -739,8 +740,55 @@ export default function SingaporeFundPitch() {
           </div>
         </motion.section>
 
+        {/* THE FOUNDER */}
+        <motion.section id="founder" className="py-24 px-6 bg-pale-pink/20" initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger}>
+          <div className="max-w-3xl mx-auto">
+            <motion.p variants={fadeUp} className="text-xs tracking-[0.25em] uppercase text-red mb-4">The Founder</motion.p>
+            <motion.h2 variants={fadeUp} className="text-3xl md:text-4xl font-bold uppercase tracking-wider text-dark-red mb-6 leading-tight font-heading">
+              Tom Hay
+            </motion.h2>
+
+            <motion.div variants={stagger} className="space-y-8">
+              <motion.div variants={fadeUp} className="bg-white p-8 border-l-4 border-red">
+                <div className="text-xs tracking-widest uppercase text-red mb-3">Before Bali</div>
+                <p className="text-sm text-dark-red/70 font-secondary leading-relaxed">
+                  Director of Digital at one of Australia&apos;s fastest-growing professional services firms. Before that, built and ran a marketing agency specialising in sales teams and technical marketing. Also founded the Farm Cafe in inner Melbourne &mdash; grew it from a small cafe into a powerhouse wedding venue. That was the first time Tom turned a venue into a wedding business. BaliLove is the second.
+                </p>
+              </motion.div>
+
+              <motion.div variants={fadeUp} className="bg-white p-8 border-l-4 border-dark-red/20">
+                <div className="text-xs tracking-widest uppercase text-dark-red/50 mb-3">Why Bali</div>
+                <p className="text-sm text-dark-red/70 font-secondary leading-relaxed">
+                  Came to Bali consulting for a venue operator and fell in love with the people. Bali has an extraordinarily talented hospitality workforce &mdash; people who want to make it a lifelong career, not a gap year. In Melbourne, hospitality teams are transient. Here, you can build something with people who stay for decades. Combined with a Hindu culture built on daily gratitude and community, it creates a working environment where nothing is impossible and the team genuinely cares.
+                </p>
+              </motion.div>
+
+              <motion.div variants={fadeUp} className="bg-white p-8 border-l-4 border-dark-red/20">
+                <div className="text-xs tracking-widest uppercase text-dark-red/50 mb-3">The Start</div>
+                <p className="text-sm text-dark-red/70 font-secondary leading-relaxed">
+                  Started BaliLove pre-COVID. Was just beginning to grow when the pandemic hit. Afterwards, wasn&apos;t sure whether to restart &mdash; but had people in Bali who desperately needed work. COVID was devastating here. Decided to sell 10-20 weddings to employ 5-6 people he cared about. Sold 100 weddings in three months. Started calling everyone he knew. Now at 64 staff, 268 weddings booked, and growing 220% year-on-year.
+                </p>
+              </motion.div>
+
+              <motion.div variants={fadeUp} className="bg-white p-8 border-l-4 border-dark-red/20">
+                <div className="text-xs tracking-widest uppercase text-dark-red/50 mb-3">Governance</div>
+                <p className="text-sm text-dark-red/70 font-secondary leading-relaxed">
+                  Previously merged with another company to solve the venue ownership problem. Demerged after discovering serious differences in governance around client deposits and financial management. Walked away from the deal rather than compromise on the fundamentals. This is why the fund is structured in Singapore with independent administration &mdash; strong governance, strong risk management, and rock-solid alignment from day one. You cannot build a 20-year business without taking this seriously.
+                </p>
+              </motion.div>
+
+              <motion.div variants={fadeUp} className="bg-dark-red text-white p-8">
+                <div className="text-xs tracking-widest uppercase text-pale-pink mb-3">The Long Game</div>
+                <p className="text-sm text-white/80 font-secondary leading-relaxed">
+                  &ldquo;I want to build the Aman for destination weddings. Getting groups of people together for once-in-a-lifetime celebrations in the world&apos;s most beautiful venues &mdash; it&apos;s a deeply creative and connective life. I see myself running this for 30 years. This is all I want to do.&rdquo;
+                </p>
+              </motion.div>
+            </motion.div>
+          </div>
+        </motion.section>
+
         {/* TEAM */}
-        <motion.section id="team" className="py-24 px-6 bg-pale-pink/20" initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger}>
+        <motion.section id="team" className="py-24 px-6 bg-white" initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger}>
           <div className="max-w-3xl mx-auto">
             <motion.p variants={fadeUp} className="text-xs tracking-[0.25em] uppercase text-red mb-4">The Team</motion.p>
             <motion.h2 variants={fadeUp} className="text-3xl md:text-4xl font-bold uppercase tracking-wider text-dark-red mb-12 leading-tight font-heading">
