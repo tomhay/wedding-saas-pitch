@@ -6,17 +6,16 @@ import { useState, useEffect } from 'react';
 const FUND_PASSWORD = 'balilove2026';
 
 const navigation = [
+  { id: 'founder', label: 'The Founder' },
+  { id: 'tenant', label: 'The Operator' },
   { id: 'asset', label: 'The Asset' },
-  { id: 'tenant', label: 'The Tenant' },
   { id: 'returns', label: 'Your Returns' },
   { id: 'de-risk', label: 'The De-Risk' },
   { id: 'pipeline', label: 'Pipeline' },
-  { id: 'vision', label: 'Vision' },
   { id: 'strategy', label: 'Strategy' },
   { id: 'structure', label: 'Structure' },
   { id: 'terms', label: 'Fund Terms' },
   { id: 'market', label: 'Market' },
-  { id: 'founder', label: 'The Founder' },
   { id: 'team', label: 'Team' },
   { id: 'risks', label: 'Risks' },
   { id: 'next-steps', label: 'Next Steps' },
@@ -40,8 +39,8 @@ function MetricRow({ label, value, highlight }: { label: string; value: string; 
   );
 }
 
-function PropertyCard({ name, price, status, land, leaseType, description }: {
-  name: string; price: string; status: string; land: string; leaseType: string; description: string;
+function PropertyCard({ name, price, status, land, leaseType, description, guaranteedLease, leaseYield }: {
+  name: string; price: string; status: string; land: string; leaseType: string; description: string; guaranteedLease?: string; leaseYield?: string;
 }) {
   return (
     <motion.div variants={fadeUp} className="bg-white p-8 border-l-4 border-red">
@@ -64,6 +63,18 @@ function PropertyCard({ name, price, status, land, leaseType, description }: {
           <div className="text-sm font-bold font-heading text-red">{leaseType}</div>
         </div>
       </div>
+      {guaranteedLease && (
+        <div className="mt-4 pt-4 border-t border-dark-red/10 grid grid-cols-2 gap-4">
+          <div>
+            <div className="text-xs text-dark-red/50 uppercase tracking-wider mb-1">Guaranteed Lease</div>
+            <div className="text-sm font-bold font-heading text-red">{guaranteedLease}</div>
+          </div>
+          <div>
+            <div className="text-xs text-dark-red/50 uppercase tracking-wider mb-1">Lease Yield</div>
+            <div className="text-sm font-bold font-heading text-red">{leaseYield}</div>
+          </div>
+        </div>
+      )}
     </motion.div>
   );
 }
@@ -212,60 +223,57 @@ export default function SingaporeFundPitch() {
           </motion.div>
         </section>
 
-        {/* THE ASSET */}
-        <motion.section id="asset" className="py-24 px-6 bg-white" initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger}>
+        {/* THE FOUNDER */}
+        <motion.section id="founder" className="py-24 px-6 bg-pale-pink/20" initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger}>
           <div className="max-w-3xl mx-auto">
-            <motion.p variants={fadeUp} className="text-xs tracking-[0.25em] uppercase text-red mb-4">The Asset</motion.p>
+            <motion.p variants={fadeUp} className="text-xs tracking-[0.25em] uppercase text-red mb-4">The Founder</motion.p>
             <motion.h2 variants={fadeUp} className="text-3xl md:text-4xl font-bold uppercase tracking-wider text-dark-red mb-6 leading-tight font-heading">
-              Bali Freehold.<br /><span className="font-normal text-red">Structurally Scarce.</span>
+              Tom Hay
             </motion.h2>
-            <motion.p variants={fadeUp} className="text-sm text-dark-red/60 leading-relaxed max-w-2xl mb-12 font-secondary">
-              Bali freehold land (Hak Milik) is one of Asia&apos;s most structurally constrained property assets. Only 18.2% of listed supply is freehold. Cultural inheritance practices mean it rarely changes hands. An agricultural land conversion ban further constrains new supply. The result: consistent long-term appreciation with strong downside protection.
-            </motion.p>
 
-            <motion.div variants={stagger} className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
-              <motion.div variants={fadeUp} className="bg-pale-pink/20 p-6">
-                <div className="text-2xl font-bold text-red font-heading mb-1">8-13%</div>
-                <div className="text-xs text-dark-red/50 uppercase tracking-wider mb-2">Annual Appreciation (Prime Areas)</div>
-                <div className="text-xs text-dark-red/40 font-secondary">Uluwatu, Canggu, Seminyak clifftop &amp; beachfront parcels. Consistent over 10+ years.</div>
+            <motion.div variants={stagger} className="space-y-8">
+              <motion.div variants={fadeUp} className="bg-white p-8 border-l-4 border-red">
+                <div className="text-xs tracking-widest uppercase text-red mb-3">Before Bali</div>
+                <p className="text-sm text-dark-red/70 font-secondary leading-relaxed">
+                  Director of Digital at one of Australia&apos;s fastest-growing professional services firms. Before that, built and ran a marketing agency specialising in sales teams and technical marketing. Also founded the Farm Cafe in inner Melbourne &mdash; grew it from a small cafe into a powerhouse wedding venue. That was the first time Tom turned a venue into a wedding business. BaliLove is the second.
+                </p>
               </motion.div>
-              <motion.div variants={fadeUp} className="bg-pale-pink/20 p-6">
-                <div className="text-2xl font-bold text-red font-heading mb-1">+51%</div>
-                <div className="text-xs text-dark-red/50 uppercase tracking-wider mb-2">Post-COVID Surge (2021-2024)</div>
-                <div className="text-xs text-dark-red/40 font-secondary">Cumulative appreciation. Quality assets recovered within 2-3 years of the downturn.</div>
-              </motion.div>
-              <motion.div variants={fadeUp} className="bg-pale-pink/20 p-6">
-                <div className="text-2xl font-bold text-red font-heading mb-1">18.2%</div>
-                <div className="text-xs text-dark-red/50 uppercase tracking-wider mb-2">Freehold Share of Supply</div>
-                <div className="text-xs text-dark-red/40 font-secondary">81.8% of listed property is leasehold. Freehold is structurally scarce and getting scarcer.</div>
-              </motion.div>
-              <motion.div variants={fadeUp} className="bg-pale-pink/20 p-6">
-                <div className="text-2xl font-bold text-red font-heading mb-1">6.95M</div>
-                <div className="text-xs text-dark-red/50 uppercase tracking-wider mb-2">2025 International Arrivals</div>
-                <div className="text-xs text-dark-red/40 font-secondary">New record. Surpassed pre-COVID peak. Tourism = 21.75% of Bali GDP.</div>
-              </motion.div>
-            </motion.div>
 
-            <motion.div variants={fadeUp} className="bg-sky-blue/20 p-8 border-l-4 border-sky-blue mb-8">
-              <div className="text-xs tracking-widest uppercase text-dark-red/50 mb-3">Government Infrastructure Bet</div>
-              <p className="text-sm text-dark-red/70 font-secondary leading-relaxed">
-                Indonesia is investing $3B in a new North Bali International Airport (50M passenger capacity, designated National Strategic Project), expanding Ngurah Rai from 24M to 32M capacity, and planning a $20B Bali MRT system (2031 target). This is not speculative &mdash; the Indonesian government is making a generational bet on Bali tourism.
-              </p>
-            </motion.div>
+              <motion.div variants={fadeUp} className="bg-white p-8 border-l-4 border-dark-red/20">
+                <div className="text-xs tracking-widest uppercase text-dark-red/50 mb-3">Why Bali</div>
+                <p className="text-sm text-dark-red/70 font-secondary leading-relaxed">
+                  Came to Bali consulting for a venue operator and fell in love with the people. Bali has an extraordinarily talented hospitality workforce &mdash; people who want to make it a lifelong career, not a gap year. In Melbourne, hospitality teams are transient. Here, you can build something with people who stay for decades. Combined with a Hindu culture built on daily gratitude and community, it creates a working environment where nothing is impossible and the team genuinely cares.
+                </p>
+              </motion.div>
 
-            <motion.div variants={fadeUp} className="bg-dark-red text-white p-8">
-              <div className="text-xs tracking-widest uppercase text-pale-pink mb-3">Regulatory Advantage</div>
-              <p className="text-sm text-white/70 font-secondary leading-relaxed">
-                Recent crackdowns demolished 48 illegal structures at Bingin Beach alone. ~50% of non-hotel accommodations lack proper documentation. We operate through fully compliant PT PMA structures with established legal counsel. As regulation tightens, properly documented freehold becomes more valuable and the cowboy operators get wiped out.
-              </p>
+              <motion.div variants={fadeUp} className="bg-white p-8 border-l-4 border-dark-red/20">
+                <div className="text-xs tracking-widest uppercase text-dark-red/50 mb-3">The Start</div>
+                <p className="text-sm text-dark-red/70 font-secondary leading-relaxed">
+                  Started BaliLove pre-COVID. Was just beginning to grow when the pandemic hit. Afterwards, wasn&apos;t sure whether to restart &mdash; but had people in Bali who desperately needed work. COVID was devastating here. Decided to sell 10-20 weddings to employ 5-6 people he cared about. Sold 100 weddings in three months. Started calling everyone he knew. Now at 64 staff, 268 weddings booked, and growing 220% year-on-year.
+                </p>
+              </motion.div>
+
+              <motion.div variants={fadeUp} className="bg-white p-8 border-l-4 border-dark-red/20">
+                <div className="text-xs tracking-widest uppercase text-dark-red/50 mb-3">Governance</div>
+                <p className="text-sm text-dark-red/70 font-secondary leading-relaxed">
+                  Previously merged with another company to solve the venue ownership problem. Demerged after discovering serious differences in governance around client deposits and financial management. Walked away from the deal rather than compromise on the fundamentals. This is why the fund is structured in Singapore with independent administration &mdash; strong governance, strong risk management, and rock-solid alignment from day one. You cannot build a 20-year business without taking this seriously.
+                </p>
+              </motion.div>
+
+              <motion.div variants={fadeUp} className="bg-dark-red text-white p-8">
+                <div className="text-xs tracking-widest uppercase text-pale-pink mb-3">The Long Game</div>
+                <p className="text-sm text-white/80 font-secondary leading-relaxed">
+                  &ldquo;I want to build the Aman for destination weddings. Getting groups of people together for once-in-a-lifetime celebrations in the world&apos;s most beautiful venues &mdash; it&apos;s a deeply creative and connective life. I see myself running this for 30 years. This is all I want to do.&rdquo;
+                </p>
+              </motion.div>
             </motion.div>
           </div>
         </motion.section>
 
-        {/* THE TENANT */}
-        <motion.section id="tenant" className="py-24 px-6 bg-pale-pink/20" initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger}>
+        {/* THE OPERATOR */}
+        <motion.section id="tenant" className="py-24 px-6 bg-white" initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger}>
           <div className="max-w-3xl mx-auto">
-            <motion.p variants={fadeUp} className="text-xs tracking-[0.25em] uppercase text-red mb-4">The Tenant</motion.p>
+            <motion.p variants={fadeUp} className="text-xs tracking-[0.25em] uppercase text-red mb-4">The Operator</motion.p>
             <motion.h2 variants={fadeUp} className="text-3xl md:text-4xl font-bold uppercase tracking-wider text-dark-red mb-6 leading-tight font-heading">
               Established Operator.<br /><span className="font-normal text-red">Long-Term Lease.</span>
             </motion.h2>
@@ -303,6 +311,56 @@ export default function SingaporeFundPitch() {
               <div className="text-xs tracking-widest uppercase text-dark-red/50 mb-3">Co-Investment</div>
               <p className="text-sm text-dark-red/70 font-secondary leading-relaxed">
                 BaliLove co-invests alongside fund investors in many deals. Our capital sits beside yours. We have skin in the game on both sides &mdash; as operator guaranteeing the lease and as co-investor in the property. Our interests are fully aligned.
+              </p>
+            </motion.div>
+          </div>
+        </motion.section>
+
+        {/* THE ASSET */}
+        <motion.section id="asset" className="py-24 px-6 bg-pale-pink/20" initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger}>
+          <div className="max-w-3xl mx-auto">
+            <motion.p variants={fadeUp} className="text-xs tracking-[0.25em] uppercase text-red mb-4">The Asset</motion.p>
+            <motion.h2 variants={fadeUp} className="text-3xl md:text-4xl font-bold uppercase tracking-wider text-dark-red mb-6 leading-tight font-heading">
+              Bali Freehold.<br /><span className="font-normal text-red">Structurally Scarce.</span>
+            </motion.h2>
+            <motion.p variants={fadeUp} className="text-sm text-dark-red/60 leading-relaxed max-w-2xl mb-12 font-secondary">
+              Bali freehold land (Hak Milik) is one of Asia&apos;s most structurally constrained property assets. Only 18.2% of listed supply is freehold. Cultural inheritance practices mean it rarely changes hands. An agricultural land conversion ban further constrains new supply. The result: consistent long-term appreciation with strong downside protection.
+            </motion.p>
+
+            <motion.div variants={stagger} className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+              <motion.div variants={fadeUp} className="bg-white p-6">
+                <div className="text-2xl font-bold text-red font-heading mb-1">8-13%</div>
+                <div className="text-xs text-dark-red/50 uppercase tracking-wider mb-2">Annual Appreciation (Prime Areas)</div>
+                <div className="text-xs text-dark-red/40 font-secondary">Uluwatu, Canggu, Seminyak clifftop &amp; beachfront parcels. Consistent over 10+ years.</div>
+              </motion.div>
+              <motion.div variants={fadeUp} className="bg-white p-6">
+                <div className="text-2xl font-bold text-red font-heading mb-1">+51%</div>
+                <div className="text-xs text-dark-red/50 uppercase tracking-wider mb-2">Post-COVID Surge (2021-2024)</div>
+                <div className="text-xs text-dark-red/40 font-secondary">Cumulative appreciation. Quality assets recovered within 2-3 years of the downturn.</div>
+              </motion.div>
+              <motion.div variants={fadeUp} className="bg-white p-6">
+                <div className="text-2xl font-bold text-red font-heading mb-1">18.2%</div>
+                <div className="text-xs text-dark-red/50 uppercase tracking-wider mb-2">Freehold Share of Supply</div>
+                <div className="text-xs text-dark-red/40 font-secondary">81.8% of listed property is leasehold. Freehold is structurally scarce and getting scarcer.</div>
+              </motion.div>
+              <motion.div variants={fadeUp} className="bg-white p-6">
+                <div className="text-2xl font-bold text-red font-heading mb-1">6.95M</div>
+                <div className="text-xs text-dark-red/50 uppercase tracking-wider mb-2">2025 International Arrivals</div>
+                <div className="text-xs text-dark-red/40 font-secondary">New record. Surpassed pre-COVID peak. Tourism = 21.75% of Bali GDP.</div>
+              </motion.div>
+            </motion.div>
+
+            <motion.div variants={fadeUp} className="bg-sky-blue/20 p-8 border-l-4 border-sky-blue mb-8">
+              <div className="text-xs tracking-widest uppercase text-dark-red/50 mb-3">Government Infrastructure Bet</div>
+              <p className="text-sm text-dark-red/70 font-secondary leading-relaxed">
+                Indonesia is investing $3B in a new North Bali International Airport (50M passenger capacity, designated National Strategic Project), expanding Ngurah Rai from 24M to 32M capacity, and planning a $20B Bali MRT system (2031 target). This is not speculative &mdash; the Indonesian government is making a generational bet on Bali tourism.
+              </p>
+            </motion.div>
+
+            <motion.div variants={fadeUp} className="bg-dark-red text-white p-8">
+              <div className="text-xs tracking-widest uppercase text-pale-pink mb-3">Regulatory Advantage</div>
+              <p className="text-sm text-white/70 font-secondary leading-relaxed">
+                Recent crackdowns demolished 48 illegal structures at Bingin Beach alone. ~50% of non-hotel accommodations lack proper documentation. We operate through fully compliant PT PMA structures with established legal counsel. As regulation tightens, properly documented freehold becomes more valuable and the cowboy operators get wiped out.
               </p>
             </motion.div>
           </div>
@@ -380,6 +438,39 @@ export default function SingaporeFundPitch() {
                 <div className="text-xs text-white/30 mt-1">Guaranteed cash + structural appreciation. No operational involvement required.</div>
               </div>
             </motion.div>
+
+            <motion.div variants={fadeUp} className="bg-white/5 border border-white/10 p-8 mt-8">
+              <div className="text-xs tracking-widest uppercase text-pale-pink mb-4">Worked Example &mdash; Boutique Villa</div>
+              <div className="grid grid-cols-1 divide-y divide-white/10">
+                <div className="flex justify-between items-center py-3">
+                  <span className="text-sm text-white/60">Your Investment (Property Acquisition)</span>
+                  <span className="text-sm font-bold text-white font-heading">$920K</span>
+                </div>
+                <div className="flex justify-between items-center py-3">
+                  <span className="text-sm text-white/60">Guaranteed Annual Lease (BaliLove &rarr; Fund)</span>
+                  <span className="text-sm font-bold text-pale-pink font-heading">[TBC]/yr</span>
+                </div>
+                <div className="flex justify-between items-center py-3">
+                  <span className="text-sm text-white/60">Guaranteed Lease Yield</span>
+                  <span className="text-sm font-bold text-pale-pink font-heading">[TBC]%</span>
+                </div>
+                <div className="flex justify-between items-center py-3">
+                  <span className="text-sm text-white/60">Revenue Share Above Baseline</span>
+                  <span className="text-sm font-bold text-white font-heading">[TBC]</span>
+                </div>
+                <div className="flex justify-between items-center py-3">
+                  <span className="text-sm text-white/60">Land Appreciation (8-13%/yr)</span>
+                  <span className="text-sm font-bold text-white font-heading">$74-120K/yr</span>
+                </div>
+                <div className="flex justify-between items-center py-3 border-t border-pale-pink/30 mt-2 pt-4">
+                  <span className="text-sm text-white font-bold">Total Indicative Annual Return</span>
+                  <span className="text-sm font-bold text-pale-pink font-heading">[TBC]</span>
+                </div>
+              </div>
+              <div className="mt-4 text-xs text-white/40 font-secondary">
+                Guaranteed lease is contractual. Revenue share and appreciation are indicative based on historical performance. Your floor is the lease + freehold land value.
+              </div>
+            </motion.div>
           </div>
         </motion.section>
 
@@ -443,6 +534,8 @@ export default function SingaporeFundPitch() {
                 land="Premium riverside"
                 leaseType="Lease-to-Own"
                 description="LOI signed. Due diligence completing. Lease-to-own structure — ~$750K upfront, 12-month grace period, purchase option at fixed price. Prime riverside location in established wedding corridor."
+                guaranteedLease="[TBC]/yr"
+                leaseYield="[TBC]%"
               />
               <PropertyCard
                 name="Property B — Boutique Villa"
@@ -451,6 +544,8 @@ export default function SingaporeFundPitch() {
                 land="Clifftop / hillside"
                 leaseType="Leasehold"
                 description="Terms agreed, final negotiation. Boutique property ideal for intimate events. Low acquisition cost, high yield-on-cost. Template deal for the fund's acquisition strategy."
+                guaranteedLease="[TBC]/yr"
+                leaseYield="[TBC]%"
               />
               <PropertyCard
                 name="Property C — Beachfront Estate"
@@ -459,6 +554,8 @@ export default function SingaporeFundPitch() {
                 land="Beachfront"
                 leaseType="Freehold"
                 description="Owner willing to sell. Freehold title. Large beachfront parcel with existing structures. 386 historical events on record. Prime development site for future resort build."
+                guaranteedLease="[TBC]/yr"
+                leaseYield="[TBC]%"
               />
             </motion.div>
 
@@ -466,43 +563,6 @@ export default function SingaporeFundPitch() {
               <div className="text-xs tracking-widest uppercase text-dark-red/50 mb-3">Acquisition Pipeline</div>
               <p className="text-sm text-dark-red/70 font-secondary leading-relaxed">
                 BaliLove operates across 50+ venues today. We know which owners are open to selling, which properties underperform their potential, and where our operating model creates the biggest uplift. These three are the starting point &mdash; we have a deep shortlist for follow-on acquisitions.
-              </p>
-            </motion.div>
-          </div>
-        </motion.section>
-
-        {/* THE VISION */}
-        <motion.section id="vision" className="py-24 px-6 bg-dark-red text-white" initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger}>
-          <div className="max-w-3xl mx-auto">
-            <motion.p variants={fadeUp} className="text-xs tracking-[0.25em] uppercase text-pale-pink mb-4">The Vision</motion.p>
-            <motion.h2 variants={fadeUp} className="text-3xl md:text-4xl font-bold uppercase tracking-wider text-white mb-6 leading-tight font-heading">
-              Buy Land Today.<br /><span className="font-normal text-pale-pink">Build Resorts Tomorrow.</span>
-            </motion.h2>
-            <motion.p variants={fadeUp} className="text-sm text-white/70 leading-relaxed max-w-2xl mb-12 font-secondary">
-              Phase one: acquire prime freehold land, operate it with BaliLove, and collect guaranteed lease income while the land appreciates. Phase two: build world-class destination wedding resorts on that land. Fund investors have first right of refusal on every development.
-            </motion.p>
-
-            <motion.div variants={stagger} className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
-              <motion.div variants={fadeUp} className="bg-white/5 border border-white/10 p-8">
-                <div className="text-xs tracking-widest uppercase text-pale-pink mb-3">Phase 1 &mdash; Now</div>
-                <h4 className="font-bold text-white mb-2 font-heading text-sm uppercase tracking-wide">Acquire &amp; Operate</h4>
-                <p className="text-sm text-white/60 font-secondary">
-                  Buy prime freehold in established wedding corridors. Lease to BaliLove. Collect guaranteed income. Refurbish where needed to increase asset value. Land appreciates while you earn cash yield.
-                </p>
-              </motion.div>
-              <motion.div variants={fadeUp} className="bg-white/5 border border-white/10 p-8">
-                <div className="text-xs tracking-widest uppercase text-pale-pink mb-3">Phase 2 &mdash; Future</div>
-                <h4 className="font-bold text-white mb-2 font-heading text-sm uppercase tracking-wide">Develop &amp; Build</h4>
-                <p className="text-sm text-white/60 font-secondary">
-                  Purpose-built destination wedding resorts designed by YSG Studio (AD100 listed, Australia&apos;s most awarded). Fund investors get first right of refusal on development. This is where land turns into a branded hospitality asset.
-                </p>
-              </motion.div>
-            </motion.div>
-
-            <motion.div variants={fadeUp} className="bg-white/10 p-8">
-              <div className="text-xs tracking-widest uppercase text-pale-pink mb-3">Design Partner &mdash; YSG Studio</div>
-              <p className="text-sm text-white/60 font-secondary leading-relaxed">
-                AD100 listed (European Architectural Digest&apos;s top 100 designers worldwide). Hospitality portfolio includes Hotel Collectionist. Co-founded by Yasmine Saleh Ghoniem, host of ABC&apos;s Grand Designs Transformations. When we build, we build with the best.
               </p>
             </motion.div>
           </div>
@@ -552,6 +612,23 @@ export default function SingaporeFundPitch() {
               <p className="text-sm text-dark-red/70 font-secondary leading-relaxed">
                 Traditional property funds buy assets and <em>hope</em> for tenants. This fund buys property for an operator that already has <strong>268 events booked</strong> and <strong>12-18 months forward visibility</strong>. You own the real estate. The lease is guaranteed. The land appreciates. And you have first right on the development upside.
               </p>
+            </motion.div>
+
+            <motion.div variants={stagger} className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-12">
+              <motion.div variants={fadeUp} className="bg-pale-pink/20 p-8">
+                <div className="text-xs tracking-widest uppercase text-red mb-3">Phase 1 &mdash; Now</div>
+                <h4 className="font-bold text-dark-red mb-2 font-heading text-sm uppercase tracking-wide">Acquire &amp; Operate</h4>
+                <p className="text-sm text-dark-red/60 font-secondary">
+                  Buy prime freehold in established wedding corridors. Lease to BaliLove. Collect guaranteed income. Refurbish where needed to increase asset value. Land appreciates while you earn cash yield.
+                </p>
+              </motion.div>
+              <motion.div variants={fadeUp} className="bg-pale-pink/20 p-8">
+                <div className="text-xs tracking-widest uppercase text-red mb-3">Phase 2 &mdash; Future</div>
+                <h4 className="font-bold text-dark-red mb-2 font-heading text-sm uppercase tracking-wide">Develop &amp; Build</h4>
+                <p className="text-sm text-dark-red/60 font-secondary">
+                  Purpose-built destination wedding resorts designed by YSG Studio (AD100 listed, Australia&apos;s most awarded). Fund investors get first right of refusal on development. This is where land turns into a branded hospitality asset.
+                </p>
+              </motion.div>
             </motion.div>
           </div>
         </motion.section>
@@ -734,61 +811,18 @@ export default function SingaporeFundPitch() {
 
             <motion.div variants={fadeUp} className="bg-sky-blue/20 p-8 border-l-4 border-sky-blue">
               <p className="text-sm text-dark-red/70 font-secondary leading-relaxed">
-                <strong>Key insight:</strong> Bali freehold property trades at 7-8% cap rates. With a guaranteed lease from an established operator, your effective yield is significantly higher &mdash; and that&apos;s before land appreciation. The arbitrage exists because most property owners don&apos;t have a 64-person operation filling their venues year-round.
+                <strong>Key insight:</strong> Bali freehold property trades at 7-8% cap rates for passive owners.
+                With a guaranteed long-term lease from BaliLove, your baseline yield matches or exceeds this
+                &mdash; contractually, from day one, before any revenue share or land appreciation.
+                The arbitrage: most property owners don&apos;t have an established operator with 268 booked
+                events guaranteeing their income.
               </p>
             </motion.div>
           </div>
         </motion.section>
 
-        {/* THE FOUNDER */}
-        <motion.section id="founder" className="py-24 px-6 bg-pale-pink/20" initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger}>
-          <div className="max-w-3xl mx-auto">
-            <motion.p variants={fadeUp} className="text-xs tracking-[0.25em] uppercase text-red mb-4">The Founder</motion.p>
-            <motion.h2 variants={fadeUp} className="text-3xl md:text-4xl font-bold uppercase tracking-wider text-dark-red mb-6 leading-tight font-heading">
-              Tom Hay
-            </motion.h2>
-
-            <motion.div variants={stagger} className="space-y-8">
-              <motion.div variants={fadeUp} className="bg-white p-8 border-l-4 border-red">
-                <div className="text-xs tracking-widest uppercase text-red mb-3">Before Bali</div>
-                <p className="text-sm text-dark-red/70 font-secondary leading-relaxed">
-                  Director of Digital at one of Australia&apos;s fastest-growing professional services firms. Before that, built and ran a marketing agency specialising in sales teams and technical marketing. Also founded the Farm Cafe in inner Melbourne &mdash; grew it from a small cafe into a powerhouse wedding venue. That was the first time Tom turned a venue into a wedding business. BaliLove is the second.
-                </p>
-              </motion.div>
-
-              <motion.div variants={fadeUp} className="bg-white p-8 border-l-4 border-dark-red/20">
-                <div className="text-xs tracking-widest uppercase text-dark-red/50 mb-3">Why Bali</div>
-                <p className="text-sm text-dark-red/70 font-secondary leading-relaxed">
-                  Came to Bali consulting for a venue operator and fell in love with the people. Bali has an extraordinarily talented hospitality workforce &mdash; people who want to make it a lifelong career, not a gap year. In Melbourne, hospitality teams are transient. Here, you can build something with people who stay for decades. Combined with a Hindu culture built on daily gratitude and community, it creates a working environment where nothing is impossible and the team genuinely cares.
-                </p>
-              </motion.div>
-
-              <motion.div variants={fadeUp} className="bg-white p-8 border-l-4 border-dark-red/20">
-                <div className="text-xs tracking-widest uppercase text-dark-red/50 mb-3">The Start</div>
-                <p className="text-sm text-dark-red/70 font-secondary leading-relaxed">
-                  Started BaliLove pre-COVID. Was just beginning to grow when the pandemic hit. Afterwards, wasn&apos;t sure whether to restart &mdash; but had people in Bali who desperately needed work. COVID was devastating here. Decided to sell 10-20 weddings to employ 5-6 people he cared about. Sold 100 weddings in three months. Started calling everyone he knew. Now at 64 staff, 268 weddings booked, and growing 220% year-on-year.
-                </p>
-              </motion.div>
-
-              <motion.div variants={fadeUp} className="bg-white p-8 border-l-4 border-dark-red/20">
-                <div className="text-xs tracking-widest uppercase text-dark-red/50 mb-3">Governance</div>
-                <p className="text-sm text-dark-red/70 font-secondary leading-relaxed">
-                  Previously merged with another company to solve the venue ownership problem. Demerged after discovering serious differences in governance around client deposits and financial management. Walked away from the deal rather than compromise on the fundamentals. This is why the fund is structured in Singapore with independent administration &mdash; strong governance, strong risk management, and rock-solid alignment from day one. You cannot build a 20-year business without taking this seriously.
-                </p>
-              </motion.div>
-
-              <motion.div variants={fadeUp} className="bg-dark-red text-white p-8">
-                <div className="text-xs tracking-widest uppercase text-pale-pink mb-3">The Long Game</div>
-                <p className="text-sm text-white/80 font-secondary leading-relaxed">
-                  &ldquo;I want to build the Aman for destination weddings. Getting groups of people together for once-in-a-lifetime celebrations in the world&apos;s most beautiful venues &mdash; it&apos;s a deeply creative and connective life. I see myself running this for 30 years. This is all I want to do.&rdquo;
-                </p>
-              </motion.div>
-            </motion.div>
-          </div>
-        </motion.section>
-
         {/* TEAM */}
-        <motion.section id="team" className="py-24 px-6 bg-white" initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger}>
+        <motion.section id="team" className="py-24 px-6 bg-pale-pink/20" initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger}>
           <div className="max-w-3xl mx-auto">
             <motion.p variants={fadeUp} className="text-xs tracking-[0.25em] uppercase text-red mb-4">The Team</motion.p>
             <motion.h2 variants={fadeUp} className="text-3xl md:text-4xl font-bold uppercase tracking-wider text-dark-red mb-12 leading-tight font-heading">
